@@ -1,0 +1,55 @@
+[2.311s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/pysp': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/pysp/prefix_override:/home/seastar/steve_summer_seastar_ws/install/pysp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/pysp/build --no-deps install_data
+[3.444s] running develop
+[3.445s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.445s]   warnings.warn(
+[3.449s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.449s]   warnings.warn(
+[3.716s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[3.716s]   warnings.warn(
+[3.717s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[3.717s]   warnings.warn(
+[3.717s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[3.717s]   warnings.warn(
+[4.321s] running egg_info
+[4.324s] creating pysp.egg-info
+[4.324s] writing pysp.egg-info/PKG-INFO
+[4.325s] writing dependency_links to pysp.egg-info/dependency_links.txt
+[4.325s] writing entry points to pysp.egg-info/entry_points.txt
+[4.325s] writing requirements to pysp.egg-info/requires.txt
+[4.325s] writing top-level names to pysp.egg-info/top_level.txt
+[4.326s] writing manifest file 'pysp.egg-info/SOURCES.txt'
+[4.437s] listing git files failed - pretending there aren't any
+[4.815s] reading manifest file 'pysp.egg-info/SOURCES.txt'
+[4.817s] writing manifest file 'pysp.egg-info/SOURCES.txt'
+[4.953s] running build_ext
+[4.954s] Creating /home/seastar/steve_summer_seastar_ws/install/pysp/lib/python3.10/site-packages/pysp.egg-link (link to .)
+[4.956s] Installing state_publisher script to /home/seastar/steve_summer_seastar_ws/install/pysp/lib/pysp
+[4.957s] 
+[4.958s] Installed /home/seastar/steve_summer_seastar_ws/build/pysp
+[4.958s] running install_data
+[4.958s] creating /home/seastar/steve_summer_seastar_ws/install/pysp/share/ament_index
+[4.959s] creating /home/seastar/steve_summer_seastar_ws/install/pysp/share/ament_index/resource_index
+[4.959s] creating /home/seastar/steve_summer_seastar_ws/install/pysp/share/ament_index/resource_index/packages
+[4.959s] copying resource/pysp -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/ament_index/resource_index/packages
+[4.959s] copying package.xml -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.960s] creating /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp/launch
+[4.960s] copying launch/publish.launch.py -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp/launch
+[4.961s] copying urdf/materials.xacro -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.969s] copying urdf/05_seastar_roll.urdf.xacro -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.970s] copying urdf/seastar.urdf.xacro.upright2 -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.970s] copying urdf/01_seastar_header.urdf -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.971s] copying urdf/07_seastar_stokes.urdf.xacro -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.972s] copying urdf/seastar.urdf.xacro -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.973s] copying urdf/pyMotor.so -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.976s] copying urdf/08_seastar_footer.urdf -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.976s] copying urdf/pysMotor.py -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.977s] copying urdf/macros.xacro -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.978s] copying urdf/03_seastar_base.urdf.xacro -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.979s] copying urdf/02_seastar_imulink.urdf -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.979s] copying urdf/seastar.urdf -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.980s] copying urdf/04_seastar_upright1.urdf.xacro -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.981s] copying urdf/build_seastar_urdf.sh -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.981s] copying urdf/06_seastar_pitch.urdf.xacro -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.982s] copying urdf/seastar.sdf -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[4.982s] copying pyMotor.so -> /home/seastar/steve_summer_seastar_ws/install/pysp/share/pysp
+[5.159s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/pysp' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/pysp/prefix_override:/home/seastar/steve_summer_seastar_ws/install/pysp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/pysp/build --no-deps install_data

@@ -1,0 +1,28 @@
+[4.124s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/prefix_override:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/hamburger_helper/build --no-deps install_data
+[5.201s] running develop
+[5.203s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.203s]   warnings.warn(
+[5.207s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.207s]   warnings.warn(
+[5.432s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[5.433s]   warnings.warn(
+[5.434s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[5.434s]   warnings.warn(
+[5.434s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[5.435s]   warnings.warn(
+[5.882s] running egg_info
+[5.882s] writing hamburger_helper.egg-info/PKG-INFO
+[5.883s] writing dependency_links to hamburger_helper.egg-info/dependency_links.txt
+[5.883s] writing entry points to hamburger_helper.egg-info/entry_points.txt
+[5.883s] writing requirements to hamburger_helper.egg-info/requires.txt
+[5.883s] writing top-level names to hamburger_helper.egg-info/top_level.txt
+[6.068s] listing git files failed - pretending there aren't any
+[6.540s] reading manifest file 'hamburger_helper.egg-info/SOURCES.txt'
+[6.541s] writing manifest file 'hamburger_helper.egg-info/SOURCES.txt'
+[6.681s] running build_ext
+[6.689s] Creating /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages/hamburger-helper.egg-link (link to .)
+[6.690s] Installing hamburger_helper script to /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/hamburger_helper
+[6.691s] 
+[6.691s] Installed /home/seastar/steve_summer_seastar_ws/build/hamburger_helper
+[6.691s] running install_data
+[7.597s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/prefix_override:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/hamburger_helper/build --no-deps install_data

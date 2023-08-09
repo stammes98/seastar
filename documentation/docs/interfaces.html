@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<title>SeaSTAR Interfaces</title>
+</head>
+
+
+<body>
+<h1>SeaSTAR Interfaces</h1>
+<p>Contains custom message and service type declerations. Listed below</p>
+<p><a href='../index.html'>Return home</a></p>
+
+<h4>Message Types</h4>
+<ul>
+
+<li>
+DesiredPointing
+<ul>
+<li>float64 azimuth - azimuth of target in degrees</li>
+<li>float64 altitude - altitude of target in degrees</li>
+<li>float64 polarization - polarization angle of target in degrees. Motor zero has yet to be defined, will likely need an offset.</li>
+</ul>
+</li>
+
+<li>
+MotorCommand
+<ul>
+<li>float64 q1 - position of roll motor in degrees</li>
+<li>float64 q2 - position of pitch motor in degrees</li>
+<li>float64 q3 - Position of the stokes motor in degrees</li>
+</ul>
+</li>
+
+<li>
+SkyEphemeris
+<ul>
+<li>float64 azimuth - azimuth of target in degrees</li>
+<li>float64 altitude - altitude of target in degrees</li>
+</ul>
+</li>
+
+</ul>
+
+<h4>Service Types</h4>
+
+<ul>
+
+<li>
+PointMotors
+<ul>
+<h5>Input:</h5>
+<li>DesiredPointing point - target pointing for IK to get to/li>
+<li>MotorCommand input_state - Current positions of all the motors. Allows for fastest solution to target, or staying at current position if target can't be reached.</li>
+<h5>Output:</h5>
+<li>MotorCommand command - Response from ik_solver, will either be desired pointing, or current position if no solution could be found.</li>
+</ul>
+</li>
+
+
+</ul>
+
+</body>
+
+</html>

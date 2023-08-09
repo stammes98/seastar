@@ -1,0 +1,26 @@
+[2.085s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/prefix_override:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/build --no-deps install_data
+[2.841s] running develop
+[2.842s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.842s]   warnings.warn(
+[2.845s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.845s]   warnings.warn(
+[3.050s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[3.050s]   warnings.warn(
+[3.051s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[3.051s]   warnings.warn(
+[3.401s] running egg_info
+[3.402s] writing solar_ephemeris.egg-info/PKG-INFO
+[3.403s] writing dependency_links to solar_ephemeris.egg-info/dependency_links.txt
+[3.403s] writing entry points to solar_ephemeris.egg-info/entry_points.txt
+[3.404s] writing requirements to solar_ephemeris.egg-info/requires.txt
+[3.404s] writing top-level names to solar_ephemeris.egg-info/top_level.txt
+[3.506s] listing git files failed - pretending there aren't any
+[3.805s] reading manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+[3.806s] writing manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+[3.904s] running build_ext
+[3.909s] Creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages/solar-ephemeris.egg-link (link to .)
+[3.912s] Installing solar_ephemeris script to /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/solar_ephemeris
+[3.913s] 
+[3.913s] Installed /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris
+[3.914s] running install_data
+[4.031s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris' returned '0': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/prefix_override:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/build --no-deps install_data

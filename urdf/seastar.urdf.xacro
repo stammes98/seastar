@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="seastar">
+
+<xacro:include filename="materials.xacro"/>
+<xacro:include filename="macros.xacro"/>
+
+!-- the IMU is fixed to the base of the robot -->
+<link name="imu_link">
+</link>
+
+<joint name="imu_to_base" type="fixed">
+	<parent link="imu_link"/>
+	<child link="base_link"/>
+	<origin xyz="0 0 0" rpy="0 0 ${pi}"/>
+</joint>
+
+<!-- the robot base is a 4in x 25in x 1/2 in alumin(i)um plate -->
+<xacro:property name="base_l" value="0.6223"/>
+<xacro:property name="base_w" value="0.100"/>
+<xacro:property name="base_h" value="0.0124"/>
+<xacro:property name="base_m" value="0.5"/>
+<link name="base_link">
+	<visual>
+		<origin xyz="0 0 ${base_h/2}" rpy="0 0 0"/>
+		<geometry>
+			<box size="${base_l} ${base_w} ${base_h}"/>
+		</geometry>
+		<material name="white"/>
+	</visual>
+	<collision>
+		<origin xyz="${base_l/2} ${base_w/2} ${base_h/2}" rpy="0 0 0"/>
+		<geometry>
+			<box size="${base_l} ${base_w} ${base_h}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_box mass="${base_m}" x="${base_l}" y="${base_w}" z="${base_h}">
+		<origin xyz="${base_l/2} ${base_w/2} ${base_h/2}" rpy="0 0 0"/>
+	</xacro:inertial_box>
+</link>
+<!-- base to upright -->
+<joint name="base_to_upright1_joint" type="fixed">
+	<parent link="base_link"/>
+	<child link="upright1_link"/>
+	<origin xyz="${base_l/2} 0 0" rpy="0 -${pi/2} 0"/>
+</joint>
+
+
+<!-- the robot upright1 is a 4in x 12in x 1/2 in aluminium plate -->
+<xacro:property name="upright1_l" value="0.3"/>
+<xacro:property name="upright1_w" value="0.100"/>
+<xacro:property name="upright1_h" value="0.0125"/>
+<xacro:property name="upright1_m" value="0.5"/>
+<link name="upright1_link">
+	<visual>
+		<origin xyz="${upright1_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${upright1_l} ${upright1_w} ${upright1_h}"/>
+		</geometry>
+		<material name="white"/>
+	</visual>
+	<collision>
+		<origin xyz="${upright1_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${upright1_l} ${upright1_w} ${upright1_h}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_box mass="${upright1_m}" x="${upright1_l}" y="${upright1_w}" z="${upright1_h}">
+		<origin xyz="${upright1_l/2} 0 0" rpy="0 0 0"/>
+	</xacro:inertial_box>
+</link>
+<!-- upright to roll -->
+<joint name="upright1_to_roll_joint" type="revolute">
+	<parent link="upright1_link"/>
+	<child link="roll_link"/>
+	<origin xyz="${upright1_l} 0 0" rpy="0 -${pi/2} 0"/>
+	<axis xyz="1 0 0"/>
+	<limit lower="-3.64774" upper="0.558505" velocity="100" effort="100"/>
+</joint>
+
+<!-- the robot roll_link is a 4in x xxin x 1/2 in aluminium plate between the two uprights -->
+<xacro:property name="roll_l" value="0.6"/>
+<xacro:property name="roll_w" value="0.100"/>
+<xacro:property name="roll_h" value="0.0125"/>
+<xacro:property name="roll_m" value="0.5"/>
+<link name="roll_link">
+	<visual>
+		<origin xyz="${roll_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${roll_l} ${roll_w} ${roll_h}"/>
+		</geometry>
+		<material name="white"/>
+	</visual>
+	<collision>
+		<origin xyz="${roll_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${roll_l} ${roll_w} ${roll_h}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_box mass="${roll_m}" x="${roll_l}" y="${roll_w}" z="${roll_h}">
+		<origin xyz="${roll_l/2} 0 0" rpy="0 0 0"/>
+	</xacro:inertial_box>
+</link>
+
+<!-- roll to pitch-->
+<joint name="roll_to_pitch_joint" type="revolute">
+	<parent link="roll_link"/>
+	<child link="pitch_link"/>
+	<origin xyz="${roll_l/2} 0 0" rpy="0 -${pi/2} 0"/>
+	<axis xyz="1 0 0"/>
+	<limit lower="${pi}" upper="7.34784" velocity="100" effort="100"/>
+</joint>
+
+<!-- the robot pitch_link is ??? -->
+<xacro:property name="pitch_l" value="0.2"/>
+<xacro:property name="pitch_w" value="0.100"/>
+<xacro:property name="pitch_h" value="0.0125"/>
+<xacro:property name="pitch_m" value="0.5"/>
+<link name="pitch_link">
+	<visual>
+		<origin xyz="${pitch_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${pitch_l} ${pitch_w} ${pitch_h}"/>
+		</geometry>
+		<material name="white"/>
+	</visual>
+	<collision>
+		<origin xyz="${pitch_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${pitch_l} ${pitch_w} ${pitch_h}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_box mass="${pitch_m}" x="${pitch_l}" y="${pitch_w}" z="${pitch_h}">
+		<origin xyz="${pitch_l/2} 0 0" rpy="0 0 0"/>
+	</xacro:inertial_box>
+</link>
+
+<!-- pitch to stokes -->
+<joint name="pitch_to_stokes_joint" type="revolute">
+	<parent link="pitch_link"/>
+	<child link="stokes_link"/>
+	<origin xyz="${pitch_l/2} 0 0" rpy="0 -${pi/2} 0"/>
+	<axis xyz="1 0 0"/>
+	<limit lower="-${pi}" upper="${pi}" velocity="100" effort="100"/>
+</joint>
+
+<!-- the robot stokes_link is ??? -->
+<xacro:property name="stokes_l" value="0.2"/>
+<xacro:property name="stokes_r" value="0.060"/>
+<xacro:property name="stokes_m" value="0.5"/>
+<link name="stokes_link">
+	<visual>
+		<origin xyz="${stokes_l/2} 0 0" rpy="0 ${pi/2} 0"/>
+		<geometry>
+			<cylinder length="${stokes_l}" radius="${stokes_r}"/>
+		</geometry>
+		<material name="orange"/>
+	</visual>
+	<collision>
+		<origin xyz="${stokes_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<cylinder length="${stokes_l}" radius="${stokes_r}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_cylinder mass="${stokes_m}" h="${stokes_l}" r="${stokes_r}">
+		<origin xyz="${stokes_l/2} 0 0" rpy="0 0 0"/>
+	</xacro:inertial_cylinder>
+</link>
+
+</robot>

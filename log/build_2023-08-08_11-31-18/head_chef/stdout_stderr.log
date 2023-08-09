@@ -1,0 +1,32 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:12:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChefCommand>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   12 |         if ([01;35m[KexecLine >= comms_.size()[m[K) {
+      |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:18:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   18 |         double [01;35m[Kp[m[K = curComm.param_;
+      |                [01;35m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:81:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisValid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   81 |         bool [01;35m[KisValid[m[K = false;
+      |              [01;35m[K^~~~~~~[m[K
+[ 33%] [32m[1mLinking CXX executable head_chef[0m
+[100%] Built target head_chef
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/lib/head_chef/head_chef
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/package_run_dependencies/head_chef
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/parent_prefix_path/head_chef
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/path.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/path.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.bash
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.zsh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.dsv
+-- Symlinking: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/packages/head_chef
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/cmake/head_chefConfig.cmake
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/cmake/head_chefConfig-version.cmake
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.xml

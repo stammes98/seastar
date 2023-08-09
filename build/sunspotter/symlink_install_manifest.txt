@@ -1,0 +1,16 @@
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/lib/sunspotter//sunspotter
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/ament_index/resource_index/package_run_dependencies/sunspotter
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/ament_index/resource_index/parent_prefix_path/sunspotter
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/ament_prefix_path.sh
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/ament_prefix_path.dsv
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/path.sh
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/path.dsv
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.bash
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.sh
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.zsh
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.dsv
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.dsv
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/ament_index/resource_index/packages/sunspotter
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/cmake/sunspotterConfig.cmake
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/cmake/sunspotterConfig-version.cmake
+/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.xml

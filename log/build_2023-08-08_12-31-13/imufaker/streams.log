@@ -1,0 +1,26 @@
+[1.870s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/imufaker': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/imufaker/prefix_override:/home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/imufaker/build --no-deps install_data
+[2.537s] running develop
+[2.538s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.538s]   warnings.warn(
+[2.538s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.538s]   warnings.warn(
+[2.689s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[2.690s]   warnings.warn(
+[2.690s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[2.690s]   warnings.warn(
+[2.997s] running egg_info
+[2.997s] writing imufaker.egg-info/PKG-INFO
+[2.998s] writing dependency_links to imufaker.egg-info/dependency_links.txt
+[2.998s] writing entry points to imufaker.egg-info/entry_points.txt
+[2.998s] writing requirements to imufaker.egg-info/requires.txt
+[2.998s] writing top-level names to imufaker.egg-info/top_level.txt
+[3.173s] listing git files failed - pretending there aren't any
+[3.467s] reading manifest file 'imufaker.egg-info/SOURCES.txt'
+[3.468s] writing manifest file 'imufaker.egg-info/SOURCES.txt'
+[3.554s] running build_ext
+[3.554s] Creating /home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages/imufaker.egg-link (link to .)
+[3.556s] Installing imufaker script to /home/seastar/steve_summer_seastar_ws/install/imufaker/lib/imufaker
+[3.556s] 
+[3.557s] Installed /home/seastar/steve_summer_seastar_ws/build/imufaker
+[3.557s] running install_data
+[4.327s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/imufaker' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/imufaker/prefix_override:/home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/imufaker/build --no-deps install_data

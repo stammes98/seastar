@@ -1,0 +1,105 @@
+[0.016s] Invoking command in '/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/seastar_ws/install/solar_ephemeris:/home/seastar/seastar_ws/install/skyscan_offset:/opt/ros/humble /usr/bin/cmake /home/seastar/seastar_ws/src/seastar_interfaces -DCMAKE_INSTALL_PREFIX=/home/seastar/seastar_ws/src/seastar_interfaces/install/seastar_interfaces
+[0.425s] -- The C compiler identification is GNU 11.3.0
+[0.803s] -- The CXX compiler identification is GNU 11.3.0
+[0.814s] -- Detecting C compiler ABI info
+[0.905s] -- Detecting C compiler ABI info - done
+[0.912s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.912s] -- Detecting C compile features
+[0.913s] -- Detecting C compile features - done
+[0.917s] -- Detecting CXX compiler ABI info
+[1.003s] -- Detecting CXX compiler ABI info - done
+[1.010s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.010s] -- Detecting CXX compile features
+[1.011s] -- Detecting CXX compile features - done
+[1.017s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.189s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[1.300s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.306s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.315s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.372s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.419s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.687s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.877s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.121s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.146s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") 
+[2.149s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.180s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") 
+[2.180s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.180s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.180s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.202s] -- Found PythonExtra: .so  
+[2.247s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.247s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_introspection_cpp>;/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c;/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_py
+[2.248s] -- Configured cppcheck exclude dirs and/or files: 
+[2.249s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.251s] -- Added test 'lint_cmake' to check CMake code style
+[2.252s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.258s] -- Added test 'uncrustify' to check C / C++ code style
+[2.258s] -- Configured uncrustify additional arguments: 
+[2.259s] -- Added test 'xmllint' to check XML markup files
+[2.267s] -- Configuring done
+[2.297s] -- Generating done
+[2.299s] -- Build files have been written to: /home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces
+[2.306s] Invoked command in '/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/seastar_ws/install/solar_ephemeris:/home/seastar/seastar_ws/install/skyscan_offset:/opt/ros/humble /usr/bin/cmake /home/seastar/seastar_ws/src/seastar_interfaces -DCMAKE_INSTALL_PREFIX=/home/seastar/seastar_ws/src/seastar_interfaces/install/seastar_interfaces
+[2.308s] Invoking command in '/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/seastar_ws/install/solar_ephemeris:/home/seastar/seastar_ws/install/skyscan_offset:/opt/ros/humble /usr/bin/cmake --build /home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces -- -j4 -l4
+[2.347s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.352s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.371s] [  5%] Built target ament_cmake_python_copy_seastar_interfaces
+[2.745s] [  7%] [32mBuilding C object CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__functions.c.o[0m
+[2.746s] [ 10%] [32mBuilding C object CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/rosidl_generator_c/seastar_interfaces/msg/detail/sky_ephemeris__functions.c.o[0m
+[2.791s] In file included from [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__functions.h:19[m[K,
+[2.792s]                  from [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__functions.c:4[m[K:
+[2.792s] [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kseastar_interfaces/msg/detail/quaternion__struct.h: No such file or directory
+[2.792s]    22 | #include [01;31m[K"seastar_interfaces/msg/detail/quaternion__struct.h"[m[K
+[2.792s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.792s] compilation terminated.
+[2.794s] gmake[2]: *** [CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/build.make:135: CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__functions.c.o] Error 1
+[2.794s] gmake[2]: *** Waiting for unfinished jobs....
+[2.798s] running egg_info
+[2.799s] creating seastar_interfaces.egg-info
+[2.799s] writing seastar_interfaces.egg-info/PKG-INFO
+[2.799s] writing dependency_links to seastar_interfaces.egg-info/dependency_links.txt
+[2.800s] writing top-level names to seastar_interfaces.egg-info/top_level.txt
+[2.800s] writing manifest file 'seastar_interfaces.egg-info/SOURCES.txt'
+[2.804s] reading manifest file 'seastar_interfaces.egg-info/SOURCES.txt'
+[2.804s] writing manifest file 'seastar_interfaces.egg-info/SOURCES.txt'
+[2.859s] [ 10%] Built target ament_cmake_python_build_seastar_interfaces_egg
+[2.861s] [ 10%] Built target seastar_interfaces__cpp
+[2.866s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/all] Error 2
+[2.867s] gmake[1]: *** Waiting for unfinished jobs....
+[2.872s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.873s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.873s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.190s] [ 23%] [32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/seastar_interfaces/msg/sky_ephemeris__type_support.cpp.o[0m
+[3.190s] [ 23%] [32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/seastar_interfaces/msg/sky_scan_offset__type_support.cpp.o[0m
+[3.275s] [ 25%] [32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/dds_fastrtps/sky_ephemeris__type_support.cpp.o[0m
+[3.332s] [ 28%] [32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/seastar_interfaces/msg/detail/sky_ephemeris__type_support.cpp.o[0m
+[3.385s] In file included from [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_cpp/seastar_interfaces/msg/sky_scan_offset__type_support.cpp:7[m[K:
+[3.385s] [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/sky_scan_offset__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kseastar_interfaces/msg/detail/quaternion__struct.hpp: No such file or directory
+[3.385s]    20 | #include [01;31m[K"seastar_interfaces/msg/detail/quaternion__struct.hpp"[m[K
+[3.385s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.385s] compilation terminated.
+[3.387s] gmake[2]: *** [CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/build.make:104: CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/seastar_interfaces/msg/sky_scan_offset__type_support.cpp.o] Error 1
+[3.387s] gmake[2]: *** Waiting for unfinished jobs....
+[3.394s] [ 30%] [32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/seastar_interfaces/msg/detail/sky_scan_offset__type_support.cpp.o[0m
+[3.485s] In file included from [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_introspection_cpp/seastar_interfaces/msg/detail/sky_scan_offset__type_support.cpp:12[m[K:
+[3.485s] [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/sky_scan_offset__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kseastar_interfaces/msg/detail/quaternion__struct.hpp: No such file or directory
+[3.486s]    20 | #include [01;31m[K"seastar_interfaces/msg/detail/quaternion__struct.hpp"[m[K
+[3.486s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.486s] compilation terminated.
+[3.488s] gmake[2]: *** [CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:112: CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/seastar_interfaces/msg/detail/sky_scan_offset__type_support.cpp.o] Error 1
+[3.489s] gmake[2]: *** Waiting for unfinished jobs....
+[3.502s] [ 33%] [32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/dds_fastrtps/sky_scan_offset__type_support.cpp.o[0m
+[3.595s] In file included from [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/sky_scan_offset__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[3.595s]                  from [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/dds_fastrtps/sky_scan_offset__type_support.cpp:4[m[K:
+[3.595s] [01m[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/sky_scan_offset__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kseastar_interfaces/msg/detail/quaternion__struct.hpp: No such file or directory
+[3.596s]    20 | #include [01;31m[K"seastar_interfaces/msg/detail/quaternion__struct.hpp"[m[K
+[3.596s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.596s] compilation terminated.
+[3.598s] gmake[2]: *** [CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:112: CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/dds_fastrtps/sky_scan_offset__type_support.cpp.o] Error 1
+[3.598s] gmake[2]: *** Waiting for unfinished jobs....
+[3.798s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/all] Error 2
+[3.884s] gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[3.921s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[3.921s] gmake: *** [Makefile:146: all] Error 2
+[3.922s] Invoked command in '/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/seastar_ws/install/solar_ephemeris:/home/seastar/seastar_ws/install/skyscan_offset:/opt/ros/humble /usr/bin/cmake --build /home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces -- -j4 -l4

@@ -1,0 +1,3 @@
+[console_scripts]
+test_cam = test_cam.test_cam:main
+

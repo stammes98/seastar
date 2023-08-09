@@ -1,0 +1,10 @@
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/uninstall.dir
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/sunspotter_uninstall.dir
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/sunspotter.dir
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/test.dir
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/edit_cache.dir
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/rebuild_cache.dir
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/list_install_components.dir
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/install.dir
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/install/local.dir
+/home/seastar/steve_summer_seastar_ws/build/sunspotter/CMakeFiles/install/strip.dir

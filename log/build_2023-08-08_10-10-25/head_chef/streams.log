@@ -1,0 +1,30 @@
+[0.477s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': AMENT_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.560s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[0.571s] [ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[0.576s] [ 50%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o[0m
+[0.619s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[0.619s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:35:25:[m[K [01;31m[Kerror: [m[K‘[01m[KNULL[m[K’ was not declared in this scope
+[0.619s]    35 |         double param_ = [01;31m[KNULL[m[K;
+[0.619s]       |                         [01;31m[K^~~~[m[K
+[0.619s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:1:1:[m[K [01;36m[Knote: [m[K‘[01m[KNULL[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[0.620s]   +++ |+[32m[K#include <cstddef>[m[K
+[0.620s]     1 | #ifndef CHEF_COM_H
+[0.621s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:118: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o] Error 1
+[0.621s] gmake[2]: *** Waiting for unfinished jobs....
+[1.160s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:8[m[K,
+[1.161s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.161s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:35:25:[m[K [01;35m[Kwarning: [m[Kconverting to non-pointer type ‘[01m[Kdouble[m[K’ from NULL [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wconversion-null-Wconversion-null]8;;[m[K]
+[1.161s]    35 |         double param_ = [01;35m[KNULL[m[K;
+[1.161s]       |                         [01;35m[K^~~~[m[K
+[3.988s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:8[m[K,
+[3.988s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[3.988s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:35:25:[m[K [01;35m[Kwarning: [m[Kconverting to non-pointer type ‘[01m[Kdouble[m[K’ from NULL [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wconversion-null-Wconversion-null]8;;[m[K]
+[3.988s]    35 |         double param_ = [01;35m[KNULL[m[K;
+[3.988s]       |                         [01;35m[K^~~~[m[K
+[3.990s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[3.990s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.990s]    38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[3.991s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[16.986s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[16.986s] gmake: *** [Makefile:146: all] Error 2
+[16.992s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': AMENT_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

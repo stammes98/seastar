@@ -1,0 +1,152 @@
+[0.000000] (-) TimerEvent: {}
+[0.000127] (seastar_interfaces) JobQueued: {'identifier': 'seastar_interfaces', 'dependencies': OrderedDict()}
+[0.000509] (seastar_interfaces) JobStarted: {'identifier': 'seastar_interfaces'}
+[0.015852] (seastar_interfaces) JobProgress: {'identifier': 'seastar_interfaces', 'progress': 'cmake'}
+[0.016063] (seastar_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/seastar/seastar_ws/src/seastar_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/seastar/seastar_ws/src/seastar_interfaces/install/seastar_interfaces'], 'cwd': '/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/seastar/seastar_ws/install/seastar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1561'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/seastar/seastar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1536,unix/seastar:/tmp/.ICE-unix/1536'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a07eeed5_ef86_4781_9f36_969dd330ce15'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DB1K11'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/seastar/seastar_ws/install/solar_ephemeris:/home/seastar/seastar_ws/install/skyscan_offset:/home/seastar/seastar_ws/install/seastar_interfaces:/home/seastar/seastar_ws/install/bluespace_ai_xsens_mti_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/seastar/seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages:/home/seastar/seastar_ws/install/skyscan_offset/lib/python3.10/site-packages:/home/seastar/seastar_ws/install/skyscan_inverse_kinematics/lib/python3.10/site-packages:/home/seastar/seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/seastar/seastar_ws/install/seastar_interfaces:/home/seastar/seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/seastar_ws/install/solar_ephemeris:/home/seastar/seastar_ws/install/skyscan_offset:/opt/ros/humble')]), 'shell': False}
+[0.099782] (-) TimerEvent: {}
+[0.200101] (-) TimerEvent: {}
+[0.300526] (-) TimerEvent: {}
+[0.401003] (-) TimerEvent: {}
+[0.425973] (seastar_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.501103] (-) TimerEvent: {}
+[0.601491] (-) TimerEvent: {}
+[0.702234] (-) TimerEvent: {}
+[0.802548] (-) TimerEvent: {}
+[0.803766] (seastar_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.815313] (seastar_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.902669] (-) TimerEvent: {}
+[0.905560] (seastar_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.912770] (seastar_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.913289] (seastar_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.914143] (seastar_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.917802] (seastar_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.002783] (-) TimerEvent: {}
+[1.003569] (seastar_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.010924] (seastar_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.011259] (seastar_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.011739] (seastar_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.017745] (seastar_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.102888] (-) TimerEvent: {}
+[1.190375] (seastar_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[1.202996] (-) TimerEvent: {}
+[1.301489] (seastar_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.303070] (-) TimerEvent: {}
+[1.306774] (seastar_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.316104] (seastar_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.372577] (seastar_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.403194] (-) TimerEvent: {}
+[1.420035] (seastar_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.503295] (-) TimerEvent: {}
+[1.603593] (-) TimerEvent: {}
+[1.688319] (seastar_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.703705] (-) TimerEvent: {}
+[1.803976] (-) TimerEvent: {}
+[1.877647] (seastar_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.904085] (-) TimerEvent: {}
+[2.004417] (-) TimerEvent: {}
+[2.104691] (-) TimerEvent: {}
+[2.121851] (seastar_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.146860] (seastar_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") \n'}
+[2.150381] (seastar_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.180979] (seastar_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") \n'}
+[2.181191] (seastar_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.181260] (seastar_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.181320] (seastar_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.203342] (seastar_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.204766] (-) TimerEvent: {}
+[2.247642] (seastar_interfaces) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.248438] (seastar_interfaces) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_introspection_cpp>;/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c;/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_py\n'}
+[2.248578] (seastar_interfaces) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.249888] (seastar_interfaces) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.251844] (seastar_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.253202] (seastar_interfaces) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.259118] (seastar_interfaces) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.259240] (seastar_interfaces) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.260508] (seastar_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.267614] (seastar_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.297970] (seastar_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.300406] (seastar_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces\n'}
+[2.304901] (-) TimerEvent: {}
+[2.306915] (seastar_interfaces) CommandEnded: {'returncode': 0}
+[2.307526] (seastar_interfaces) JobProgress: {'identifier': 'seastar_interfaces', 'progress': 'build'}
+[2.308129] (seastar_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/seastar/seastar_ws/install/seastar_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1561'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/seastar/seastar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1536,unix/seastar:/tmp/.ICE-unix/1536'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a07eeed5_ef86_4781_9f36_969dd330ce15'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DB1K11'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/seastar/seastar_ws/install/solar_ephemeris:/home/seastar/seastar_ws/install/skyscan_offset:/home/seastar/seastar_ws/install/seastar_interfaces:/home/seastar/seastar_ws/install/bluespace_ai_xsens_mti_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/seastar/seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages:/home/seastar/seastar_ws/install/skyscan_offset/lib/python3.10/site-packages:/home/seastar/seastar_ws/install/skyscan_inverse_kinematics/lib/python3.10/site-packages:/home/seastar/seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/seastar/seastar_ws/install/seastar_interfaces:/home/seastar/seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/seastar_ws/install/solar_ephemeris:/home/seastar/seastar_ws/install/skyscan_offset:/opt/ros/humble')]), 'shell': False}
+[2.347774] (seastar_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.353302] (seastar_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.372085] (seastar_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_seastar_interfaces\n'}
+[2.404999] (-) TimerEvent: {}
+[2.505304] (-) TimerEvent: {}
+[2.605606] (-) TimerEvent: {}
+[2.705909] (-) TimerEvent: {}
+[2.746078] (seastar_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__functions.c.o\x1b[0m\n'}
+[2.746903] (seastar_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/rosidl_generator_c/seastar_interfaces/msg/detail/sky_ephemeris__functions.c.o\x1b[0m\n'}
+[2.792195] (seastar_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__functions.h:19\x1b[m\x1b[K,\n'}
+[2.792582] (seastar_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__functions.c:4\x1b[m\x1b[K:\n'}
+[2.792783] (seastar_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kseastar_interfaces/msg/detail/quaternion__struct.h: No such file or directory\n'}
+[2.792973] (seastar_interfaces) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"seastar_interfaces/msg/detail/quaternion__struct.h"\x1b[m\x1b[K\n'}
+[2.793138] (seastar_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.793329] (seastar_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[2.794516] (seastar_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/build.make:135: CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/rosidl_generator_c/seastar_interfaces/msg/detail/sky_scan_offset__functions.c.o] Error 1\n'}
+[2.794767] (seastar_interfaces) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.798888] (seastar_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.799720] (seastar_interfaces) StdoutLine: {'line': b'creating seastar_interfaces.egg-info\n'}
+[2.800035] (seastar_interfaces) StdoutLine: {'line': b'writing seastar_interfaces.egg-info/PKG-INFO\n'}
+[2.800320] (seastar_interfaces) StdoutLine: {'line': b'writing dependency_links to seastar_interfaces.egg-info/dependency_links.txt\n'}
+[2.800580] (seastar_interfaces) StdoutLine: {'line': b'writing top-level names to seastar_interfaces.egg-info/top_level.txt\n'}
+[2.800955] (seastar_interfaces) StdoutLine: {'line': b"writing manifest file 'seastar_interfaces.egg-info/SOURCES.txt'\n"}
+[2.804798] (seastar_interfaces) StdoutLine: {'line': b"reading manifest file 'seastar_interfaces.egg-info/SOURCES.txt'\n"}
+[2.805381] (seastar_interfaces) StdoutLine: {'line': b"writing manifest file 'seastar_interfaces.egg-info/SOURCES.txt'\n"}
+[2.806002] (-) TimerEvent: {}
+[2.859911] (seastar_interfaces) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_build_seastar_interfaces_egg\n'}
+[2.862114] (seastar_interfaces) StdoutLine: {'line': b'[ 10%] Built target seastar_interfaces__cpp\n'}
+[2.867113] (seastar_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/seastar_interfaces__rosidl_generator_c.dir/all] Error 2\n'}
+[2.867477] (seastar_interfaces) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.873116] (seastar_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.873698] (seastar_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.873858] (seastar_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.906119] (-) TimerEvent: {}
+[3.006600] (-) TimerEvent: {}
+[3.107037] (-) TimerEvent: {}
+[3.190606] (seastar_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/seastar_interfaces/msg/sky_ephemeris__type_support.cpp.o\x1b[0m\n'}
+[3.190850] (seastar_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/seastar_interfaces/msg/sky_scan_offset__type_support.cpp.o\x1b[0m\n'}
+[3.207169] (-) TimerEvent: {}
+[3.275598] (seastar_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/dds_fastrtps/sky_ephemeris__type_support.cpp.o\x1b[0m\n'}
+[3.307277] (-) TimerEvent: {}
+[3.333240] (seastar_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/seastar_interfaces/msg/detail/sky_ephemeris__type_support.cpp.o\x1b[0m\n'}
+[3.385631] (seastar_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_cpp/seastar_interfaces/msg/sky_scan_offset__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[3.385882] (seastar_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/sky_scan_offset__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kseastar_interfaces/msg/detail/quaternion__struct.hpp: No such file or directory\n'}
+[3.386020] (seastar_interfaces) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"seastar_interfaces/msg/detail/quaternion__struct.hpp"\x1b[m\x1b[K\n'}
+[3.386110] (seastar_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.386238] (seastar_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[3.387710] (seastar_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/build.make:104: CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/seastar_interfaces/msg/sky_scan_offset__type_support.cpp.o] Error 1\n'}
+[3.387977] (seastar_interfaces) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.395018] (seastar_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/seastar_interfaces/msg/detail/sky_scan_offset__type_support.cpp.o\x1b[0m\n'}
+[3.407389] (-) TimerEvent: {}
+[3.486004] (seastar_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_introspection_cpp/seastar_interfaces/msg/detail/sky_scan_offset__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[3.486347] (seastar_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/sky_scan_offset__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kseastar_interfaces/msg/detail/quaternion__struct.hpp: No such file or directory\n'}
+[3.486560] (seastar_interfaces) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"seastar_interfaces/msg/detail/quaternion__struct.hpp"\x1b[m\x1b[K\n'}
+[3.486759] (seastar_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.486988] (seastar_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[3.489258] (seastar_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:112: CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/seastar_interfaces/msg/detail/sky_scan_offset__type_support.cpp.o] Error 1\n'}
+[3.489845] (seastar_interfaces) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.502446] (seastar_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/dds_fastrtps/sky_scan_offset__type_support.cpp.o\x1b[0m\n'}
+[3.507519] (-) TimerEvent: {}
+[3.595858] (seastar_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/sky_scan_offset__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[3.596237] (seastar_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/dds_fastrtps/sky_scan_offset__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[3.596490] (seastar_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/seastar_ws/src/seastar_interfaces/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/sky_scan_offset__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kseastar_interfaces/msg/detail/quaternion__struct.hpp: No such file or directory\n'}
+[3.596700] (seastar_interfaces) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"seastar_interfaces/msg/detail/quaternion__struct.hpp"\x1b[m\x1b[K\n'}
+[3.596947] (seastar_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.597217] (seastar_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[3.599085] (seastar_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:112: CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/msg/detail/dds_fastrtps/sky_scan_offset__type_support.cpp.o] Error 1\n'}
+[3.599452] (seastar_interfaces) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.607636] (-) TimerEvent: {}
+[3.708142] (-) TimerEvent: {}
+[3.799129] (seastar_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/seastar_interfaces__rosidl_typesupport_cpp.dir/all] Error 2\n'}
+[3.808245] (-) TimerEvent: {}
+[3.885140] (seastar_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/seastar_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2\n'}
+[3.908356] (-) TimerEvent: {}
+[3.921481] (seastar_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/seastar_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2\n'}
+[3.921702] (seastar_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.923243] (seastar_interfaces) CommandEnded: {'returncode': 2}
+[3.998206] (seastar_interfaces) JobEnded: {'identifier': 'seastar_interfaces', 'rc': 2}
+[4.008414] (-) TimerEvent: {}
+[4.008797] (-) EventReactorShutdown: {}

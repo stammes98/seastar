@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Wave Table</title>
+</head>
+
+
+<body>
+<h1>Running the Wave Table</h1>
+<p>This section outlines how to run and troubleshoot the wave table code</p>
+<p><a href='../index.html'>Return home</a></p>
+
+<h2>The Wave Table Code</h2>
+<p>The code is located in the folder "/home/seastar/seastar_ik/wave table" - the program you'll want to run is "python table.py"</p>
+<p>To change the speed of the motor, change the second parameter of the function call on line 7, this value should be in RPM. Be careful, it's already multiplied by 10 for the gear box ratio!</p>
+
+<h3>If it throws errors</h3>
+<p>One of the drivers that teknic motors uses loves to delete itself for some reason. Thankfully this is easy to re-install. Navigate the terminal to the folder "/home/seastar/install/teknic/2023_download/ExarKernelDriver" and execute the following commands</p>
+<ul>
+<li>sudo su</li>
+<li>./Install_DRV_SCRIPT.sh</li>
+</ul>
+<p>And that theoretically should be it. It's really unclear why this deletes itself, sometimes it'll do so sparringly, sometimes it'll do so in the middle of execution. If we continue all the food metaphors in the project, this surely is our soufflé</p>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+DesiredPointing point
+MotorCommand input_state
+---
+MotorCommand command

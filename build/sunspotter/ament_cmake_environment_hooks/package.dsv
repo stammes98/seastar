@@ -1,0 +1,4 @@
+source;share/sunspotter/local_setup.bash
+source;share/sunspotter/local_setup.dsv
+source;share/sunspotter/local_setup.sh
+source;share/sunspotter/local_setup.zsh

@@ -1,0 +1,10 @@
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::loadScript(std::string)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:13:38:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 2 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   13 |         printf("Loading script from [01;35m[K%s[m[K\n", filePath);
+      |                                     [01;35m[K~^[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar*[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K

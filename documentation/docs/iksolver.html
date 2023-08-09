@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<title>IK Solver</title>
+</head>
+
+
+<body>
+<h1>IK Solver</h1>
+<p>IK Solver is a ROS service that takes in two custom message types, and responds with one custom message. The custom messages are better documented in SeaSTAR interfaces.</p>
+<p><a href='../index.html'>Return home</a></p>
+<p>The service exists on "/ik_solver" topic. Uses modified LM2 method from pykin library to solve IK without positioning error, just directional error. Node contains extra helper script called ik_helper.py, which contains re-written version of pykin functions that ignore position.</p>
+<h4>Input messages</h4>
+<ul>
+<li>
+DesiredPointing
+<ul>
+<li>float64 azimuth - target azimuth for IK to point at in degrees</li>
+<li>float64 altitude - target altitude for IK to point at in degrees</li>
+<li>float64 polarization - roll relative to the sky, in degrees, in reference to as-of-yet undetermined vertical angle</li>
+</ul>
+</li>
+
+<li>
+MotorCommand
+<ul>
+<li>float64 q1 - current position of the roll motor in degrees</li>
+<li>float64 q2 - current position of the pitch motor in degrees</li>
+<li>float64 q3 - current position of the stokes motor in degrees</li>
+</ul>
+</li>
+</ul>
+
+<h4>Response message</h4>
+<ul>
+<li>
+MotorCommand
+<ul>
+<li>float64 q1 - target position of the roll motor in degrees</li>
+<li>float64 q2 - target position of the pitch motor in degrees</li>
+<li>float64 q3 - target position of the stokes motor in degrees</li>
+</ul>
+</li>
+</ul>
+If the IK solver fails for some reason, it will respond with the position it was given at the start, as to not freak the motors out.
+</body>
+
+</html>

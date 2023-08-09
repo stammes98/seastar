@@ -1,0 +1,26 @@
+[0.031s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.219s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[4.992s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[4.992s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:16:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.992s]    16 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[4.992s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[5.016s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K At global scope:
+[5.016s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:177:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid HeadChef::findTarg()[m[K’
+[5.016s]   177 | void [01;31m[KHeadChef[m[K::findTarg() {
+[5.016s]       |      [01;31m[K^~~~~~~~[m[K
+[5.016s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:177:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid HeadChef::findTarg()[m[K’
+[5.016s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:1[m[K:
+[5.017s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass HeadChef[m[K’ defined here
+[5.017s]    30 | class [01;36m[KHeadChef[m[K : public rclcpp::Node {
+[5.017s]       |       [01;36m[K^~~~~~~~[m[K
+[5.022s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::seekLoopPos()[m[K’:
+[5.022s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:358:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktheta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.023s]   358 |                 double [01;35m[Ktheta[m[K = sTargVecC.y;
+[5.023s]       |                        [01;35m[K^~~~~[m[K
+[5.023s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:359:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kphi[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.023s]   359 |                 double [01;35m[Kphi[m[K = sTargVecC.z;
+[5.023s]       |                        [01;35m[K^~~[m[K
+[12.775s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+[12.775s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[12.775s] gmake: *** [Makefile:146: all] Error 2
+[12.782s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

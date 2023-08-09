@@ -1,0 +1,3 @@
+[console_scripts]
+hamburger_helper = hamburger_helper.hamburger_helper:main
+

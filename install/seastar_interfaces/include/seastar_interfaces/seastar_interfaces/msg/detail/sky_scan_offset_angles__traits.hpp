@@ -1,0 +1,1 @@
+/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/sky_scan_offset_angles__traits.hpp

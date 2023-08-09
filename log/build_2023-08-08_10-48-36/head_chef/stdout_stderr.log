@@ -1,0 +1,34 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:29:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+   29 | std::[01;31m[Kstring[m[K CommNames[21] = {"HOAL", "HOON", "FISU", "FSSU", "TRSU", "CRSU", "SUAO", "SUEO", "SATG", "SETG", "SSTG", "SSSU", "FTRG", "FSTG", "CRTG", "ARCS", "ARCE", "ARSU", "ARTG", "GOTO", "NOOP"};
+      |      [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::string[m[K’ is defined in header ‘[01m[K<string>[m[K’; did you forget to ‘[01m[K#include <string>[m[K’?
+  +++ |+[32m[K#include <string>[m[K
+    1 | #ifndef CHEF_COM_H
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:118: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::loadScript(std::string)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:20:17:[m[K [01;31m[Kerror: [m[K‘[01m[KisValidCommand[m[K’ was not declared in this scope; did you mean ‘[01m[KisValidComm[m[K’?
+   20 |                 [01;31m[KisValidCommand[m[K(line);
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                 [32m[KisValidComm[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K At global scope:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:27:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’
+   27 | bool [01;31m[KChefScript[m[K::isValidCommand(std::string inLine) {
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:27:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ChefScript[m[K’ defined here
+   13 | class [01;36m[KChefScript[m[K {
+      |       [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,3 @@
+[console_scripts]
+ik_tools = ik_tools.ik_tools:main
+

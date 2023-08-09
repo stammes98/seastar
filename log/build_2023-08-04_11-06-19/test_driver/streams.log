@@ -1,0 +1,28 @@
+[3.399s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/test_driver': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/test_driver/prefix_override:/home/seastar/steve_summer_seastar_ws/install/test_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/test_driver/build --no-deps install_data
+[4.457s] running develop
+[4.458s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.458s]   warnings.warn(
+[4.460s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.461s]   warnings.warn(
+[4.666s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[4.666s]   warnings.warn(
+[4.667s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[4.667s]   warnings.warn(
+[4.668s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[4.668s]   warnings.warn(
+[5.084s] running egg_info
+[5.085s] writing test_driver.egg-info/PKG-INFO
+[5.091s] writing dependency_links to test_driver.egg-info/dependency_links.txt
+[5.091s] writing entry points to test_driver.egg-info/entry_points.txt
+[5.091s] writing requirements to test_driver.egg-info/requires.txt
+[5.092s] writing top-level names to test_driver.egg-info/top_level.txt
+[5.214s] listing git files failed - pretending there aren't any
+[5.634s] reading manifest file 'test_driver.egg-info/SOURCES.txt'
+[5.635s] writing manifest file 'test_driver.egg-info/SOURCES.txt'
+[5.740s] running build_ext
+[5.740s] Creating /home/seastar/steve_summer_seastar_ws/install/test_driver/lib/python3.10/site-packages/test-driver.egg-link (link to .)
+[5.745s] Installing tester script to /home/seastar/steve_summer_seastar_ws/install/test_driver/lib/test_driver
+[5.746s] 
+[5.747s] Installed /home/seastar/steve_summer_seastar_ws/build/test_driver
+[5.747s] running install_data
+[5.924s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/test_driver' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/test_driver/prefix_override:/home/seastar/steve_summer_seastar_ws/install/test_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/test_driver/build --no-deps install_data

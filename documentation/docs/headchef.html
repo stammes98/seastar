@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>Head Chef Node</title>
+</head>
+
+
+<body>
+<h1>Head Chef Node</h1>
+<p>This is where the control magic happens. Runs the two motor pairs, requests inverse kinematics, changes modes, reads and runs ChefScript.</p>
+<p><a href='../index.html'>Return home</a></p>
+
+<h4>Subscribed Topics</h4>
+<ul>
+<li>"/motors0" - listens for the positions of the pitch and roll motors</li>
+<li>"/motors1" - listens for the positions of the stokes and plate motors</li>
+<li>"/solar_ephemeris" - listens for the position of the sun on the sky for tracking</li>
+<li>"/robot_ephemeris" - listens for the calculated pointing of the robot in the sky</li>
+<li>"/filter/quaternion" - rotation data from the IMU run through an extended kalman filter</li>
+<li>"/sunspot" - location of the brightest camera pixel. Likely not needed anymore as calculations for this are offloaded to ik_tools</li>
+<li>"/inv_jacobian" - motor commands used to track brightest pixel</li>
+</ul>
+<h4>Subscribed Services</h4>
+<ul>
+<li>"/ik_solver" - used for inverse kinematics. Request sends desired orientation and current state. Gets new state as response. State is same as old state if solution isn't found.</li>
+</ul>
+<h4>Published Topics</h4>
+<li>"/motor_commands" - used to interface with motor_state_manager and drive pairs of motors in velocity mode</li>
+<li>"/joint_states" - used for TF2 (not preferred, forward kinematics is faster to solve on our own) and rviz2</li>
+
+</body>
+
+</html>

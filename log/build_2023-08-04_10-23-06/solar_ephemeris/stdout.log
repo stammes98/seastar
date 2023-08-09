@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating solar_ephemeris.egg-info
+writing solar_ephemeris.egg-info/PKG-INFO
+writing dependency_links to solar_ephemeris.egg-info/dependency_links.txt
+writing entry points to solar_ephemeris.egg-info/entry_points.txt
+writing requirements to solar_ephemeris.egg-info/requires.txt
+writing top-level names to solar_ephemeris.egg-info/top_level.txt
+writing manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+reading manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+writing manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages/solar-ephemeris.egg-link (link to .)
+Installing solar_ephemeris script to /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/solar_ephemeris
+
+Installed /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris
+running install_data
+creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/ament_index
+creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/ament_index/resource_index
+creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/ament_index/resource_index/packages
+copying resource/solar_ephemeris -> /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/ament_index/resource_index/packages
+copying package.xml -> /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris

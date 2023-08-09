@@ -1,0 +1,23 @@
+<!-- the robot base is a 4in x 25in x 1/2 in alumin(i)um plate -->
+<xacro:property name="base_l" value="0.6223"/>
+<xacro:property name="base_w" value="0.100"/>
+<xacro:property name="base_h" value="0.0124"/>
+<xacro:property name="base_m" value="0.5"/>
+<link name="base_link">
+	<visual>
+		<origin xyz="0 0 ${base_h/2}" rpy="0 0 0"/>
+		<geometry>
+			<box size="${base_l} ${base_w} ${base_h}"/>
+		</geometry>
+		<material name="white"/>
+	</visual>
+	<collision>
+		<origin xyz="${base_l/2} ${base_w/2} ${base_h/2}" rpy="0 0 0"/>
+		<geometry>
+			<box size="${base_l} ${base_w} ${base_h}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_box mass="${base_m}" x="${base_l}" y="${base_w}" z="${base_h}">
+		<origin xyz="${base_l/2} ${base_w/2} ${base_h/2}" rpy="0 0 0"/>
+	</xacro:inertial_box>
+</link>

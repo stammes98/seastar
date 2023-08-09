@@ -1,0 +1,27 @@
+[1.614s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/imufaker': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/imufaker/prefix_override:/home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/imufaker/build --no-deps install_data
+[1.645s] Fatal Python error: init_import_site: Failed to import the site module
+[1.645s] Python runtime state: initialized
+[1.645s] Traceback (most recent call last):
+[1.645s]   File "/usr/lib/python3.10/site.py", line 636, in <module>
+[1.648s]     main()
+[1.648s]   File "/usr/lib/python3.10/site.py", line 623, in main
+[1.649s]     known_paths = addsitepackages(known_paths)
+[1.650s]   File "/usr/lib/python3.10/site.py", line 406, in addsitepackages
+[1.650s]     addsitedir(sitedir, known_paths)
+[1.650s]   File "/usr/lib/python3.10/site.py", line 232, in addsitedir
+[1.651s]     addpackage(sitedir, name, known_paths)
+[1.651s]   File "/usr/lib/python3.10/site.py", line 192, in addpackage
+[1.652s]     exec(line)
+[1.652s]   File "<string>", line 1, in <module>
+[1.653s]   File "/usr/lib/python3.10/importlib/util.py", line 14, in <module>
+[1.653s]     from contextlib import contextmanager
+[1.654s]   File "/usr/lib/python3.10/contextlib.py", line 5, in <module>
+[1.654s]     from collections import deque
+[1.654s]   File "/usr/lib/python3.10/collections/__init__.py", line 36, in <module>
+[1.655s]     from operator import eq as _eq
+[1.655s]   File "/usr/lib/python3.10/operator.py", line 226, in <module>
+[1.656s]     class attrgetter:
+[1.656s]   File "/usr/lib/python3.10/operator.py", line 226, in attrgetter
+[1.656s]     class attrgetter:
+[1.657s] KeyboardInterrupt
+[1.660s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/imufaker' returned '1': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/imufaker/prefix_override:/home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/imufaker/build --no-deps install_data

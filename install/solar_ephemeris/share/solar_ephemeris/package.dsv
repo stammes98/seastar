@@ -1,0 +1,9 @@
+source;share/solar_ephemeris/hook/pythonpath.ps1
+source;share/solar_ephemeris/hook/pythonpath.dsv
+source;share/solar_ephemeris/hook/pythonpath.sh
+source;share/solar_ephemeris/hook/ament_prefix_path.ps1
+source;share/solar_ephemeris/hook/ament_prefix_path.dsv
+source;share/solar_ephemeris/hook/ament_prefix_path.sh
+source;../../build/solar_ephemeris/share/solar_ephemeris/hook/pythonpath_develop.ps1
+source;../../build/solar_ephemeris/share/solar_ephemeris/hook/pythonpath_develop.dsv
+source;../../build/solar_ephemeris/share/solar_ephemeris/hook/pythonpath_develop.sh

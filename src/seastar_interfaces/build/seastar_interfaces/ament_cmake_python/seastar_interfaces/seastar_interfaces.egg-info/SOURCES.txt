@@ -1,0 +1,9 @@
+setup.py
+seastar_interfaces/__init__.py
+seastar_interfaces.egg-info/PKG-INFO
+seastar_interfaces.egg-info/SOURCES.txt
+seastar_interfaces.egg-info/dependency_links.txt
+seastar_interfaces.egg-info/top_level.txt
+seastar_interfaces/msg/__init__.py
+seastar_interfaces/msg/_sky_ephemeris.py
+seastar_interfaces/msg/_sky_scan_offset.py

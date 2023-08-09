@@ -1,0 +1,9 @@
+source;share/imufaker/hook/pythonpath.ps1
+source;share/imufaker/hook/pythonpath.dsv
+source;share/imufaker/hook/pythonpath.sh
+source;share/imufaker/hook/ament_prefix_path.ps1
+source;share/imufaker/hook/ament_prefix_path.dsv
+source;share/imufaker/hook/ament_prefix_path.sh
+source;../../build/imufaker/share/imufaker/hook/pythonpath_develop.ps1
+source;../../build/imufaker/share/imufaker/hook/pythonpath_develop.dsv
+source;../../build/imufaker/share/imufaker/hook/pythonpath_develop.sh

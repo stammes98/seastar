@@ -1,0 +1,6 @@
+/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/SkyEphemeris.idl
+/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/SkyScanOffsetAngles.idl
+/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/SkyScanPointingAngles.idl
+/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/DesiredPointing.idl
+/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/MotorCommand.idl
+/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:srv/PointMotors.idl

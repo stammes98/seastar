@@ -1,0 +1,19 @@
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:30:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisValid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   30 |         bool [01;35m[KisValid[m[K = false;
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:37:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   37 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o:(.data+0x0): multiple definition of `CommHasParam'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.data+0x0): first defined here
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o:(.bss+0x0): multiple definition of `CommNames[abi:cxx11]'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o:(.data+0x0): multiple definition of `CommHasParam'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.data+0x0): first defined here
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o:(.bss+0x0): multiple definition of `CommNames[abi:cxx11]'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.bss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:278: head_chef] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

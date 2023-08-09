@@ -1,0 +1,3 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[ 33%] [32m[1mLinking CXX executable head_chef[0m
+[100%] Built target head_chef

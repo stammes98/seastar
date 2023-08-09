@@ -1,0 +1,123 @@
+[0.426s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.547s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[0.566s] [ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[4.848s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[4.848s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[4.848s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[4.849s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.849s]    38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[4.849s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[5.060s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.060s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[5.061s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K At global scope:
+[5.061s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:406:9:[m[K [01;31m[Kerror: [m[K‘[01m[KChefScript[m[K’ does not name a type
+[5.061s]   406 |         [01;31m[KChefScript[m[K cs; //Reads and executes recipe
+[5.061s]       |         [01;31m[K^~~~~~~~~~[m[K
+[5.074s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.075s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[5.075s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In constructor ‘[01m[KHeadChef::HeadChef()[m[K’:
+[5.075s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:68:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcs[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+[5.075s]    68 |                 [01;31m[Kcs[m[K = ChefScript("/recipes/testScript.rcp");
+[5.075s]       |                 [01;31m[K^~[m[K
+[5.075s]       |                 [32m[Kcos[m[K
+[5.083s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:68:22:[m[K [01;31m[Kerror: [m[K‘[01m[KChefScript[m[K’ was not declared in this scope
+[5.083s]    68 |                 cs = [01;31m[KChefScript[m[K("/recipes/testScript.rcp");
+[5.083s]       |                      [01;31m[K^~~~~~~~~~[m[K
+[5.104s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.104s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.104s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[5.104s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.104s]    38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[5.105s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[5.125s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[5.125s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:35:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChefCommand>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.125s]    35 |         if ([01;35m[KexecLine >= comms_.size()[m[K) {
+[5.125s]       |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[5.128s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[5.129s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:170:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisValid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.129s]   170 |         bool [01;35m[KisValid[m[K = false;
+[5.129s]       |              [01;35m[K^~~~~~~[m[K
+[5.304s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.305s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.305s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K At global scope:
+[5.305s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:406:9:[m[K [01;31m[Kerror: [m[K‘[01m[KChefScript[m[K’ does not name a type
+[5.305s]   406 |         [01;31m[KChefScript[m[K cs; //Reads and executes recipe
+[5.305s]       |         [01;31m[K^~~~~~~~~~[m[K
+[5.317s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.318s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.318s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In constructor ‘[01m[KHeadChef::HeadChef()[m[K’:
+[5.318s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:68:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcs[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+[5.318s]    68 |                 [01;31m[Kcs[m[K = ChefScript("/recipes/testScript.rcp");
+[5.318s]       |                 [01;31m[K^~[m[K
+[5.318s]       |                 [32m[Kcos[m[K
+[5.325s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:68:22:[m[K [01;31m[Kerror: [m[K‘[01m[KChefScript[m[K’ was not declared in this scope
+[5.325s]    68 |                 cs = [01;31m[KChefScript[m[K("/recipes/testScript.rcp");
+[5.325s]       |                      [01;31m[K^~~~~~~~~~[m[K
+[5.362s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K At global scope:
+[5.362s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:30:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kbool isRunning[m[K’
+[5.362s]    30 | bool [01;31m[KisRunning[m[K = true;
+[5.363s]       |      [01;31m[K^~~~~~~~~[m[K
+[5.363s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.363s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.363s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:30:6:[m[K [01;36m[Knote: [m[K‘[01m[Kbool isRunning[m[K’ previously defined here
+[5.363s]    30 | bool [01;36m[KisRunning[m[K = true;
+[5.363s]       |      [01;36m[K^~~~~~~~~[m[K
+[5.363s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:33:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble tAz[m[K’
+[5.363s]    33 | double [01;31m[KtAz[m[K = 0.0;
+[5.364s]       |        [01;31m[K^~~[m[K
+[5.364s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.364s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.364s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:33:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble tAz[m[K’ previously defined here
+[5.364s]    33 | double [01;36m[KtAz[m[K = 0.0;
+[5.364s]       |        [01;36m[K^~~[m[K
+[5.364s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:34:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble tAlt[m[K’
+[5.364s]    34 | double [01;31m[KtAlt[m[K = 0.0;
+[5.364s]       |        [01;31m[K^~~~[m[K
+[5.365s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.365s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.365s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:34:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble tAlt[m[K’ previously defined here
+[5.365s]    34 | double [01;36m[KtAlt[m[K = 0.0;
+[5.365s]       |        [01;36m[K^~~~[m[K
+[5.365s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:35:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint loopLen[m[K’
+[5.365s]    35 | int [01;31m[KloopLen[m[K = 1;
+[5.365s]       |     [01;31m[K^~~~~~~[m[K
+[5.366s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.366s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.366s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:35:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint loopLen[m[K’ previously defined here
+[5.366s]    35 | int [01;36m[KloopLen[m[K = 1;
+[5.366s]       |     [01;36m[K^~~~~~~[m[K
+[5.366s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid signal_callback_handler(int)[m[K’
+[5.366s]    38 | void [01;31m[Ksignal_callback_handler[m[K(int signum) {
+[5.366s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.366s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.367s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.367s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid signal_callback_handler(int)[m[K’ previously defined here
+[5.367s]    38 | void [01;36m[Ksignal_callback_handler[m[K(int signum) {
+[5.367s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.367s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[5.367s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.367s]    38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[5.367s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[5.367s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K At global scope:
+[5.368s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:43:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass HeadChef[m[K’
+[5.368s]    43 | class [01;31m[KHeadChef[m[K : public rclcpp::Node {
+[5.368s]       |       [01;31m[K^~~~~~~~[m[K
+[5.368s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.368s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.368s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:43:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass HeadChef[m[K’
+[5.368s]    43 | class [01;36m[KHeadChef[m[K : public rclcpp::Node {
+[5.368s]       |       [01;36m[K^~~~~~~~[m[K
+[5.368s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:430:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint main(int, char**)[m[K’
+[5.369s]   430 | int [01;31m[Kmain[m[K(int argc, char ** argv) {
+[5.369s]       |     [01;31m[K^~~~[m[K
+[5.369s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:12[m[K,
+[5.369s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[5.369s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:430:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint main(int, char**)[m[K’ previously defined here
+[5.369s]   430 | int [01;36m[Kmain[m[K(int argc, char ** argv) {
+[5.369s]       |     [01;36m[K^~~~[m[K
+[10.816s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[10.816s] gmake[2]: *** Waiting for unfinished jobs....
+[11.075s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+[11.075s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[11.075s] gmake: *** [Makefile:146: all] Error 2
+[11.081s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

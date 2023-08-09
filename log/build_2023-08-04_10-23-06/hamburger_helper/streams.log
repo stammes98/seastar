@@ -1,0 +1,39 @@
+[3.181s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/prefix_override:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/hamburger_helper/build --no-deps install_data
+[3.921s] running develop
+[3.922s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.922s]   warnings.warn(
+[3.924s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.924s]   warnings.warn(
+[4.225s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[4.226s]   warnings.warn(
+[4.226s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[4.227s]   warnings.warn(
+[4.227s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[4.227s]   warnings.warn(
+[4.713s] running egg_info
+[4.716s] creating hamburger_helper.egg-info
+[4.723s] writing hamburger_helper.egg-info/PKG-INFO
+[4.723s] writing dependency_links to hamburger_helper.egg-info/dependency_links.txt
+[4.724s] writing entry points to hamburger_helper.egg-info/entry_points.txt
+[4.724s] writing requirements to hamburger_helper.egg-info/requires.txt
+[4.728s] writing top-level names to hamburger_helper.egg-info/top_level.txt
+[4.729s] writing manifest file 'hamburger_helper.egg-info/SOURCES.txt'
+[4.949s] listing git files failed - pretending there aren't any
+[5.172s] reading manifest file 'hamburger_helper.egg-info/SOURCES.txt'
+[5.173s] writing manifest file 'hamburger_helper.egg-info/SOURCES.txt'
+[5.306s] running build_ext
+[5.306s] Creating /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages/hamburger-helper.egg-link (link to .)
+[5.308s] Installing hamburger_helper script to /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/hamburger_helper
+[5.316s] 
+[5.316s] Installed /home/seastar/steve_summer_seastar_ws/build/hamburger_helper
+[5.316s] running install_data
+[5.317s] creating /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/ament_index
+[5.317s] creating /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/ament_index/resource_index
+[5.317s] creating /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/ament_index/resource_index/packages
+[5.317s] copying resource/hamburger_helper -> /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/ament_index/resource_index/packages
+[5.317s] copying package.xml -> /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper
+[5.317s] creating /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/launch
+[5.317s] copying DataFileSystem.py -> /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper
+[5.317s] copying HamburgerLib.py -> /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper
+[5.318s] copying setup.py -> /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper
+[6.118s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/prefix_override:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/hamburger_helper/build --no-deps install_data

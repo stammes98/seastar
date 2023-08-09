@@ -1,0 +1,33 @@
+<!-- roll to pitch-->
+<joint name="roll_to_pitch_joint" type="revolute">
+	<parent link="roll_link"/>
+	<child link="pitch_link"/>
+	<origin xyz="${roll_l/2} 0 0" rpy="0 -${pi/2} 0"/>
+	<axis xyz="1 0 0"/>
+	<limit lower="${pi}" upper="7.34784" velocity="100" effort="100"/>
+</joint>
+
+<!-- the robot pitch_link is ??? -->
+<xacro:property name="pitch_l" value="0.2"/>
+<xacro:property name="pitch_w" value="0.100"/>
+<xacro:property name="pitch_h" value="0.0125"/>
+<xacro:property name="pitch_m" value="0.5"/>
+<link name="pitch_link">
+	<visual>
+		<origin xyz="${pitch_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${pitch_l} ${pitch_w} ${pitch_h}"/>
+		</geometry>
+		<material name="white"/>
+	</visual>
+	<collision>
+		<origin xyz="${pitch_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${pitch_l} ${pitch_w} ${pitch_h}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_box mass="${pitch_m}" x="${pitch_l}" y="${pitch_w}" z="${pitch_h}">
+		<origin xyz="${pitch_l/2} 0 0" rpy="0 0 0"/>
+	</xacro:inertial_box>
+</link>
+

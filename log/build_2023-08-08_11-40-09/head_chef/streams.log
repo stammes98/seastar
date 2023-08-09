@@ -1,0 +1,154 @@
+[0.501s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.615s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[1.463s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[1.463s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:35:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChefCommand>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.463s]    35 |         if ([01;35m[KexecLine >= comms_.size()[m[K) {
+[1.464s]       |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[1.464s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:51:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.464s]    51 |                 case [01;31m[KFindSun[m[K:
+[1.464s]       |                      [01;31m[K^~~~~~~[m[K
+[1.464s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.464s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.464s]       |                             [01;36m[K^~[m[K
+[1.464s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:54:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.465s]    54 |                 case [01;31m[KFindStaySun[m[K:
+[1.465s]       |                      [01;31m[K^~~~~~~~~~~[m[K
+[1.465s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.465s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.465s]       |                             [01;36m[K^~[m[K
+[1.465s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:57:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.465s]    57 |                 case [01;31m[KTrackSun[m[K:
+[1.465s]       |                      [01;31m[K^~~~~~~~[m[K
+[1.465s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.465s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.466s]       |                             [01;36m[K^~[m[K
+[1.466s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:60:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.466s]    60 |                 case [01;31m[KCircleSun[m[K:
+[1.466s]       |                      [01;31m[K^~~~~~~~~[m[K
+[1.466s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.466s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.466s]       |                             [01;36m[K^~[m[K
+[1.466s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:63:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.466s]    63 |                 case [01;31m[KSetSunAzOff[m[K:
+[1.467s]       |                      [01;31m[K^~~~~~~~~~~[m[K
+[1.467s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.467s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.467s]       |                             [01;36m[K^~[m[K
+[1.468s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:66:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.468s]    66 |                 case [01;31m[KSetSunAltOff[m[K:
+[1.468s]       |                      [01;31m[K^~~~~~~~~~~~[m[K
+[1.468s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.468s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.468s]       |                             [01;36m[K^~[m[K
+[1.469s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:69:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.469s]    69 |                 case [01;31m[KSetAzTarg[m[K:
+[1.469s]       |                      [01;31m[K^~~~~~~~~[m[K
+[1.469s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.469s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.469s]       |                             [01;36m[K^~[m[K
+[1.469s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:72:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.469s]    72 |                 case [01;31m[KSetAltTarg[m[K:
+[1.469s]       |                      [01;31m[K^~~~~~~~~~[m[K
+[1.470s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.473s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.473s]       |                             [01;36m[K^~[m[K
+[1.473s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:75:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.473s]    75 |                 case [01;31m[KSetStokeTarg[m[K:
+[1.473s]       |                      [01;31m[K^~~~~~~~~~~~[m[K
+[1.473s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.473s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.474s]       |                             [01;36m[K^~[m[K
+[1.474s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:78:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.474s]    78 |                 case [01;31m[KSetSunStoke[m[K:
+[1.474s]       |                      [01;31m[K^~~~~~~~~~~[m[K
+[1.474s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.474s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.474s]       |                             [01;36m[K^~[m[K
+[1.474s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:81:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.474s]    81 |                 case [01;31m[KFindTarg[m[K:
+[1.475s]       |                      [01;31m[K^~~~~~~~[m[K
+[1.475s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.475s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.475s]       |                             [01;36m[K^~[m[K
+[1.475s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:84:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.475s]    84 |                 case [01;31m[KFindStayTarg[m[K:
+[1.475s]       |                      [01;31m[K^~~~~~~~~~~~[m[K
+[1.476s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.476s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.476s]       |                             [01;36m[K^~[m[K
+[1.476s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:87:22:[m[K [01;31m[Kerror: [m[K‘[01m[KCircleTarg[m[K’ was not declared in this scope; did you mean ‘[01m[KCirlceTarg[m[K’?
+[1.476s]    87 |                 case [01;31m[KCircleTarg[m[K:
+[1.476s]       |                      [01;31m[K^~~~~~~~~~[m[K
+[1.476s]       |                      [32m[KCirlceTarg[m[K
+[1.476s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:87:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.477s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.477s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.477s]       |                             [01;36m[K^~[m[K
+[1.477s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:90:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.477s]    90 |                 case [01;31m[KArcStart[m[K:
+[1.477s]       |                      [01;31m[K^~~~~~~~[m[K
+[1.477s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.477s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.478s]       |                             [01;36m[K^~[m[K
+[1.478s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:93:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.478s]    93 |                 case [01;31m[KArcEnd[m[K:
+[1.478s]       |                      [01;31m[K^~~~~~[m[K
+[1.478s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.478s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.478s]       |                             [01;36m[K^~[m[K
+[1.478s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:96:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.478s]    96 |                 case [01;31m[KArcSun[m[K:
+[1.479s]       |                      [01;31m[K^~~~~~[m[K
+[1.479s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.479s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.479s]       |                             [01;36m[K^~[m[K
+[1.479s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:99:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.479s]    99 |                 case [01;31m[KArcTarg[m[K:
+[1.479s]       |                      [01;31m[K^~~~~~~[m[K
+[1.479s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.479s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.480s]       |                             [01;36m[K^~[m[K
+[1.480s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:102:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.480s]   102 |                 case [01;31m[KGoto[m[K:
+[1.480s]       |                      [01;31m[K^~~~[m[K
+[1.480s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.480s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.480s]       |                             [01;36m[K^~[m[K
+[1.480s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:107:17:[m[K [01;31m[Kerror: [m[Kjump to case label
+[1.481s]   107 |                 [01;31m[Kdefault[m[K:
+[1.481s]       |                 [01;31m[K^~~~~~~[m[K
+[1.481s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:103:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint newLine[m[K’
+[1.481s]   103 |                         int [01;36m[KnewLine[m[K = (int) p;
+[1.481s]       |                             [01;36m[K^~~~~~~[m[K
+[1.481s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:48:29:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kint hm[m[K’
+[1.481s]    48 |                         int [01;36m[Khm[m[K = (int) p;
+[1.481s]       |                             [01;36m[K^~[m[K
+[1.481s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KFindSun[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.481s]    43 |         switch [01;35m[K([m[Kc) {
+[1.482s]       |                [01;35m[K^[m[K
+[1.482s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KFindStaySun[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.482s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KTrackSun[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.482s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KCircleSun[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.482s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSetSunAzOff[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.482s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSetSunAltOff[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.482s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSetAzTarg[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.483s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSetAltTarg[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.483s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSetStokeTarg[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.483s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSetSunStoke[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.483s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KFindTarg[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.483s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KFindStayTarg[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.483s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KCirlceTarg[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.483s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KArcStart[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.483s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KArcEnd[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.483s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KArcSun[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.484s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KArcTarg[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.484s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KGoto[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.484s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:43:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KNoop[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[1.484s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[1.484s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:165:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisValid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.484s]   165 |         bool [01;35m[KisValid[m[K = false;
+[1.484s]       |              [01;35m[K^~~~~~~[m[K
+[1.602s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[1.604s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[1.604s] gmake: *** [Makefile:146: all] Error 2
+[1.612s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

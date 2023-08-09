@@ -1,0 +1,33 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+running egg_info
+creating solar_ephemeris.egg-info
+writing solar_ephemeris.egg-info/PKG-INFO
+writing dependency_links to solar_ephemeris.egg-info/dependency_links.txt
+writing entry points to solar_ephemeris.egg-info/entry_points.txt
+writing requirements to solar_ephemeris.egg-info/requires.txt
+writing top-level names to solar_ephemeris.egg-info/top_level.txt
+writing manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+listing git files failed - pretending there aren't any
+reading manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+writing manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages/solar-ephemeris.egg-link (link to .)
+Installing solar_ephemeris script to /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/solar_ephemeris
+
+Installed /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris
+running install_data
+creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/ament_index
+creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/ament_index/resource_index
+creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/ament_index/resource_index/packages
+copying resource/solar_ephemeris -> /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/ament_index/resource_index/packages
+copying package.xml -> /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris

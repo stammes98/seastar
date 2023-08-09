@@ -1,0 +1,11 @@
+{
+  "package_name": "seastar_interfaces",
+  "non_idl_tuples": [
+    "/home/seastar/steve_summer_seastar_ws/src/seastar_interfaces:msg/SkyEphemeris.msg",
+    "/home/seastar/steve_summer_seastar_ws/src/seastar_interfaces:msg/SkyScanOffsetAngles.msg",
+    "/home/seastar/steve_summer_seastar_ws/src/seastar_interfaces:msg/SkyScanPointingAngles.msg",
+    "/home/seastar/steve_summer_seastar_ws/src/seastar_interfaces:msg/DesiredPointing.msg",
+    "/home/seastar/steve_summer_seastar_ws/src/seastar_interfaces:msg/MotorCommand.msg",
+    "/home/seastar/steve_summer_seastar_ws/src/seastar_interfaces:srv/PointMotors.srv"
+  ]
+}

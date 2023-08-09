@@ -1,0 +1,35 @@
+[2.877s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/test_cam': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/test_cam/prefix_override:/home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/test_cam/build --no-deps install_data
+[3.820s] running develop
+[3.824s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.824s]   warnings.warn(
+[3.826s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.827s]   warnings.warn(
+[4.061s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[4.061s]   warnings.warn(
+[4.062s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[4.062s]   warnings.warn(
+[4.062s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[4.062s]   warnings.warn(
+[4.679s] running egg_info
+[4.679s] creating test_cam.egg-info
+[4.679s] writing test_cam.egg-info/PKG-INFO
+[4.680s] writing dependency_links to test_cam.egg-info/dependency_links.txt
+[4.680s] writing entry points to test_cam.egg-info/entry_points.txt
+[4.680s] writing requirements to test_cam.egg-info/requires.txt
+[4.681s] writing top-level names to test_cam.egg-info/top_level.txt
+[4.681s] writing manifest file 'test_cam.egg-info/SOURCES.txt'
+[4.882s] listing git files failed - pretending there aren't any
+[5.386s] reading manifest file 'test_cam.egg-info/SOURCES.txt'
+[5.387s] writing manifest file 'test_cam.egg-info/SOURCES.txt'
+[5.563s] running build_ext
+[5.564s] Creating /home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages/test-cam.egg-link (link to .)
+[5.567s] Installing test_cam script to /home/seastar/steve_summer_seastar_ws/install/test_cam/lib/test_cam
+[5.568s] 
+[5.568s] Installed /home/seastar/steve_summer_seastar_ws/build/test_cam
+[5.569s] running install_data
+[5.569s] creating /home/seastar/steve_summer_seastar_ws/install/test_cam/share/ament_index
+[5.569s] creating /home/seastar/steve_summer_seastar_ws/install/test_cam/share/ament_index/resource_index
+[5.569s] creating /home/seastar/steve_summer_seastar_ws/install/test_cam/share/ament_index/resource_index/packages
+[5.570s] copying resource/test_cam -> /home/seastar/steve_summer_seastar_ws/install/test_cam/share/ament_index/resource_index/packages
+[5.571s] copying package.xml -> /home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam
+[5.744s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/test_cam' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/test_cam/prefix_override:/home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/test_cam/build --no-deps install_data

@@ -1,0 +1,27 @@
+{
+  "package_name": "seastar_interfaces",
+  "output_dir": "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_typesupport_cpp/seastar_interfaces",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/SkyEphemeris.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/SkyScanOffsetAngles.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/SkyScanPointingAngles.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/DesiredPointing.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:msg/MotorCommand.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces:srv/PointMotors.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces/msg/SkyEphemeris.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces/msg/SkyScanOffsetAngles.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces/msg/SkyScanPointingAngles.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces/msg/DesiredPointing.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces/msg/MotorCommand.idl",
+    "/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_adapter/seastar_interfaces/srv/PointMotors.idl"
+  ]
+}

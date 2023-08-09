@@ -1,0 +1,82 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:30:21:[m[K [01;31m[Kerror: [m[K‘[01m[KChefCommand[m[K’ was not declared in this scope
+   30 |         std::vector<[01;31m[KChefCommand[m[K> comms_;
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:30:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   30 |         std::vector<ChefCommand[01;31m[K>[m[K comms_;
+      |                                [01;31m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:30:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:36:32:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((ChefScript*)this)->ChefScript::comms_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   36 |         if (execLine >= comms_.[01;31m[Ksize[m[K()) {
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:42:38:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kat[m[K’ in ‘[01m[K((ChefScript*)this)->ChefScript::comms_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   42 |         ChefCommand curComm = comms_.[01;31m[Kat[m[K(execLine);
+      |                                      [01;31m[K^~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:52:30:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass HeadChef[m[K’
+   52 |                         chef_[01;31m[K->[m[KhomeAll();
+      |                              [01;31m[K^~[m[K
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:13:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass HeadChef[m[K’
+   13 | class [01;36m[KHeadChef[m[K;
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::loadScript(std::string)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:160:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope
+  160 |         for (ChefCommand c : [01;31m[Kcomms_[m[K) {
+      |                              [01;31m[K^~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:160:30:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/11/string:54[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:4[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/range_access.h:108:37:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::begin[m[K’
+  108 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&) noexcept;
+      |                                     [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/filesystem:46[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:8[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/fs_dir.h:549:3:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::filesystem::__cxx11::begin[m[K’
+  549 |   [01;36m[Kbegin[m[K(recursive_directory_iterator __iter) noexcept
+      |   [01;36m[K^~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:160:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope
+  160 |         for (ChefCommand c : [01;31m[Kcomms_[m[K) {
+      |                              [01;31m[K^~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:160:30:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/11/string:54[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:4[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/range_access.h:110:37:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::end[m[K’
+  110 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&) noexcept;
+      |                                     [01;36m[K^~~[m[K
+In file included from [01m[K/usr/include/c++/11/filesystem:46[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:8[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/fs_dir.h:554:3:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::filesystem::__cxx11::end[m[K’
+  554 |   [01;36m[Kend[m[K(recursive_directory_iterator) noexcept
+      |   [01;36m[K^~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:184:48:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[K((ChefScript*)this)->ChefScript::comms_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  184 |                                         comms_.[01;31m[Kpush_back[m[K(ChefCommand(static_cast<Command>(i), std::stod(rest)));
+      |                                                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:186:48:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[K((ChefScript*)this)->ChefScript::comms_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  186 |                                         comms_.[01;31m[Kpush_back[m[K(ChefCommand(static_cast<Command>(i)));
+      |                                                [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:26[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:2[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:30:21:[m[K [01;31m[Kerror: [m[K‘[01m[KChefCommand[m[K’ was not declared in this scope
+   30 |         std::vector<[01;31m[KChefCommand[m[K> comms_;
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:30:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   30 |         std::vector<ChefCommand[01;31m[K>[m[K comms_;
+      |                                [01;31m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:30:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:17:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

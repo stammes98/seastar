@@ -1,0 +1,10 @@
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/uninstall.dir
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/motor_manager_uninstall.dir
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/motor_controller.dir
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/test.dir
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/edit_cache.dir
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/rebuild_cache.dir
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/list_install_components.dir
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/install.dir
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/install/local.dir
+/home/seastar/steve_summer_seastar_ws/build/motor_manager/CMakeFiles/install/strip.dir

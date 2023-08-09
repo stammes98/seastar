@@ -1,0 +1,81 @@
+[0.082s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake /home/seastar/steve_summer_seastar_ws/src/motor_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/seastar/steve_summer_seastar_ws/install/motor_manager
+[0.267s] -- The C compiler identification is GNU 11.4.0
+[0.435s] -- The CXX compiler identification is GNU 11.4.0
+[0.471s] -- Detecting C compiler ABI info
+[0.654s] -- Detecting C compiler ABI info - done
+[0.683s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.684s] -- Detecting C compile features
+[0.685s] -- Detecting C compile features - done
+[0.703s] -- Detecting CXX compiler ABI info
+[0.973s] -- Detecting CXX compiler ABI info - done
+[1.002s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.002s] -- Detecting CXX compile features
+[1.003s] -- Detecting CXX compile features - done
+[1.007s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.796s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.975s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.033s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[3.284s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.301s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.340s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.415s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.521s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.863s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.871s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.335s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.453s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.596s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.656s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.992s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.994s] -- Found Threads: TRUE  
+[5.614s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[5.808s] -- Found moveit_ros_planning_interface: 2.5.4 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[5.936s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[9.437s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[9.514s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[10.034s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[10.624s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[10.630s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[12.652s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[14.505s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[15.432s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[17.297s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[22.845s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[22.845s] -- Configured cppcheck include dirs: 
+[22.846s] -- Configured cppcheck exclude dirs and/or files: 
+[23.222s] -- Added test 'flake8' to check Python code syntax and style conventions
+[23.708s] -- Added test 'lint_cmake' to check CMake code style
+[24.094s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[26.774s] -- Added test 'uncrustify' to check C / C++ code style
+[26.775s] -- Configured uncrustify additional arguments: 
+[27.113s] -- Added test 'xmllint' to check XML markup files
+[27.124s] -- Configuring done (27.0s)
+[27.309s] -- Generating done (0.2s)
+[27.314s] -- Build files have been written to: /home/seastar/steve_summer_seastar_ws/build/motor_manager
+[27.398s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake /home/seastar/steve_summer_seastar_ws/src/motor_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/seastar/steve_summer_seastar_ws/install/motor_manager
+[27.399s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_manager -- -j4 -l4
+[27.720s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o[0m
+[44.414s] [100%] [32m[1mLinking CXX executable motor_controller[0m
+[46.194s] [100%] Built target motor_controller
+[46.233s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_manager -- -j4 -l4
+[46.570s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/motor_manager
+[46.692s] -- Install configuration: ""
+[46.693s] -- Execute custom install script
+[46.694s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/ament_index/resource_index/package_run_dependencies/motor_manager
+[46.703s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/ament_index/resource_index/parent_prefix_path/motor_manager
+[46.712s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/ament_prefix_path.sh
+[46.721s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/ament_prefix_path.dsv
+[46.734s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/path.sh
+[46.754s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/path.dsv
+[46.808s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.bash
+[46.809s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.sh
+[46.822s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.zsh
+[46.846s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.dsv
+[46.870s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/package.dsv
+[46.881s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/ament_index/resource_index/packages/motor_manager
+[46.886s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/cmake/motor_managerConfig.cmake
+[46.891s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/cmake/motor_managerConfig-version.cmake
+[46.895s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/package.xml
+[46.900s] -- Installing: /home/seastar/steve_summer_seastar_ws/install/motor_manager/lib/motor_manager/motor_controller
+[46.902s] -- Set runtime path of "/home/seastar/steve_summer_seastar_ws/install/motor_manager/lib/motor_manager/motor_controller" to ""
+[46.919s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/motor_manager

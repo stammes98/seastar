@@ -1,0 +1,49 @@
+[0.417s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.529s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[0.547s] [ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o[0m
+[0.565s] [ 50%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[1.799s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[1.799s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:61:73:[m[K [01;31m[Kerror: [m[K‘[01m[Katod[m[K’ was not declared in this scope; did you mean ‘[01m[Katol[m[K’?
+[1.800s]    61 |                                         comms_.push_back(ChefCommand(i, [01;31m[Katod[m[K(rest)));
+[1.800s]       |                                                                         [01;31m[K^~~~[m[K
+[1.800s]       |                                                                         [32m[Katol[m[K
+[1.800s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:63:70:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.801s]    63 |                                         comms_.push_back(ChefCommand([01;31m[Ki[m[K));
+[1.801s]       |                                                                      [01;31m[K^[m[K
+[1.801s]       |                                                                      [01;31m[K|[m[K
+[1.801s]       |                                                                      [01;31m[Kint[m[K
+[1.801s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:11[m[K,
+[1.802s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.802s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:35:29:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KChefCommand::ChefCommand(Command)[m[K’
+[1.802s]    35 |         ChefCommand([01;36m[KCommand comm[m[K);
+[1.802s]       |                     [01;36m[K~~~~~~~~^~~~[m[K
+[1.802s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:63:57:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<Command>::push_back(ChefCommand)[m[K’
+[1.803s]    63 |                                         [01;31m[Kcomms_.push_back(ChefCommand(i))[m[K;
+[1.803s]       |                                         [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[1.803s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[1.803s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:5[m[K,
+[1.804s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.804s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Command; _Alloc = std::allocator<Command>; std::vector<_Tp, _Alloc>::value_type = Command][m[K’
+[1.805s]  1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+[1.805s]       |       [01;36m[K^~~~~~~~~[m[K
+[1.809s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1187:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KChefCommand[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst Command&[m[K’}
+[1.809s]  1187 |       push_back([01;36m[Kconst value_type& __x[m[K)
+[1.810s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.810s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = Command; _Alloc = std::allocator<Command>; std::vector<_Tp, _Alloc>::value_type = Command][m[K’
+[1.810s]  1203 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+[1.811s]       |       [01;36m[K^~~~~~~~~[m[K
+[1.811s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1203:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KChefCommand[m[K’ to ‘[01m[Kstd::vector<Command>::value_type&&[m[K’ {aka ‘[01m[KCommand&&[m[K’}
+[1.811s]  1203 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+[1.812s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[1.812s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:54:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisValid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.813s]    54 |         bool [01;35m[KisValid[m[K = false;
+[1.813s]       |              [01;35m[K^~~~~~~[m[K
+[1.919s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[1.919s] gmake[2]: *** Waiting for unfinished jobs....
+[4.430s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[4.430s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.430s]    38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[4.430s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[17.483s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[17.484s] gmake: *** [Makefile:146: all] Error 2
+[17.489s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

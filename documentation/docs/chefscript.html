@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+	<title>ChefScript</title>
+</head>
+
+
+<body>
+<h1>ChefScript</h1>
+<p>ChefScript is the scripting language the head_chef node reads and converts to commands. Below is documentation of all the commands</p>
+<p><a href='../index.html'>Return home</a></p>
+
+<h4>Command list</h4>
+<h5>Command - Long name - Description - Parameters</h5>
+<ul>
+
+<li>
+<ul>
+HOAL - HOMEALL
+<li>Homes the motors against their hardstops</li>
+Parameters:
+<li>None.</li>
+</ul>
+</li>
+
+<li>
+<ul>
+HOON - HOMEONE
+<li>Homes the motors against their hardstops</li>
+Parameters:
+<li>Index of motor to home. 0 = roll, 1 = pitch, 2 = stokes, 3 = plate</li>
+</ul>
+</li>
+
+<li>
+<ul>
+FISU - FINDSUN
+<li>Points SeaSTAR towards IMU + IK determined location of the Sun</li>
+Parameters:
+<li>None.</li>
+</ul>
+</li>
+
+<li>
+<ul>
+FSSU - FINDSTAYSUN
+<li>Points SeaSTAR towards IMU + IK determined location of the Sun, and stay there for a set amount of time</li>
+Parameters:
+<li>Time to hold in ms</li>
+</ul>
+</li>
+
+<li>
+<ul>
+TRSU - TRACKSUN
+<li>Uses the camera to follow the brightest spot on the sky, and publish the difference between the calculated and actual pointings.</li>
+Parameters:
+<li>Time to track in ms</li>
+</ul>
+</li>
+
+<li>
+<ul>
+CRSU - CIRCLESUN
+<li>Do a sky scan around the sun</li>
+Parameters:
+<li>Size of circle around sun in degrees offset</li>
+</ul>
+</li>
+
+<li>
+<ul>
+SUAO - SETSUNAZOFF
+<li>Set an offset to the solar azimuth</li>
+Parameters:
+<li>Solar azimuth offset in degrees</li>
+</ul>
+</li>
+
+<li>
+<ul>
+SUEO - SETSUNALTOFF
+<li>Set an offset to the solar altitude</li>
+Parameters:
+<li>Solar altitude offset in degrees</li>
+</ul>
+</li>
+
+<li>
+<ul>
+SATG - SETAZTARG
+<li>Set the secondary target azimuth</li>
+Parameters:
+<li>Azimuth of secondary sky target in degrees</li>
+</ul>
+</li>
+
+
+<li>
+<ul>
+SETG - SETALTTARG
+<li>Set the secondary target altitude</li>
+Parameters:
+<li>Altitude of secondary sky target in degrees</li>
+</ul>
+</li>
+
+<li>
+<ul>
+SSTG - SETSTOKETARG
+<li>Set the secondary target stokes angle</li>
+Parameters:
+<li>Stokes angle of secondary sky target in degrees</li>
+</ul>
+</li>
+
+<li>
+<ul>
+SSSU - SETSUNSTOKE
+<li>Set the solar target stokes angle</li>
+Parameters:
+<li>Stokes angle desired when pointing at / around the Sun in degrees</li>
+</ul>
+</li>
+
+<li>
+<ul>
+FTRG - FINDTARG
+<li>Use the IMU / IK to point at the secondary target</li>
+Parameters:
+<li>None</li>
+</ul>
+</li>
+
+
+<li>
+<ul>
+FSTG - FINDSTAYTARG
+<li>Use the IMU / IK to point at the secondary target and stay there for a set time</li>
+Parameters:
+<li>Time to stay in ms</li>
+</ul>
+</li>
+
+
+<li>
+<ul>
+CRTG - CIRCLETARG
+<li>Do a sky scan around the secondary target</li>
+Parameters:
+<li>Radius of sky scan in degrees offset</li>
+</ul>
+</li>
+
+
+<li>
+<ul>
+ARCS - ARCSTART
+<li>Set start of arc for partial scan range</li>
+Parameters:
+<li>Position on circle to start partial sky scan at, in degrees</li>
+</ul>
+</li>
+
+<li>
+<ul>
+ARCE - ARCEND
+<li>Set end of arc for partial scan range</li>
+Parameters:
+<li>Position on circle to end partial sky scan at, in degrees</li>
+</ul>
+</li>
+
+<li>
+<ul>
+ARSU - ARCSUN
+<li>Do a scan from the arc start to arc end around the Sun</li>
+Parameters:
+<li>Radius of arc</li>
+</ul>
+</li>
+
+<li>
+<ul>
+ARTG - ARCTARG
+<li>Do a scan from the arc start to arc end around the secondary target</li>
+Parameters:
+<li>Radius of arc</li>
+</ul>
+</li>
+
+<li>
+<ul>
+GOTO - GOTO
+<li>Return to a certain line in the code. One indexed</li>
+Parameters:
+<li>Line of code to return to</li>
+</ul>
+</li>
+
+<li>
+<ul>
+NOOP - NO OP
+<li>Does nothing. Placeholder.</li>
+Parameters:
+<li>None</li>
+</ul>
+</li>
+
+</ul>
+
+<h3>WARNING</h3>
+<p>DO NOT INCLUDE BLANK LINES! The program thinks an empty line is a command, and struggles with an empty command.</p>
+
+</body>
+
+</html>

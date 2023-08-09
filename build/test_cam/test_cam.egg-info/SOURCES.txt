@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/test_cam
+test_cam/__init__.py
+test_cam/test_cam.py
+test_cam.egg-info/PKG-INFO
+test_cam.egg-info/SOURCES.txt
+test_cam.egg-info/dependency_links.txt
+test_cam.egg-info/entry_points.txt
+test_cam.egg-info/requires.txt
+test_cam.egg-info/top_level.txt
+test_cam.egg-info/zip-safe

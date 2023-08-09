@@ -1,0 +1,10 @@
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/uninstall.dir
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/head_chef_uninstall.dir
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/head_chef.dir
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/test.dir
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/edit_cache.dir
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/rebuild_cache.dir
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/list_install_components.dir
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/install.dir
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/install/local.dir
+/home/seastar/steve_summer_seastar_ws/build/head_chef/CMakeFiles/install/strip.dir

@@ -1,0 +1,79 @@
+[0.392s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': AMENT_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.495s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o[0m
+[0.496s] [ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[0.516s] [ 50%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[0.565s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[0.565s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:31:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kcomm[m[K’
+[0.565s]    31 |         ChefCommand[34m[K([m[KCommand[01;31m[K [m[K[32m[Kcomm[m[K);
+[0.565s]       |                    [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~~[m[K
+[0.565s]       |                            [32m[K)[m[K
+[0.566s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:32:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kcomm[m[K’
+[0.566s]    32 |         ChefCommand[34m[K([m[KCommand[01;31m[K [m[K[32m[Kcomm[m[K, double param);
+[0.566s]       |                    [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~~[m[K
+[0.566s]       |                            [32m[K)[m[K
+[0.566s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:9:[m[K [01;31m[Kerror: [m[K‘[01m[KCommand[m[K’ does not name a type; did you mean ‘[01m[KCommands[m[K’?
+[0.566s]    34 |         [01;31m[KCommand[m[K comm_;
+[0.566s]       |         [01;31m[K^~~~~~~[m[K
+[0.566s]       |         [32m[KCommands[m[K
+[0.566s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:35:25:[m[K [01;31m[Kerror: [m[K‘[01m[KNULL[m[K’ was not declared in this scope
+[0.567s]    35 |         double param_ = [01;31m[KNULL[m[K;
+[0.567s]       |                         [01;31m[K^~~~[m[K
+[0.567s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:1:1:[m[K [01;36m[Knote: [m[K‘[01m[KNULL[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[0.567s]   +++ |+[32m[K#include <cstddef>[m[K
+[0.567s]     1 | #ifndef CHEF_COM_H
+[0.567s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:[m[K In constructor ‘[01m[KChefCommand::ChefCommand()[m[K’:
+[0.567s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:4:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcomm_[m[K’ was not declared in this scope
+[0.567s]     4 |         [01;31m[Kcomm_[m[K = Noop;
+[0.567s]       |         [01;31m[K^~~~~[m[K
+[0.567s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:[m[K At global scope:
+[0.568s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:7:25:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[0.568s]     7 | ChefCommand::ChefCommand[01;31m[K([m[KCommand comm) {
+[0.568s]       |                         [01;31m[K^[m[K
+[0.568s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:11:25:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[0.568s]    11 | ChefCommand::ChefCommand[01;31m[K([m[KCommand comm, double param) {
+[0.568s]       |                         [01;31m[K^[m[K
+[0.568s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:118: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o] Error 1
+[0.568s] gmake[2]: *** Waiting for unfinished jobs....
+[1.255s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:8[m[K,
+[1.255s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.255s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:31:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kcomm[m[K’
+[1.255s]    31 |         ChefCommand[34m[K([m[KCommand[01;31m[K [m[K[32m[Kcomm[m[K);
+[1.255s]       |                    [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~~[m[K
+[1.255s]       |                            [32m[K)[m[K
+[1.255s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:32:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kcomm[m[K’
+[1.255s]    32 |         ChefCommand[34m[K([m[KCommand[01;31m[K [m[K[32m[Kcomm[m[K, double param);
+[1.256s]       |                    [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~~[m[K
+[1.256s]       |                            [32m[K)[m[K
+[1.256s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:9:[m[K [01;31m[Kerror: [m[K‘[01m[KCommand[m[K’ does not name a type; did you mean ‘[01m[KCommands[m[K’?
+[1.256s]    34 |         [01;31m[KCommand[m[K comm_;
+[1.256s]       |         [01;31m[K^~~~~~~[m[K
+[1.256s]       |         [32m[KCommands[m[K
+[1.256s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:35:25:[m[K [01;35m[Kwarning: [m[Kconverting to non-pointer type ‘[01m[Kdouble[m[K’ from NULL [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wconversion-null-Wconversion-null]8;;[m[K]
+[1.257s]    35 |         double param_ = [01;35m[KNULL[m[K;
+[1.257s]       |                         [01;35m[K^~~~[m[K
+[1.323s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[4.408s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:8[m[K,
+[4.408s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[4.409s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:31:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kcomm[m[K’
+[4.409s]    31 |         ChefCommand[34m[K([m[KCommand[01;31m[K [m[K[32m[Kcomm[m[K);
+[4.409s]       |                    [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~~[m[K
+[4.409s]       |                            [32m[K)[m[K
+[4.409s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:32:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kcomm[m[K’
+[4.409s]    32 |         ChefCommand[34m[K([m[KCommand[01;31m[K [m[K[32m[Kcomm[m[K, double param);
+[4.409s]       |                    [34m[K~[m[K       [01;31m[K^[m[K[32m[K~~~~[m[K
+[4.409s]       |                            [32m[K)[m[K
+[4.410s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:9:[m[K [01;31m[Kerror: [m[K‘[01m[KCommand[m[K’ does not name a type; did you mean ‘[01m[KCommands[m[K’?
+[4.410s]    34 |         [01;31m[KCommand[m[K comm_;
+[4.410s]       |         [01;31m[K^~~~~~~[m[K
+[4.410s]       |         [32m[KCommands[m[K
+[4.410s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:35:25:[m[K [01;35m[Kwarning: [m[Kconverting to non-pointer type ‘[01m[Kdouble[m[K’ from NULL [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wconversion-null-Wconversion-null]8;;[m[K]
+[4.410s]    35 |         double param_ = [01;35m[KNULL[m[K;
+[4.410s]       |                         [01;35m[K^~~~[m[K
+[4.413s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[4.413s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.413s]    38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[4.414s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[9.842s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+[9.842s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[9.843s] gmake: *** [Makefile:146: all] Error 2
+[9.849s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': AMENT_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

@@ -1,0 +1,21 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o[0m
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:29:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+   29 | std::[01;31m[Kstring[m[K CommNames[21] = {"HOAL", "HOON", "FISU", "FSSU", "TRSU", "CRSU", "SUAO", "SUEO", "SATG", "SETG", "SSTG", "SSSU", "FTRG", "FSTG", "CRTG", "ARCS", "ARCE", "ARSU", "ARTG", "GOTO", "NOOP"};
+      |      [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::string[m[K’ is defined in header ‘[01m[K<string>[m[K’; did you forget to ‘[01m[K#include <string>[m[K’?
+  +++ |+[32m[K#include <string>[m[K
+    1 | #ifndef CHEF_COM_H
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:118: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:30:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisValid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   30 |         bool [01;35m[KisValid[m[K = false;
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:37:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   37 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

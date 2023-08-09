@@ -1,0 +1,95 @@
+[0.029s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.146s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[0.157s] [ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[0.160s] [ 50%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o[0m
+[0.201s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[0.201s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:23:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[KArcTarg[m[K’
+[0.201s]    23 |         [01;31m[KArcTarg[m[K = 18,           //ARTG
+[0.201s]       |         [01;31m[K^~~~~~~[m[K
+[0.201s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:4:14:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[0.202s]     4 | enum Command [01;36m[K{[m[K
+[0.202s]       |              [01;36m[K^[m[K
+[0.202s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:23:19:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[0.202s]    23 |         ArcTarg = [01;31m[K18[m[K,           //ARTG
+[0.202s]       |                   [01;31m[K^~[m[K
+[0.202s]       |                   [01;31m[K|[m[K
+[0.202s]       |                   [01;31m[Kint[m[K
+[0.202s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:24:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[0.202s]    24 |         Goto = [01;31m[K19[m[K,              //GOTO
+[0.203s]       |                [01;31m[K^~[m[K
+[0.203s]       |                [01;31m[K|[m[K
+[0.203s]       |                [01;31m[Kint[m[K
+[0.203s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:25:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[0.203s]    25 |         Noop = [01;31m[K20[m[K,              //NOOP
+[0.203s]       |                [01;31m[K^~[m[K
+[0.203s]       |                [01;31m[K|[m[K
+[0.203s]       |                [01;31m[Kint[m[K
+[0.203s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:26:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K}[m[K’ token
+[0.203s]    26 | [01;31m[K}[m[K;
+[0.204s]       | [01;31m[K^[m[K
+[0.204s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:26:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[0.204s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:118: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o] Error 1
+[0.204s] gmake[2]: *** Waiting for unfinished jobs....
+[1.199s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:11[m[K,
+[1.199s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.199s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:23:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[KArcTarg[m[K’
+[1.200s]    23 |         [01;31m[KArcTarg[m[K = 18,           //ARTG
+[1.200s]       |         [01;31m[K^~~~~~~[m[K
+[1.200s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:4:14:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.200s]     4 | enum Command [01;36m[K{[m[K
+[1.200s]       |              [01;36m[K^[m[K
+[1.200s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:23:19:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.201s]    23 |         ArcTarg = [01;31m[K18[m[K,           //ARTG
+[1.201s]       |                   [01;31m[K^~[m[K
+[1.201s]       |                   [01;31m[K|[m[K
+[1.201s]       |                   [01;31m[Kint[m[K
+[1.201s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:24:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.201s]    24 |         Goto = [01;31m[K19[m[K,              //GOTO
+[1.201s]       |                [01;31m[K^~[m[K
+[1.201s]       |                [01;31m[K|[m[K
+[1.202s]       |                [01;31m[Kint[m[K
+[1.202s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:25:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.202s]    25 |         Noop = [01;31m[K20[m[K,              //NOOP
+[1.202s]       |                [01;31m[K^~[m[K
+[1.202s]       |                [01;31m[K|[m[K
+[1.202s]       |                [01;31m[Kint[m[K
+[1.202s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:26:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K}[m[K’ token
+[1.202s]    26 | [01;31m[K}[m[K;
+[1.202s]       | [01;31m[K^[m[K
+[1.202s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:26:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[1.327s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[3.794s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:11[m[K,
+[3.794s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[3.794s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:23:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[KArcTarg[m[K’
+[3.794s]    23 |         [01;31m[KArcTarg[m[K = 18,           //ARTG
+[3.794s]       |         [01;31m[K^~~~~~~[m[K
+[3.794s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:4:14:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[3.794s]     4 | enum Command [01;36m[K{[m[K
+[3.794s]       |              [01;36m[K^[m[K
+[3.794s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:23:19:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.794s]    23 |         ArcTarg = [01;31m[K18[m[K,           //ARTG
+[3.794s]       |                   [01;31m[K^~[m[K
+[3.794s]       |                   [01;31m[K|[m[K
+[3.794s]       |                   [01;31m[Kint[m[K
+[3.795s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:24:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.795s]    24 |         Goto = [01;31m[K19[m[K,              //GOTO
+[3.795s]       |                [01;31m[K^~[m[K
+[3.795s]       |                [01;31m[K|[m[K
+[3.795s]       |                [01;31m[Kint[m[K
+[3.795s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:25:16:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[KCommand[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.795s]    25 |         Noop = [01;31m[K20[m[K,              //NOOP
+[3.795s]       |                [01;31m[K^~[m[K
+[3.795s]       |                [01;31m[K|[m[K
+[3.795s]       |                [01;31m[Kint[m[K
+[3.795s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:26:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K}[m[K’ token
+[3.795s]    26 | [01;31m[K}[m[K;
+[3.795s]       | [01;31m[K^[m[K
+[3.795s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:26:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[3.796s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[3.796s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.796s]    38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[3.796s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[9.246s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+[9.246s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[9.246s] gmake: *** [Makefile:146: all] Error 2
+[9.252s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

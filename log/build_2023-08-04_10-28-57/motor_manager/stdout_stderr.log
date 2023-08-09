@@ -1,0 +1,19 @@
+[100%] Built target motor_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/ament_index/resource_index/package_run_dependencies/motor_manager
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/ament_index/resource_index/parent_prefix_path/motor_manager
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/path.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/path.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.bash
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.zsh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.dsv
+-- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/package.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/ament_index/resource_index/packages/motor_manager
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/cmake/motor_managerConfig.cmake
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/cmake/motor_managerConfig-version.cmake
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/package.xml
+-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/motor_manager/lib/motor_manager/motor_controller

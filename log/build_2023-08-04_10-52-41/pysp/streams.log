@@ -1,0 +1,28 @@
+[3.208s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/pysp': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/pysp/prefix_override:/home/seastar/steve_summer_seastar_ws/install/pysp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/pysp/build --no-deps install_data
+[4.232s] running develop
+[4.232s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.233s]   warnings.warn(
+[4.237s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.238s]   warnings.warn(
+[4.537s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[4.537s]   warnings.warn(
+[4.538s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[4.538s]   warnings.warn(
+[4.539s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[4.539s]   warnings.warn(
+[4.860s] running egg_info
+[4.860s] writing pysp.egg-info/PKG-INFO
+[4.861s] writing dependency_links to pysp.egg-info/dependency_links.txt
+[4.861s] writing entry points to pysp.egg-info/entry_points.txt
+[4.861s] writing requirements to pysp.egg-info/requires.txt
+[4.862s] writing top-level names to pysp.egg-info/top_level.txt
+[4.966s] listing git files failed - pretending there aren't any
+[5.296s] reading manifest file 'pysp.egg-info/SOURCES.txt'
+[5.296s] writing manifest file 'pysp.egg-info/SOURCES.txt'
+[5.417s] running build_ext
+[5.418s] Creating /home/seastar/steve_summer_seastar_ws/install/pysp/lib/python3.10/site-packages/pysp.egg-link (link to .)
+[5.424s] Installing state_publisher script to /home/seastar/steve_summer_seastar_ws/install/pysp/lib/pysp
+[5.425s] 
+[5.425s] Installed /home/seastar/steve_summer_seastar_ws/build/pysp
+[5.426s] running install_data
+[5.639s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/pysp' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/pysp/prefix_override:/home/seastar/steve_summer_seastar_ws/install/pysp/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/pysp/build --no-deps install_data

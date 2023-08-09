@@ -1,0 +1,26 @@
+[1.760s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/ik_tools': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/ik_tools/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/ik_tools/build --no-deps install_data
+[2.565s] running develop
+[2.568s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.568s]   warnings.warn(
+[2.570s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.570s]   warnings.warn(
+[2.738s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[2.738s]   warnings.warn(
+[2.739s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[2.739s]   warnings.warn(
+[3.042s] running egg_info
+[3.042s] writing ik_tools.egg-info/PKG-INFO
+[3.042s] writing dependency_links to ik_tools.egg-info/dependency_links.txt
+[3.042s] writing entry points to ik_tools.egg-info/entry_points.txt
+[3.043s] writing requirements to ik_tools.egg-info/requires.txt
+[3.043s] writing top-level names to ik_tools.egg-info/top_level.txt
+[3.146s] listing git files failed - pretending there aren't any
+[3.390s] reading manifest file 'ik_tools.egg-info/SOURCES.txt'
+[3.391s] writing manifest file 'ik_tools.egg-info/SOURCES.txt'
+[3.463s] running build_ext
+[3.464s] Creating /home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/python3.10/site-packages/ik-tools.egg-link (link to .)
+[3.466s] Installing ik_tools script to /home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/ik_tools
+[3.466s] 
+[3.466s] Installed /home/seastar/steve_summer_seastar_ws/build/ik_tools
+[3.467s] running install_data
+[3.563s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/ik_tools' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/ik_tools/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/ik_tools/build --no-deps install_data

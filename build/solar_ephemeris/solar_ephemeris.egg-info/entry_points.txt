@@ -1,0 +1,3 @@
+[console_scripts]
+solar_ephemeris = solar_ephemeris.solar_ephemeris:main
+

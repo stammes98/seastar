@@ -1,0 +1,26 @@
+[1.760s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris': AMENT_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces LD_LIBRARY_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/prefix_override:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages:/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/build --no-deps install_data
+[2.681s] running develop
+[2.682s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.682s]   warnings.warn(
+[2.686s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.686s]   warnings.warn(
+[2.851s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[2.851s]   warnings.warn(
+[2.854s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[2.854s]   warnings.warn(
+[3.180s] running egg_info
+[3.181s] writing solar_ephemeris.egg-info/PKG-INFO
+[3.182s] writing dependency_links to solar_ephemeris.egg-info/dependency_links.txt
+[3.183s] writing entry points to solar_ephemeris.egg-info/entry_points.txt
+[3.184s] writing requirements to solar_ephemeris.egg-info/requires.txt
+[3.184s] writing top-level names to solar_ephemeris.egg-info/top_level.txt
+[3.296s] listing git files failed - pretending there aren't any
+[3.540s] reading manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+[3.551s] writing manifest file 'solar_ephemeris.egg-info/SOURCES.txt'
+[3.631s] running build_ext
+[3.631s] Creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages/solar-ephemeris.egg-link (link to .)
+[3.633s] Installing solar_ephemeris script to /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/solar_ephemeris
+[3.633s] 
+[3.633s] Installed /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris
+[3.634s] running install_data
+[3.742s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris' returned '0': AMENT_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces LD_LIBRARY_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/prefix_override:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages:/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/build --no-deps install_data

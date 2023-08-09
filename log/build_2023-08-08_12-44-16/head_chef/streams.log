@@ -1,0 +1,38 @@
+[0.699s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.875s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[0.895s] [ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[1.964s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[1.965s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:35:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChefCommand>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.965s]    35 |         if ([01;35m[KexecLine >= comms_.size()[m[K) {
+[1.965s]       |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[1.965s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:51:30:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass HeadChef[m[K’
+[1.965s]    51 |                         chef_[01;31m[K->[m[KhomeAll();
+[1.965s]       |                              [01;31m[K^~[m[K
+[1.966s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.966s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:13:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass HeadChef[m[K’
+[1.966s]    13 | class [01;36m[KHeadChef[m[K;
+[1.966s]       |       [01;36m[K^~~~~~~~[m[K
+[2.110s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[2.110s] gmake[2]: *** Waiting for unfinished jobs....
+[5.464s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:2[m[K:
+[5.465s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:127:9:[m[K [01;31m[Kerror: [m[K‘[01m[KChefScript[m[K’ does not name a type
+[5.465s]   127 |         [01;31m[KChefScript[m[K cs; //Reads and executes recipe
+[5.465s]       |         [01;31m[K^~~~~~~~~~[m[K
+[5.534s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[5.534s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:17:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.534s]    17 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[5.534s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[5.544s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In constructor ‘[01m[KHeadChef::HeadChef()[m[K’:
+[5.544s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcs[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+[5.545s]    46 |         [01;31m[Kcs[m[K = ChefScript("/recipes/testScript.rcp");
+[5.545s]       |         [01;31m[K^~[m[K
+[5.545s]       |         [32m[Kcos[m[K
+[5.591s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::cook()[m[K’:
+[5.591s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:219:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcs[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+[5.591s]   219 |                 [01;31m[Kcs[m[K.execNextLine();
+[5.591s]       |                 [01;31m[K^~[m[K
+[5.591s]       |                 [32m[Kcos[m[K
+[13.242s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+[13.242s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[13.242s] gmake: *** [Makefile:146: all] Error 2
+[13.250s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

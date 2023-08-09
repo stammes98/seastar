@@ -1,0 +1,42 @@
+[0.033s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_state_manager -- -j4 -l4
+[0.157s] [ 33%] [32mBuilding CXX object CMakeFiles/motor_state_manager.dir/src/motor_state_manager.cpp.o[0m
+[0.163s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[5.508s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[5.508s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:12:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.508s]    12 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[5.508s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[5.631s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In constructor ‘[01m[KMSM::MSM()[m[K’:
+[5.631s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:27:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.631s]    27 |                 for (int i = 0; [01;35m[Ki < ports.size()[m[K; ++i) {
+[5.632s]       |                                 [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[5.658s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In member function ‘[01m[Kvoid MSM::comLoop()[m[K’:
+[5.658s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:93:39:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kres[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[5.658s]    93 |                                 char* [01;35m[Kres[m[K = getResponse(fd_);
+[5.659s]       |                                       [01;35m[K^~~[m[K
+[5.659s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:108:31:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kres[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[5.659s]   108 |                         char* [01;35m[Kres[m[K = getResponse(fd_);
+[5.659s]       |                               [01;35m[K^~~[m[K
+[5.676s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In member function ‘[01m[Kvoid MSM::commands(const String&)[m[K’:
+[5.676s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:263:41:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_msgs::msg::Bool[m[K’?
+[5.677s]   263 |                         auto isHoming = [01;31m[KBool[m[K();
+[5.677s]       |                                         [01;31m[K^~~~[m[K
+[5.677s]       |                                         [32m[Kstd_msgs::msg::Bool[m[K
+[5.677s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:7[m[K,
+[5.677s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:4[m[K:
+[5.677s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:122:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Bool[m[K’ declared here
+[5.677s]   122 | using [01;36m[KBool[m[K =
+[5.677s]       |       [01;36m[K^~~~[m[K
+[5.678s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In member function ‘[01m[Kvoid MSM::homeMotors(int)[m[K’:
+[5.678s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:279:33:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_msgs::msg::Bool[m[K’?
+[5.678s]   279 |                 auto isHoming = [01;31m[KBool[m[K();
+[5.678s]       |                                 [01;31m[K^~~~[m[K
+[5.678s]       |                                 [32m[Kstd_msgs::msg::Bool[m[K
+[5.678s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:7[m[K,
+[5.678s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:4[m[K:
+[5.678s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:122:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Bool[m[K’ declared here
+[5.678s]   122 | using [01;36m[KBool[m[K =
+[5.679s]       |       [01;36m[K^~~~[m[K
+[9.180s] gmake[2]: *** [CMakeFiles/motor_state_manager.dir/build.make:76: CMakeFiles/motor_state_manager.dir/src/motor_state_manager.cpp.o] Error 1
+[9.180s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_state_manager.dir/all] Error 2
+[9.180s] gmake: *** [Makefile:146: all] Error 2
+[9.191s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_state_manager -- -j4 -l4

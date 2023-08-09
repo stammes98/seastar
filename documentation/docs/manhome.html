@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title>Homing by Decree</title>
+</head>
+
+
+<body>
+<h1>Manual Homing, or Homing by Decree</h1>
+<p>This page contains the instructions to directly interface with the motors, using a terminal interface which relays Q commands</p>
+<p><a href='../index.html'>Return home</a></p>
+
+<h2>The Homed Position</h2>
+<img src="FK.png" alt="Homed position">
+<p>This is the orientation that pykin considers "zero" - the instrument head is below the roll axis, pointed towards the roll axis motor. Still uncertain which orientation it considers zero for the stokes motor </p>
+
+<h2>The Homing Process</h2>
+<p>To begin homing, navigate to /home/seastar/seastar_ik/amMotor with the terminal. Once there, type "make run". This will compile and execute the terminal program used to interface with the applied motion motors. If it throws an error upon running, edit line 46 of main.cpp in the folder. Typing "make run" will recompile it and run it in the same step.</p>
+<p>Once the terminal is running, we can interface with the motors using their Q commands. The first commands you'll want to send are 0MD 1MD and 2MD - these disable motors 0, 1, and 2. This will allow you to rotate the motors to the homed position. Once there, run the commands 0SP0, 1SP0, and 2SP0 individually. This manually tells the motor "this position is zero" - once done, that's it! No need to re-enable the motors, the motor_state_manager node will do that itself.</p>
+
+</body>
+
+</html>

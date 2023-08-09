@@ -1,0 +1,3 @@
+float64 azimuth_offset
+float64 elevation_offset
+float64 stokes_angle_offset

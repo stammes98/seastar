@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating test_driver.egg-info
+writing test_driver.egg-info/PKG-INFO
+writing dependency_links to test_driver.egg-info/dependency_links.txt
+writing entry points to test_driver.egg-info/entry_points.txt
+writing requirements to test_driver.egg-info/requires.txt
+writing top-level names to test_driver.egg-info/top_level.txt
+writing manifest file 'test_driver.egg-info/SOURCES.txt'
+reading manifest file 'test_driver.egg-info/SOURCES.txt'
+writing manifest file 'test_driver.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/seastar/steve_summer_seastar_ws/install/test_driver/lib/python3.10/site-packages/test-driver.egg-link (link to .)
+Installing tester script to /home/seastar/steve_summer_seastar_ws/install/test_driver/lib/test_driver
+
+Installed /home/seastar/steve_summer_seastar_ws/build/test_driver
+running install_data
+creating /home/seastar/steve_summer_seastar_ws/install/test_driver/share/ament_index
+creating /home/seastar/steve_summer_seastar_ws/install/test_driver/share/ament_index/resource_index
+creating /home/seastar/steve_summer_seastar_ws/install/test_driver/share/ament_index/resource_index/packages
+copying resource/test_driver -> /home/seastar/steve_summer_seastar_ws/install/test_driver/share/ament_index/resource_index/packages
+copying package.xml -> /home/seastar/steve_summer_seastar_ws/install/test_driver/share/test_driver
+creating /home/seastar/steve_summer_seastar_ws/install/test_driver/share/test_driver/launch
+copying helper.py -> /home/seastar/steve_summer_seastar_ws/install/test_driver/share/test_driver
+copying LUT.csv -> /home/seastar/steve_summer_seastar_ws/install/test_driver/share/test_driver
+copying LUT.so -> /home/seastar/steve_summer_seastar_ws/install/test_driver/share/test_driver

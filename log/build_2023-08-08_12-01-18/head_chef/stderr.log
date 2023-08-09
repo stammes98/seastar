@@ -1,0 +1,267 @@
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:25[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:2[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[KHeadChef[m[K’ does not name a type
+   24 |         [01;31m[KHeadChef[m[K* chef;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:17:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In constructor ‘[01m[KHeadChef::HeadChef()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPs[m[K’ was not declared in this scope
+   26 |         [01;31m[KmotorPs[m[K[0] = 0.0;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[KdesiredMotorPs[m[K’ was not declared in this scope
+   31 |         [01;31m[KdesiredMotorPs[m[K[0] = 0.0;
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:36:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcommVels[m[K’ was not declared in this scope
+   36 |         [01;31m[KcommVels[m[K[0] = 0.0;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:42:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid1[m[K’ was not declared in this scope
+   42 |         [01;31m[Kpid1[m[K = PID(0.000124, 0.0000001, 0.000006, -2.0, 2.0, 0);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:43:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid2[m[K’ was not declared in this scope
+   43 |         [01;31m[Kpid2[m[K = PID(0.000124, 0.00000001, 0.00001, -2.0, 2.0, 0);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcs[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+   46 |         [01;31m[Kcs[m[K = ChefScript("/recipes/testScript.rcp");
+      |         [01;31m[K^~[m[K
+      |         [32m[Kcos[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:49:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarVecS[m[K’ was not declared in this scope
+   49 |         [01;31m[KsolarVecS[m[K.x = 1;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:56:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub1_[m[K’ was not declared in this scope
+   56 |         [01;31m[Ksub1_[m[K = this->create_subscription<std_msgs::msg::String>("motors0", 10, std::bind(&HeadChef::firstPairListener, this, _1));
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub2_[m[K’ was not declared in this scope
+   57 |         [01;31m[Ksub2_[m[K = this->create_subscription<std_msgs::msg::String>("motors1", 10, std::bind(&HeadChef::secondPairListener, this, _1));
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[KephemSub_[m[K’ was not declared in this scope
+   58 |         [01;31m[KephemSub_[m[K = this->create_subscription<seastar_interfaces::msg::SkyEphemeris>("solar_ephemeris", 10, std::bind(&HeadChef::ephemUpdate, this, _1));
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:35:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChefCommand>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   35 |         if ([01;35m[KexecLine >= comms_.size()[m[K) {
+      |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:170:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisValid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  170 |         bool [01;35m[KisValid[m[K = false;
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[KroboEphemSub_[m[K’ was not declared in this scope
+   59 |         [01;31m[KroboEphemSub_[m[K = this->create_subscription<seastar_interfaces::msg::SkyEphemeris>("robot_ephemeris", 10, std::bind(&HeadChef::roboEphemUpdate, this, _1));
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:60:9:[m[K [01;31m[Kerror: [m[K‘[01m[KimuSub_[m[K’ was not declared in this scope
+   60 |         [01;31m[KimuSub_[m[K = this->create_subscription<geometry_msgs::msg::QuaternionStamped>("/filter/quaternion", 10, std::bind(&HeadChef::imuUpdate, this, _1));
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsunSub_[m[K’ was not declared in this scope
+   61 |         [01;31m[KsunSub_[m[K = this->create_subscription<std_msgs::msg::String>("/sunspot", 10, std::bind(&HeadChef::sunUpdate, this, _1));
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:62:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcommPub_[m[K’ was not declared in this scope
+   62 |         [01;31m[KcommPub_[m[K = this->create_publisher<std_msgs::msg::String>("motor_commands", 10);
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_pub_[m[K’ was not declared in this scope
+   63 |         [01;31m[Kjoint_pub_[m[K = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 10);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:64:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient_[m[K’ was not declared in this scope
+   64 |         [01;31m[Kclient_[m[K = this->create_client<seastar_interfaces::srv::PointMotors>("ik_solver");
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:65:9:[m[K [01;31m[Kerror: [m[K‘[01m[KjacSub_[m[K’ was not declared in this scope
+   65 |         [01;31m[KjacSub_[m[K = this->create_subscription<std_msgs::msg::String>("/inv_jacobian", 10, std::bind(&HeadChef::jacUpdate, this, _1));
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::firstPairListener(const String&)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:82:9:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPs[m[K’ was not declared in this scope
+   82 |         [01;31m[KmotorPs[m[K[0] = state[0];
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::secondPairListener(const String&)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:91:9:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPs[m[K’ was not declared in this scope
+   91 |         [01;31m[KmotorPs[m[K[2] = state[0];
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::jacUpdate(const String&)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:100:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+  100 |         if ([01;31m[Kmode[m[K == SunTracking || mode == SunTrackingTest) {
+      |             [01;31m[K^~~~[m[K
+      |             [32m[KNode[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:101:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcommVels[m[K’ was not declared in this scope
+  101 |                 [01;31m[KcommVels[m[K[0] = state[0];
+      |                 [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:23[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:2[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::roboEphemUpdate(const SkyEphemeris&)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:113:31:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarVecC[m[K’ was not declared in this scope
+  113 |         double acAz = RAD2DEG([01;31m[KsolarVecC[m[K.y);
+      |                               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.h:12:34:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KRAD2DEG[m[K’
+   12 | #define RAD2DEG(a)              ([01;36m[Ka[m[K * 180 / PI)
+      |                                  [01;36m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:116:9:[m[K [01;31m[Kerror: [m[K‘[01m[KazOff[m[K’ was not declared in this scope
+  116 |         [01;31m[KazOff[m[K = robotAz - acAz;
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:117:9:[m[K [01;31m[Kerror: [m[K‘[01m[KaltOff[m[K’ was not declared in this scope; did you mean ‘[01m[Katof[m[K’?
+  117 |         [01;31m[KaltOff[m[K = robotAlt - acAlt;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Katof[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::ephemUpdate(const SkyEphemeris&)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:126:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarAz[m[K’ was not declared in this scope
+  126 |         [01;31m[KsolarAz[m[K = msg.azimuth;
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:127:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarAlt[m[K’ was not declared in this scope
+  127 |         [01;31m[KsolarAlt[m[K = msg.elevation;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:129:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarVecS[m[K’ was not declared in this scope
+  129 |         [01;31m[KsolarVecS[m[K.x = 1;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:137:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarVecC[m[K’ was not declared in this scope
+  137 |         [01;31m[KsolarVecC[m[K = rotateSpher(solarVecS, imu);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:137:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ was not declared in this scope
+  137 |         solarVecC = rotateSpher(solarVecS, [01;31m[Kimu[m[K);
+      |                                            [01;31m[K^~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::sunUpdate(const String&)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:147:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcamX[m[K’ was not declared in this scope
+  147 |         [01;31m[KcamX[m[K = (((camW / 2) - sunSpots[0]) / camW);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:147:19:[m[K [01;31m[Kerror: [m[K‘[01m[KcamW[m[K’ was not declared in this scope
+  147 |         camX = ((([01;31m[KcamW[m[K / 2) - sunSpots[0]) / camW);
+      |                   [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:148:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcamY[m[K’ was not declared in this scope
+  148 |         [01;31m[KcamY[m[K = (((camH / 2) - sunSpots[1]) / camH);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:148:19:[m[K [01;31m[Kerror: [m[K‘[01m[KcamH[m[K’ was not declared in this scope
+  148 |         camY = ((([01;31m[KcamH[m[K / 2) - sunSpots[1]) / camH);
+      |                   [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::orderMotors()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:155:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+  155 |                 if ([01;31m[Kmode[m[K == SunSeeking || mode == SunSeekingTest) {
+      |                     [01;31m[K^~~~[m[K
+      |                     [32m[KNode[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:156:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid1[m[K’ was not declared in this scope
+  156 |                         [01;31m[Kpid1[m[K.setSetpoint(desiredMotorPs[0]);
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:156:42:[m[K [01;31m[Kerror: [m[K‘[01m[KdesiredMotorPs[m[K’ was not declared in this scope
+  156 |                         pid1.setSetpoint([01;31m[KdesiredMotorPs[m[K[0]);
+      |                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:157:25:[m[K [01;31m[Kerror: [m[K‘[01m[KcommVels[m[K’ was not declared in this scope
+  157 |                         [01;31m[KcommVels[m[K[0] = pid1.update(motorPs[0]);
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:157:51:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPs[m[K’ was not declared in this scope
+  157 |                         commVels[0] = pid1.update([01;31m[KmotorPs[m[K[0]);
+      |                                                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:158:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid2[m[K’ was not declared in this scope
+  158 |                         [01;31m[Kpid2[m[K.setSetpoint(desiredMotorPs[1]);
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:164:54:[m[K [01;31m[Kerror: [m[K‘[01m[KcommVels[m[K’ was not declared in this scope
+  164 |                 message.data = "0 " + std::to_string([01;31m[KcommVels[m[K[0]) + "," + std::to_string(commVels[1]);
+      |                                                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:165:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcommPub_[m[K’ was not declared in this scope
+  165 |                 [01;31m[KcommPub_[m[K->publish(message);
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:170:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+  170 |                 if ([01;31m[Kmode[m[K == SunTracking || mode == SunTrackingTest) {
+      |                     [01;31m[K^~~~[m[K
+      |                     [32m[KNode[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:180:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcommPub_[m[K’ was not declared in this scope
+  180 |                 [01;31m[KcommPub_[m[K->publish(message);
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:188:21:[m[K [01;31m[Kerror: [m[K‘[01m[KopenedLog[m[K’ was not declared in this scope
+  188 |                 if ([01;31m[KopenedLog[m[K) {
+      |                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:189:25:[m[K [01;31m[Kerror: [m[K‘[01m[KlogFile[m[K’ was not declared in this scope; did you mean ‘[01m[Klogl[m[K’?
+  189 |                         [01;31m[KlogFile[m[K.close();
+      |                         [01;31m[K^~~~~~~[m[K
+      |                         [32m[Klogl[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::cook()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:199:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+  199 |         switch ([01;31m[Kmode[m[K) {
+      |                 [01;31m[K^~~~[m[K
+      |                 [32m[KNode[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::logSunData()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:230:14:[m[K [01;31m[Kerror: [m[K‘[01m[KopenedLog[m[K’ was not declared in this scope
+  230 |         if (![01;31m[KopenedLog[m[K) {
+      |              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:233:17:[m[K [01;31m[Kerror: [m[K‘[01m[KlogFile[m[K’ was not declared in this scope; did you mean ‘[01m[Klogl[m[K’?
+  233 |                 [01;31m[KlogFile[m[K.open(fileName);
+      |                 [01;31m[K^~~~~~~[m[K
+      |                 [32m[Klogl[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:238:17:[m[K [01;31m[Kerror: [m[K‘[01m[KlogFile[m[K’ was not declared in this scope; did you mean ‘[01m[Klogl[m[K’?
+  238 |                 [01;31m[KlogFile[m[K << sec << ", " << solarAz << ", " << solarAlt << ", " << (RAD2DEG(solarVecC.y)) << ", " << (RAD2DEG(solarVecC.z)) << ", " << encToAng(motorPs[0]) << ", " << encToAng(motorPs[1]) << ", " << camX << ", " << camY << ", " << azOff << ", " << altOff << "\n";
+      |                 [01;31m[K^~~~~~~[m[K
+      |                 [32m[Klogl[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:238:43:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarAz[m[K’ was not declared in this scope
+  238 |                 logFile << sec << ", " << [01;31m[KsolarAz[m[K << ", " << solarAlt << ", " << (RAD2DEG(solarVecC.y)) << ", " << (RAD2DEG(solarVecC.z)) << ", " << encToAng(motorPs[0]) << ", " << encToAng(motorPs[1]) << ", " << camX << ", " << camY << ", " << azOff << ", " << altOff << "\n";
+      |                                           [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:238:62:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarAlt[m[K’ was not declared in this scope
+  238 |                logFile << sec << ", " << solarAz << ", " << [01;31m[KsolarAlt[m[K << ", " << (RAD2DEG(solarVecC.y)) << ", " << (RAD2DEG(solarVecC.z)) << ", " << encToAng(motorPs[0]) << ", " << encToAng(motorPs[1]) << ", " << camX << ", " << camY << ", " << azOff << ", " << altOff << "\n";
+      |                                                             [01;31m[K^~~~~~~~[m[K
+
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:23[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:2[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:238:91:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarVecC[m[K’ was not declared in this scope
+  238 |  << ", " << solarAz << ", " << solarAlt << ", " << (RAD2DEG([01;31m[KsolarVecC[m[K.y)) << ", " << (RAD2DEG(solarVecC.z)) << ", " << encToAng(motorPs[0]) << ", " << encToAng(motorPs[1]) << ", " << camX << ", " << camY << ", " << azOff << ", " << altOff << "\n";
+      |                                                             [01;31m[K^~~~~~~~~[m[K
+
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.h:12:34:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KRAD2DEG[m[K’
+   12 | #define RAD2DEG(a)              ([01;36m[Ka[m[K * 180 / PI)
+      |                                  [01;36m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:238:159:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPs[m[K’ was not declared in this scope
+  238 | C.y)) << ", " << (RAD2DEG(solarVecC.z)) << ", " << encToAng([01;31m[KmotorPs[m[K[0]) << ", " << encToAng(motorPs[1]) << ", " << camX << ", " << camY << ", " << azOff << ", " << altOff << "\n";
+      |                                                             [01;31m[K^~~~~~~[m[K
+
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:238:214:[m[K [01;31m[Kerror: [m[K‘[01m[KcamX[m[K’ was not declared in this scope
+  238 | oAng(motorPs[0]) << ", " << encToAng(motorPs[1]) << ", " << [01;31m[KcamX[m[K << ", " << camY << ", " << azOff << ", " << altOff << "\n";
+      |                                                             [01;31m[K^~~~[m[K
+
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:238:230:[m[K [01;31m[Kerror: [m[K‘[01m[KcamY[m[K’ was not declared in this scope
+  238 |  << ", " << encToAng(motorPs[1]) << ", " << camX << ", " << [01;31m[KcamY[m[K << ", " << azOff << ", " << altOff << "\n";
+      |                                                             [01;31m[K^~~~[m[K
+
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:238:246:[m[K [01;31m[Kerror: [m[K‘[01m[KazOff[m[K’ was not declared in this scope
+  238 | oAng(motorPs[1]) << ", " << camX << ", " << camY << ", " << [01;31m[KazOff[m[K << ", " << altOff << "\n";
+      |                                                             [01;31m[K^~~~~[m[K
+
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:238:263:[m[K [01;31m[Kerror: [m[K‘[01m[KaltOff[m[K’ was not declared in this scope; did you mean ‘[01m[Katof[m[K’?
+  238 | << ", " << camX << ", " << camY << ", " << azOff << ", " << [01;31m[KaltOff[m[K << "\n";
+      |                                                             [01;31m[K^~~~~~[m[K
+      |                                                             [32m[Katof[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::seekSun()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:246:24:[m[K [01;31m[Kerror: [m[K‘[01m[KsolarVecC[m[K’ was not declared in this scope
+  246 |         double theta = [01;31m[KsolarVecC[m[K.y;
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:261:52:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPs[m[K’ was not declared in this scope
+  261 |         request->input_state.q1 = (float) encToAng([01;31m[KmotorPs[m[K[0]);
+      |                                                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:265:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient_[m[K’ was not declared in this scope
+  265 |         auto result_future = [01;31m[Kclient_[m[K->async_send_request(request, std::bind(&HeadChef::use_ik, this, std::placeholders::_1));
+      |                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::use_ik(rclcpp::Client<seastar_interfaces::srv::PointMotors>::SharedFuture)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:275:17:[m[K [01;31m[Kerror: [m[K‘[01m[KdesiredMotorPs[m[K’ was not declared in this scope
+  275 |                 [01;31m[KdesiredMotorPs[m[K[0] = angToEnc(out.q1);
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:278:29:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPs[m[K’ was not declared in this scope
+  278 |                 double e1 = [01;31m[KmotorPs[m[K[0] - desiredMotorPs[0];
+      |                             [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:290:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+  290 |                         [01;31m[Kmode[m[K = SunTrackingTest;
+      |                         [01;31m[K^~~~[m[K
+      |                         [32m[KNode[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::publishJointState()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:301:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_state_[m[K’ was not declared in this scope
+  301 |         [01;31m[Kjoint_state_[m[K.header.stamp = now();
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:23[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:2[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:303:51:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorPs[m[K’ was not declared in this scope
+  303 |         joint_state_.position = {DEG2RAD(encToAng([01;31m[KmotorPs[m[K[0])), DEG2RAD(encToAng(motorPs[1])), DEG2RAD(encToAng(motorPs[2]))};
+      |                                                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.h:11:34:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KDEG2RAD[m[K’
+   11 | #define DEG2RAD(a)              ([01;36m[Ka[m[K * PI / 180)
+      |                                  [01;36m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:304:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_pub_[m[K’ was not declared in this scope
+  304 |         [01;31m[Kjoint_pub_[m[K->publish(joint_state_);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::imuUpdate(geometry_msgs::msg::QuaternionStamped)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:338:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ was not declared in this scope
+  338 |         [01;31m[Kimu[m[K.x = x;
+      |         [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

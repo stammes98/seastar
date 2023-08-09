@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from seastar_interfaces/srv/PointMotors.srv
+// generated code does not contain a copyright notice
+
+#include "seastar_interfaces/msg/DesiredPointing.idl"
+#include "seastar_interfaces/msg/MotorCommand.idl"
+
+module seastar_interfaces {
+  module srv {
+    struct PointMotors_Request {
+      seastar_interfaces::msg::DesiredPointing point;
+
+      seastar_interfaces::msg::MotorCommand input_state;
+    };
+    struct PointMotors_Response {
+      seastar_interfaces::msg::MotorCommand command;
+    };
+  };
+};

@@ -1,0 +1,4 @@
+source;share/head_chef/local_setup.bash
+source;share/head_chef/local_setup.dsv
+source;share/head_chef/local_setup.sh
+source;share/head_chef/local_setup.zsh

@@ -1,0 +1,40 @@
+[  1%] Built target seastar_interfaces__cpp
+[  1%] Built target ament_cmake_python_symlink_seastar_interfaces
+[ 12%] Built target seastar_interfaces__rosidl_generator_c
+[ 23%] Built target seastar_interfaces__rosidl_typesupport_introspection_cpp
+[ 35%] Built target seastar_interfaces__rosidl_typesupport_cpp
+[ 46%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 67%] Built target seastar_interfaces__rosidl_typesupport_introspection_c
+[ 69%] Built target seastar_interfaces__rosidl_typesupport_c
+[ 80%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_c
+[ 80%] Built target seastar_interfaces
+[ 81%] Built target seastar_interfaces__py
+[ 91%] Built target seastar_interfaces__rosidl_generator_py
+[ 94%] Built target seastar_interfaces__rosidl_typesupport_c__pyext
+[ 97%] Built target seastar_interfaces__rosidl_typesupport_introspection_c__pyext
+[100%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing seastar_interfaces.egg-info/PKG-INFO
+writing dependency_links to seastar_interfaces.egg-info/dependency_links.txt
+writing top-level names to seastar_interfaces.egg-info/top_level.txt
+listing git files failed - pretending there aren't any
+interrupted
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_seastar_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_seastar_interfaces_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_seastar_interfaces_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
+Traceback (most recent call last):
+  File "/home/seastar/.local/bin/cmake", line 8, in <module>
+    sys.exit(cmake())
+  File "/home/seastar/.local/lib/python3.10/site-packages/cmake/__init__.py", line 43, in cmake
+    raise SystemExit(_program('cmake', sys.argv[1:]))
+  File "/home/seastar/.local/lib/python3.10/site-packages/cmake/__init__.py", line 39, in _program
+    return subprocess.call([os.path.join(CMAKE_BIN_DIR, name)] + args, close_fds=False)
+  File "/usr/lib/python3.10/subprocess.py", line 347, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1959, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.10/subprocess.py", line 1917, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

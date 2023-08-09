@@ -1,0 +1,50 @@
+[0.064s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.190s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[4.412s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:2[m[K:
+[4.413s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:101:45:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[4.413s]   101 |         rclcpp::Subscription<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr homeSub_;
+[4.413s]       |                                             [01;31m[K^~~~[m[K
+[4.413s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:101:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.413s]   101 |         rclcpp::Subscription<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr homeSub_;
+[4.413s]       |                                                 [01;31m[K^[m[K
+[4.413s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:101:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[4.414s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:101:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[4.414s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:101:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[4.414s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:101:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[4.414s]   101 |         rclcpp::Subscription<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K homeSub_;
+[4.414s]       |                                                    [01;31m[K^~~~~~~~~[m[K
+[4.414s]       |                                                             [32m[K;[m[K
+[4.416s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:101:62:[m[K [01;31m[Kerror: [m[K‘[01m[KhomeSub_[m[K’ does not name a type
+[4.416s]   101 |         rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr [01;31m[KhomeSub_[m[K;
+[4.416s]       |                                                              [01;31m[K^~~~~~~~[m[K
+[4.429s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[4.429s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:17:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.429s]    17 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[4.429s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[4.458s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In constructor ‘[01m[KHeadChef::HeadChef()[m[K’:
+[4.459s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:67:9:[m[K [01;31m[Kerror: [m[K‘[01m[KhomeSub_[m[K’ was not declared in this scope
+[4.459s]    67 |         [01;31m[KhomeSub_[m[K = this->create_subscription<std_msgs::msg::Bool>("/is_homing", 10, std::bind(&HeadChef::homeUpdate, this, _1));
+[4.459s]       |         [01;31m[K^~~~~~~~[m[K
+[4.459s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:67:61:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[4.459s]    67 |         homeSub_ = this->create_subscription<std_msgs::msg::[01;31m[KBool[m[K>("/is_homing", 10, std::bind(&HeadChef::homeUpdate, this, _1));
+[4.460s]       |                                                             [01;31m[K^~~~[m[K
+[4.460s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:67:106:[m[K [01;31m[Kerror: [m[K‘[01m[KhomeUpdate[m[K’ is not a member of ‘[01m[KHeadChef[m[K’
+[4.460s]    67 | std_msgs::msg::Bool>("/is_homing", 10, std::bind(&HeadChef::[01;31m[KhomeUpdate[m[K, this, _1));
+[4.460s]       |                                                             [01;31m[K^~~~~~~~~~[m[K
+[4.460s] 
+[4.463s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K At global scope:
+[4.463s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:80:48:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[4.463s]    80 | void HeadChef::homeUpdate(const std_msgs::msg::[01;31m[KBool[m[K& msg) {
+[4.463s]       |                                                [01;31m[K^~~~[m[K
+[4.463s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:80:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid HeadChef::homeUpdate(const int&)[m[K’
+[4.464s]    80 | void [01;31m[KHeadChef[m[K::homeUpdate(const std_msgs::msg::Bool& msg) {
+[4.464s]       |      [01;31m[K^~~~~~~~[m[K
+[4.464s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:80:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid HeadChef::homeUpdate(const int&)[m[K’
+[4.464s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:2[m[K:
+[4.464s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:28:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass HeadChef[m[K’ defined here
+[4.464s]    28 | class [01;36m[KHeadChef[m[K : public rclcpp::Node {
+[4.464s]       |       [01;36m[K^~~~~~~~[m[K
+[10.777s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+[10.777s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[10.777s] gmake: *** [Makefile:146: all] Error 2
+[10.783s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>Starting SeaSTAR</title>
+</head>
+
+
+<body>
+<h1>Starting SeaSTAR</h1>
+<p>There are two different ways to start SeaSTAR. As of writing this I have implemented one.</p>
+<p><a href='../index.html'>Return home</a></p>
+
+<h2>The short way</h2>
+<p>Coming soon...</p>
+
+<h2>The long way</h2>
+<p>Several steps are needed to be executed in a specific order. All terminal windows should be in the main workspace, i.e. /steve_summer_workspace </p>
+<ul>
+<h5>Terminal 1</h5>
+<li>source install/setup.bash</li>
+<li>ros2 run motor_state_manager motor_state_manager</li>
+<h5>Terminal 2</h5>
+<li>source install/setup.bash</li>
+<li>ros2 run ik_solver ik_solver</li>
+<h5>Terminal 3</h5>
+<li>source install/setup.bash</li>
+<li>ros2 run ik_tools ik_tools</li>
+<h5>Terminal 4</h5>
+<li>source install/setup.bash</li>
+<li>ros2 run solar_ephemeris solar_ephemeris</li>
+<h5>Terminal 5</h5>
+<li>source install/setup.bash</li>
+<li>ros2 run robot_localization ekf_node</li>
+<h5>Terminal 6</h5>
+<li>source install/setup.bash</li>
+<li>ros2 run bluespace_ai_xsens_mti_driver xsens_mti_node</li>
+<h5>Terminal 7</h5>
+<li>source install/setup.bash</li>
+<li>ros2 run sunspotter sunspotter</li>
+<h5>Terminal 8</h5>
+<li>source install/setup.bash</li>
+<li>ros2 run head_chef head_chef</li>
+</ul>
+If the robot freezes at this point, go to terminal 6, ctrl-c the program, and restart it.
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+[0.534s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.633s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[0.658s] [ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o[0m
+[0.675s] [ 50%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[0.702s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[0.702s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:29:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[0.702s]    29 | std::[01;31m[Kstring[m[K CommNames[21] = {"HOAL", "HOON", "FISU", "FSSU", "TRSU", "CRSU", "SUAO", "SUEO", "SATG", "SETG", "SSTG", "SSSU", "FTRG", "FSTG", "CRTG", "ARCS", "ARCE", "ARSU", "ARTG", "GOTO", "NOOP"};
+[0.702s]       |      [01;31m[K^~~~~~[m[K
+[0.702s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[0.703s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::string[m[K’ is defined in header ‘[01m[K<string>[m[K’; did you forget to ‘[01m[K#include <string>[m[K’?
+[0.703s]   +++ |+[32m[K#include <string>[m[K
+[0.703s]     1 | #ifndef CHEF_COM_H
+[0.704s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:118: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o] Error 1
+[0.704s] gmake[2]: *** Waiting for unfinished jobs....
+[1.568s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[1.569s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:28:40:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktoupper(std::__cxx11::basic_string<char>)[m[K’
+[1.569s]    28 |         std::string comm = [01;31m[Kstd::toupper(inLine.substr(0, 4))[m[K;
+[1.569s]       |                            [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.569s] In file included from [01m[K/usr/include/c++/11/bits/basic_ios.h:37[m[K,
+[1.569s]                  from [01m[K/usr/include/c++/11/ios:44[m[K,
+[1.569s]                  from [01m[K/usr/include/c++/11/ostream:38[m[K,
+[1.569s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[1.569s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:7[m[K,
+[1.569s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.569s] [01m[K/usr/include/c++/11/bits/locale_facets.h:2670:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT> _CharT std::toupper(_CharT, const std::locale&)[m[K’
+[1.570s]  2670 |     [01;36m[Ktoupper[m[K(_CharT __c, const locale& __loc)
+[1.570s]       |     [01;36m[K^~~~~~~[m[K
+[1.570s] [01m[K/usr/include/c++/11/bits/locale_facets.h:2670:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.570s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:28:40:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[1.570s]    28 |         std::string comm = [01;36m[Kstd::toupper(inLine.substr(0, 4))[m[K;
+[1.571s]       |                            [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.571s] In file included from [01m[K/usr/include/c++/11/cctype:42[m[K,
+[1.571s]                  from [01m[K/usr/include/c++/11/bits/localefwd.h:42[m[K,
+[1.571s]                  from [01m[K/usr/include/c++/11/string:43[m[K,
+[1.571s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:4[m[K,
+[1.571s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.571s] [01m[K/usr/include/ctype.h:125:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint toupper(int)[m[K’
+[1.571s]   125 | extern int [01;36m[Ktoupper[m[K (int __c) __THROW;
+[1.571s]       |            [01;36m[K^~~~~~~[m[K
+[1.571s] [01m[K/usr/include/ctype.h:125:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ to ‘[01m[Kint[m[K’
+[1.572s]   125 | extern int toupper ([01;36m[Kint __c[m[K) __THROW;
+[1.572s]       |                     [01;36m[K~~~~^~~[m[K
+[1.572s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:31:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kfor[m[K’
+[1.572s]    31 |         [01;31m[Kfor[m[K (int i = 0; i < 20; ++i) {
+[1.572s]       |         [01;31m[K^~~[m[K
+[1.575s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:31:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+[1.575s]    31 |         for (int i = 0; [01;31m[Ki[m[K < 20; ++i) {
+[1.575s]       |                         [01;31m[K^[m[K
+[1.575s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:30:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisValid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.575s]    30 |         bool [01;35m[KisValid[m[K = false
+[1.575s]       |              [01;35m[K^~~~~~~[m[K
+[1.576s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:37:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.576s]    37 | [01;35m[K}[m[K
+[1.576s]       | [01;35m[K^[m[K
+[1.700s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[4.271s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[4.271s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.271s]    38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[4.271s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[17.264s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[17.264s] gmake: *** [Makefile:146: all] Error 2
+[17.270s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

@@ -1,0 +1,41 @@
+[0.047s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces -- -j4 -l4
+[0.676s] [  1%] Built target seastar_interfaces__cpp
+[0.676s] [  1%] Built target ament_cmake_python_symlink_seastar_interfaces
+[0.677s] [ 12%] Built target seastar_interfaces__rosidl_generator_c
+[0.677s] [ 23%] Built target seastar_interfaces__rosidl_typesupport_introspection_cpp
+[0.678s] [ 35%] Built target seastar_interfaces__rosidl_typesupport_cpp
+[0.678s] [ 46%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.679s] [ 67%] Built target seastar_interfaces__rosidl_typesupport_introspection_c
+[0.679s] [ 69%] Built target seastar_interfaces__rosidl_typesupport_c
+[0.679s] [ 80%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_c
+[0.679s] [ 80%] Built target seastar_interfaces
+[0.679s] [ 81%] Built target seastar_interfaces__py
+[0.679s] [ 91%] Built target seastar_interfaces__rosidl_generator_py
+[0.679s] [ 94%] Built target seastar_interfaces__rosidl_typesupport_c__pyext
+[0.679s] [ 97%] Built target seastar_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.680s] [100%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.709s] running egg_info
+[0.710s] writing seastar_interfaces.egg-info/PKG-INFO
+[0.710s] writing dependency_links to seastar_interfaces.egg-info/dependency_links.txt
+[0.711s] writing top-level names to seastar_interfaces.egg-info/top_level.txt
+[0.775s] listing git files failed - pretending there aren't any
+[0.830s] interrupted
+[0.867s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_seastar_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_seastar_interfaces_egg] Interrupt
+[0.868s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_seastar_interfaces_egg.dir/all] Interrupt
+[0.868s] gmake: *** [Makefile:146: all] Interrupt
+[0.889s] Traceback (most recent call last):
+[0.889s]   File "/home/seastar/.local/bin/cmake", line 8, in <module>
+[0.889s]     sys.exit(cmake())
+[0.889s]   File "/home/seastar/.local/lib/python3.10/site-packages/cmake/__init__.py", line 43, in cmake
+[0.889s]     raise SystemExit(_program('cmake', sys.argv[1:]))
+[0.889s]   File "/home/seastar/.local/lib/python3.10/site-packages/cmake/__init__.py", line 39, in _program
+[0.889s]     return subprocess.call([os.path.join(CMAKE_BIN_DIR, name)] + args, close_fds=False)
+[0.890s]   File "/usr/lib/python3.10/subprocess.py", line 347, in call
+[0.890s]     return p.wait(timeout=timeout)
+[0.890s]   File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+[0.890s]     return self._wait(timeout=timeout)
+[0.890s]   File "/usr/lib/python3.10/subprocess.py", line 1959, in _wait
+[0.890s]     (pid, sts) = self._try_wait(0)
+[0.890s]   File "/usr/lib/python3.10/subprocess.py", line 1917, in _try_wait
+[0.890s]     (pid, sts) = os.waitpid(self.pid, wait_flags)
+[0.890s] KeyboardInterrupt

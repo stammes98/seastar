@@ -1,0 +1,14 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K
+[ 33%] [32m[1mLinking CXX executable head_chef[0m
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o:(.data+0x0): multiple definition of `CommHasParam'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.data+0x0): first defined here
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o:(.bss+0x0): multiple definition of `CommNames[abi:cxx11]'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.bss+0x0): first defined here
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o:(.data+0x0): multiple definition of `CommHasParam'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.data+0x0): first defined here
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o:(.bss+0x0): multiple definition of `CommNames[abi:cxx11]'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.bss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:278: head_chef] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

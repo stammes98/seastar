@@ -1,0 +1,27 @@
+[1.856s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/ik_solver': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/ik_solver/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/ik_solver/build --no-deps install_data
+[2.496s] running develop
+[2.496s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.496s]   warnings.warn(
+[2.499s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.499s]   warnings.warn(
+[2.654s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[2.654s]   warnings.warn(
+[2.654s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[2.654s]   warnings.warn(
+[2.961s] running egg_info
+[2.962s] writing ik_solver.egg-info/PKG-INFO
+[2.962s] writing dependency_links to ik_solver.egg-info/dependency_links.txt
+[2.962s] writing entry points to ik_solver.egg-info/entry_points.txt
+[2.963s] writing requirements to ik_solver.egg-info/requires.txt
+[2.963s] writing top-level names to ik_solver.egg-info/top_level.txt
+[3.062s] listing git files failed - pretending there aren't any
+[3.303s] reading manifest file 'ik_solver.egg-info/SOURCES.txt'
+[3.305s] writing manifest file 'ik_solver.egg-info/SOURCES.txt'
+[3.375s] running build_ext
+[3.375s] Creating /home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/python3.10/site-packages/ik-solver.egg-link (link to .)
+[3.380s] Installing ik_solver script to /home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/ik_solver
+[3.381s] Installing ik_tester script to /home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/ik_solver
+[3.381s] 
+[3.381s] Installed /home/seastar/steve_summer_seastar_ws/build/ik_solver
+[3.381s] running install_data
+[3.480s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/ik_solver' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/ik_solver/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/ik_solver/build --no-deps install_data

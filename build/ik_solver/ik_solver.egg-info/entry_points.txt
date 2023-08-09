@@ -1,0 +1,4 @@
+[console_scripts]
+ik_solver = ik_solver.ik_solver:main
+ik_tester = ik_solver.ik_tester:main
+

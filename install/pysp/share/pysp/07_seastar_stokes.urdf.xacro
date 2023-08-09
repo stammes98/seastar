@@ -1,0 +1,32 @@
+<!-- pitch to stokes -->
+<joint name="pitch_to_stokes_joint" type="revolute">
+	<parent link="pitch_link"/>
+	<child link="stokes_link"/>
+	<origin xyz="${pitch_l/2} 0 0" rpy="0 -${pi/2} 0"/>
+	<axis xyz="1 0 0"/>
+	<limit lower="-${pi}" upper="${pi}" velocity="100" effort="100"/>
+</joint>
+
+<!-- the robot stokes_link is ??? -->
+<xacro:property name="stokes_l" value="0.2"/>
+<xacro:property name="stokes_r" value="0.060"/>
+<xacro:property name="stokes_m" value="0.5"/>
+<link name="stokes_link">
+	<visual>
+		<origin xyz="${stokes_l/2} 0 0" rpy="0 ${pi/2} 0"/>
+		<geometry>
+			<cylinder length="${stokes_l}" radius="${stokes_r}"/>
+		</geometry>
+		<material name="orange"/>
+	</visual>
+	<collision>
+		<origin xyz="${stokes_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<cylinder length="${stokes_l}" radius="${stokes_r}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_cylinder mass="${stokes_m}" h="${stokes_l}" r="${stokes_r}">
+		<origin xyz="${stokes_l/2} 0 0" rpy="0 0 0"/>
+	</xacro:inertial_cylinder>
+</link>
+

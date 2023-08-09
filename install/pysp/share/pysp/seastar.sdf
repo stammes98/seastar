@@ -1,0 +1,215 @@
+<sdf version='1.7'>
+  <model name='seastar'>
+    <link name='imu_link'>
+      <inertial>
+        <pose>0.103717 0.016667 0.102067 0 -0 0</pose>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.0164826</ixx>
+          <ixy>-0.00518583</ixy>
+          <ixz>0.0149145</ixz>
+          <iyy>0.159634</iyy>
+          <iyz>0.00239667</iyz>
+          <izz>0.147318</izz>
+        </inertia>
+      </inertial>
+      <collision name='imu_link_fixed_joint_lump__base_link_collision'>
+        <pose>0.31115 0.05 0.0062 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.6223 0.1 0.0124</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='imu_link_fixed_joint_lump__upright1_link_collision_1'>
+        <pose>0.31115 0 0.15 0 -1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.1 0.0125</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='imu_link_fixed_joint_lump__upright2_link_collision_2'>
+        <pose>-0.31115 0 0.15 0 -1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.1 0.0125</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='imu_link_fixed_joint_lump__base_link_visual'>
+        <pose>0 0 0.0062 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.6223 0.1 0.0124</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='imu_link_fixed_joint_lump__upright1_link_visual_1'>
+        <pose>0.31115 0 0.15 0 -1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.1 0.0125</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='imu_link_fixed_joint_lump__upright2_link_visual_2'>
+        <pose>-0.31115 0 0.15 0 -1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.1 0.0125</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='upright1_to_roll_joint' type='revolute'>
+      <pose relative_to='imu_link'>0.31115 0 0.3 3.14159 -0 3.14159</pose>
+      <parent>imu_link</parent>
+      <child>roll_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.14159</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='roll_link'>
+      <pose relative_to='upright1_to_roll_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.3 0 0 0 -0 0</pose>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.000423177</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0150065</iyy>
+          <iyz>0</iyz>
+          <izz>0.0154167</izz>
+        </inertia>
+      </inertial>
+      <collision name='roll_link_collision'>
+        <pose>0.3 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.6 0.1 0.0125</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='roll_link_visual'>
+        <pose>0.3 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.6 0.1 0.0125</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='roll_to_pitch_joint' type='revolute'>
+      <pose relative_to='roll_link'>0.3 0 0 0 -1.5708 0</pose>
+      <parent>roll_link</parent>
+      <child>pitch_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.14159</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='pitch_link'>
+      <pose relative_to='roll_to_pitch_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.1 0 0 0 -0 0</pose>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.000423177</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00167318</iyy>
+          <iyz>0</iyz>
+          <izz>0.00208333</izz>
+        </inertia>
+      </inertial>
+      <collision name='pitch_link_collision'>
+        <pose>0.1 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 0.1 0.0125</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='pitch_link_visual'>
+        <pose>0.1 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 0.1 0.0125</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='pitch_to_stokes_joint' type='revolute'>
+      <pose relative_to='pitch_link'>0.1 0 0 0 -1.5708 0</pose>
+      <parent>pitch_link</parent>
+      <child>stokes_link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='stokes_link'>
+      <pose relative_to='pitch_to_stokes_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.1 0 0 0 -0 0</pose>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.00211667</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00211667</iyy>
+          <iyz>0</iyz>
+          <izz>0.0009</izz>
+        </inertia>
+      </inertial>
+      <collision name='stokes_link_collision'>
+        <pose>0.1 0 0 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.2</length>
+            <radius>0.06</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='stokes_link_visual'>
+        <pose>0.1 0 0 0 1.5708 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.2</length>
+            <radius>0.06</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

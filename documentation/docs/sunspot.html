@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<title>Sunspotter Node</title>
+</head>
+
+
+<body>
+<h1>Sunspotter Node</h1>
+<p>Runs the camera and publishes the location of the brighest pixel.</p>
+<p><a href='../index.html'>Return home</a></p>
+<p>The location of the brightest pixel is determined by applying a Gaussian blur to the image, smoothing over any hotpixels and hotspots. The larger the radius used, the more accurate the center of the sun is, but the slower the node runs. Current value is a a radius of 151 pixels. Number may be changed in line 81 of sunspotter/src/publisher_member_function.cpp - WARNING: blur radius must be an odd number!</p>
+
+<h4>Published topics</h4>
+<ul>
+<li>"/sunspot" - String of format "x, y" of location of brightest pixel. Default width is 640 pixels by 480 pixels high.</li>
+<li>"/proc_image" - Unblurred version of image, with a circle drawn over the location of the computed brightest pixel. Useful for debugging.</li>
+</ul>
+
+<p>Because proc_image is not a standard topic, to view it you must use the following command:</p>
+<p>ros2 run image_tools showimage --ros-args --remap /image:=/proc_image</p>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!-- base to upright -->
+<joint name="base_to_upright1_joint" type="fixed">
+	<parent link="base_link"/>
+	<child link="upright1_link"/>
+	<origin xyz="${base_l/2} 0 0" rpy="0 -${pi/2} 0"/>
+</joint>
+
+
+<!-- the robot upright1 is a 4in x 12in x 1/2 in aluminium plate -->
+<xacro:property name="upright1_l" value="0.3"/>
+<xacro:property name="upright1_w" value="0.100"/>
+<xacro:property name="upright1_h" value="0.0125"/>
+<xacro:property name="upright1_m" value="0.5"/>
+<link name="upright1_link">
+	<visual>
+		<origin xyz="${upright1_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${upright1_l} ${upright1_w} ${upright1_h}"/>
+		</geometry>
+		<material name="white"/>
+	</visual>
+	<collision>
+		<origin xyz="${upright1_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${upright1_l} ${upright1_w} ${upright1_h}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_box mass="${upright1_m}" x="${upright1_l}" y="${upright1_w}" z="${upright1_h}">
+		<origin xyz="${upright1_l/2} 0 0" rpy="0 0 0"/>
+	</xacro:inertial_box>
+</link>

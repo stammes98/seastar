@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<title>Solar Ephemeris Node</title>
+</head>
+
+
+<body>
+<h1>Solar Ephemeris Node</h1>
+<p>Calculates current solar position relative to SeaSTAR on the sky.</p>
+<p><a href='../index.html'>Return home</a></p>
+<p>IMPORTANT NOTE: In the building we get really crappy GPS signal which causes fake wandering, so the location of SeaSTAR has been temporarily HARD-CODED IN. To change this, go to solar_ephemeris/solar_ephemeris/solar_ephemeris.py. Comment out line 27, which contains the hard-coded position, and uncomment out line 28, which uses the navsatfix location.</p>
+
+<h4>Published topics</h4>
+<ul>
+<li>"/solar_ephemeris" - type is SolarEphemeris as defined in SeaSTAR interfaces, contains altitude and azimuth (in degrees) of sun at current GPS position.</li>
+</ul>
+<h4>Subscribed topics</h4>
+<ul>
+<li>"/gnss" - Data published from the XSens node. Contains current GPS position of SeaSTAR. WARNING: Do not trust inside building, signal is crap!</li>
+</ul>
+
+</body>
+
+</html>

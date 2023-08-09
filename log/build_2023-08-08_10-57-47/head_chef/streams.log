@@ -1,0 +1,60 @@
+[0.023s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.149s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[0.154s] [ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o[0m
+[0.194s] [ 50%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[0.722s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[0.722s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:33:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconstexpr[m[K’ needed for in-class initialization of static data member ‘[01m[Kbool ChefCommand::CommHasParam [21][m[K’ of non-integral type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[0.723s]    33 |         static bool [01;31m[KCommHasParam[m[K[21] = {false, true, false, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, false, true, false};
+[0.723s]       |                     [01;31m[K^~~~~~~~~~~~[m[K
+[0.723s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:1[m[K:
+[0.723s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:28:[m[K [01;31m[Kerror: [m[Kin-class initialization of static data member ‘[01m[Kstd::string ChefCommand::CommNames [21][m[K’ of non-literal type
+[0.723s]    34 |         static std::string [01;31m[KCommNames[m[K[21] = {"HOAL", "HOON", "FISU", "FSSU", "TRSU", "CRSU", "SUAO", "SUEO", "SATG", "SETG", "SSTG", "SSSU", "FTRG", "FSTG", "CRTG", "ARCS", "ARCE", "ARSU", "ARTG", "GOTO", "NOOP"};
+[0.723s]       |                            [01;31m[K^~~~~~~~~[m[K
+[0.723s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:211:[m[K [01;31m[Kerror: [m[Knon-constant in-class initialization invalid for non-inline static member ‘[01m[KChefCommand::CommNames[m[K’
+[0.724s]    34 |         static std::string CommNames[21] = {"HOAL", "HOON", "FISU", "FSSU", "TRSU", "CRSU", "SUAO", "SUEO", "SATG", "SETG", "SSTG", "SSSU", "FTRG", "FSTG", "CRTG", "ARCS", "ARCE", "ARSU", "ARTG", "GOTO", "NOOP"[01;31m[K}[m[K;
+[0.724s]       |                                                                                                                                                                                                                   [01;31m[K^[m[K
+[0.724s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:211:[m[K [01;36m[Knote: [m[K(an out of class initialization is required)
+[0.772s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:118: CMakeFiles/head_chef.dir/src/ChefCommand.cpp.o] Error 1
+[0.773s] gmake[2]: *** Waiting for unfinished jobs....
+[1.252s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:11[m[K,
+[1.252s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.252s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:33:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconstexpr[m[K’ needed for in-class initialization of static data member ‘[01m[Kbool ChefCommand::CommHasParam [21][m[K’ of non-integral type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.252s]    33 |         static bool [01;31m[KCommHasParam[m[K[21] = {false, true, false, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, false, true, false};
+[1.252s]       |                     [01;31m[K^~~~~~~~~~~~[m[K
+[1.252s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:11[m[K,
+[1.252s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:1[m[K:
+[1.253s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:28:[m[K [01;31m[Kerror: [m[Kin-class initialization of static data member ‘[01m[Kstd::string ChefCommand::CommNames [21][m[K’ of non-literal type
+[1.253s]    34 |         static std::string [01;31m[KCommNames[m[K[21] = {"HOAL", "HOON", "FISU", "FSSU", "TRSU", "CRSU", "SUAO", "SUEO", "SATG", "SETG", "SSTG", "SSSU", "FTRG", "FSTG", "CRTG", "ARCS", "ARCE", "ARSU", "ARTG", "GOTO", "NOOP"};
+[1.253s]       |                            [01;31m[K^~~~~~~~~[m[K
+[1.253s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:211:[m[K [01;31m[Kerror: [m[Knon-constant in-class initialization invalid for non-inline static member ‘[01m[KChefCommand::CommNames[m[K’
+[1.253s]    34 |         static std::string CommNames[21] = {"HOAL", "HOON", "FISU", "FSSU", "TRSU", "CRSU", "SUAO", "SUEO", "SATG", "SETG", "SSTG", "SSSU", "FTRG", "FSTG", "CRTG", "ARCS", "ARCE", "ARSU", "ARTG", "GOTO", "NOOP"[01;31m[K}[m[K;
+[1.253s]       |                                                                                                                                                                                                                   [01;31m[K^[m[K
+[1.253s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:211:[m[K [01;36m[Knote: [m[K(an out of class initialization is required)
+[1.262s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kbool ChefScript::isValidCommand(std::string)[m[K’:
+[1.262s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:30:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisValid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.263s]    30 |         bool [01;35m[KisValid[m[K = false;
+[1.263s]       |              [01;35m[K^~~~~~~[m[K
+[1.378s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[4.052s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:11[m[K,
+[4.052s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[4.052s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:33:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconstexpr[m[K’ needed for in-class initialization of static data member ‘[01m[Kbool ChefCommand::CommHasParam [21][m[K’ of non-integral type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.052s]    33 |         static bool [01;31m[KCommHasParam[m[K[21] = {false, true, false, true, true, true, true, true, true, true, true, true, false, true, true, true, true, true, false, true, false};
+[4.052s]       |                     [01;31m[K^~~~~~~~~~~~[m[K
+[4.052s] In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:11[m[K,
+[4.053s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:23[m[K:
+[4.053s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:28:[m[K [01;31m[Kerror: [m[Kin-class initialization of static data member ‘[01m[Kstd::string ChefCommand::CommNames [21][m[K’ of non-literal type
+[4.053s]    34 |         static std::string [01;31m[KCommNames[m[K[21] = {"HOAL", "HOON", "FISU", "FSSU", "TRSU", "CRSU", "SUAO", "SUEO", "SATG", "SETG", "SSTG", "SSSU", "FTRG", "FSTG", "CRTG", "ARCS", "ARCE", "ARSU", "ARTG", "GOTO", "NOOP"};
+[4.053s]       |                            [01;31m[K^~~~~~~~~[m[K
+[4.053s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:211:[m[K [01;31m[Kerror: [m[Knon-constant in-class initialization invalid for non-inline static member ‘[01m[KChefCommand::CommNames[m[K’
+[4.053s]    34 | FTRG", "FSTG", "CRTG", "ARCS", "ARCE", "ARSU", "ARTG", "GOTO", "NOOP"[01;31m[K}[m[K;
+[4.053s]       |                                                                      [01;31m[K^[m[K
+[4.053s] 
+[4.053s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.h:34:211:[m[K [01;36m[Knote: [m[K(an out of class initialization is required)
+[4.055s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[4.055s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:38:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.055s]    38 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[4.055s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[9.639s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+[9.639s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[9.639s] gmake: *** [Makefile:146: all] Error 2
+[9.645s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

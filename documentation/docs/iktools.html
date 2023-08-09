@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+	<title>IK Tools</title>
+</head>
+
+
+<body>
+<h1>IK Tools Node</h1>
+<p>A bit of a misnomer, the IK Tools Node subscribes to a few auxilary topics and publishes a few auxilary topics to assist with sun tracking. Uses same ik_helper.py script as ik_tools to compute inverse Jacobian of robot, publishing motor velocity commands in response to the sunspot topic and motor state topics</p>
+<p><a href='../index.html'>Return home</a></p>
+
+<h4>Topics subscribed</h4>
+<ul>
+<li>"/motors0" - contains positions of roll and pitch motors</li>
+<li>"/motors1" - contains position of stokes motor and will contain future sun-plate motor</li>
+
+<li>"/sunspot" - position on the sun tracking camera the brightest pixel is at</li>
+</ul>
+
+<h4>Topics published</h4>
+<ul>
+<li>"/robot_ephemeris" - contains point on the sky the robot thinks it's pointing at based on IK and the IMU. Will drift with IMU error</li>
+<li>"/inv_jacobian" - velocity commands based on inverse jacobian method to move the camera towards the published sun spot topic. </li>
+</ul>
+</body>
+
+</html>

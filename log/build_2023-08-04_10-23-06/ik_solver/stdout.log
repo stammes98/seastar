@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating ik_solver.egg-info
+writing ik_solver.egg-info/PKG-INFO
+writing dependency_links to ik_solver.egg-info/dependency_links.txt
+writing entry points to ik_solver.egg-info/entry_points.txt
+writing requirements to ik_solver.egg-info/requires.txt
+writing top-level names to ik_solver.egg-info/top_level.txt
+writing manifest file 'ik_solver.egg-info/SOURCES.txt'
+reading manifest file 'ik_solver.egg-info/SOURCES.txt'
+writing manifest file 'ik_solver.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/python3.10/site-packages/ik-solver.egg-link (link to .)
+Installing ik_solver script to /home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/ik_solver
+Installing ik_tester script to /home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/ik_solver
+
+Installed /home/seastar/steve_summer_seastar_ws/build/ik_solver
+running install_data
+creating /home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ament_index
+creating /home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ament_index/resource_index
+creating /home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ament_index/resource_index/packages
+copying resource/ik_solver -> /home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ament_index/resource_index/packages
+copying package.xml -> /home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver
+creating /home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/launch
+copying ik_helper.py -> /home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver
+copying setup.py -> /home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver

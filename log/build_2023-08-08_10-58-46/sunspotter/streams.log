@@ -1,0 +1,20 @@
+[0.030s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/sunspotter -- -j4 -l4
+[0.136s] [100%] Built target sunspotter
+[0.169s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/sunspotter -- -j4 -l4
+[0.270s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/sunspotter
+[0.328s] Traceback (most recent call last):
+[0.329s]   File "/home/seastar/.local/bin/cmake", line 8, in <module>
+[0.329s]     sys.exit(cmake())
+[0.329s]   File "/home/seastar/.local/lib/python3.10/site-packages/cmake/__init__.py", line 43, in cmake
+[0.329s]     raise SystemExit(_program('cmake', sys.argv[1:]))
+[0.329s]   File "/home/seastar/.local/lib/python3.10/site-packages/cmake/__init__.py", line 39, in _program
+[0.329s]     return subprocess.call([os.path.join(CMAKE_BIN_DIR, name)] + args, close_fds=False)
+[0.329s]   File "/usr/lib/python3.10/subprocess.py", line 347, in call
+[0.330s]     return p.wait(timeout=timeout)
+[0.331s]   File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+[0.331s]     return self._wait(timeout=timeout)
+[0.331s]   File "/usr/lib/python3.10/subprocess.py", line 1959, in _wait
+[0.331s]     (pid, sts) = self._try_wait(0)
+[0.331s]   File "/usr/lib/python3.10/subprocess.py", line 1917, in _try_wait
+[0.331s]     (pid, sts) = os.waitpid(self.pid, wait_flags)
+[0.331s] KeyboardInterrupt

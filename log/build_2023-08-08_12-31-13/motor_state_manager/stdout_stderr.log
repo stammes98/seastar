@@ -1,0 +1,38 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/motor_state_manager.dir/src/motor_state_manager.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:12:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   12 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In constructor ‘[01m[KMSM::MSM()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:27:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   27 |                 for (int i = 0; [01;35m[Ki < ports.size()[m[K; ++i) {
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In member function ‘[01m[Kvoid MSM::comLoop()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:93:39:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kres[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   93 |                                 char* [01;35m[Kres[m[K = getResponse(fd_);
+      |                                       [01;35m[K^~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:108:31:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kres[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  108 |                         char* [01;35m[Kres[m[K = getResponse(fd_);
+      |                               [01;35m[K^~~[m[K
+[ 66%] [32m[1mLinking CXX executable motor_state_manager[0m
+[100%] Built target motor_state_manager
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/motor_state_manager/motor_state_manager
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/motor_state_manager/motorsettings.cfg
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/ament_index/resource_index/package_run_dependencies/motor_state_manager
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/ament_index/resource_index/parent_prefix_path/motor_state_manager
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/path.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/path.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.bash
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.zsh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.dsv
+-- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/ament_index/resource_index/packages/motor_state_manager
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/cmake/motor_state_managerConfig.cmake
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/cmake/motor_state_managerConfig-version.cmake
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.xml

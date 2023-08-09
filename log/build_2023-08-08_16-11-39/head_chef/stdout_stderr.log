@@ -1,0 +1,52 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:36:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChefCommand>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   36 |         if ([01;35m[KexecLine >= comms_.size()[m[K) {
+      |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:111:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass HeadChef[m[K’ has no member named ‘[01m[KloopTarg[m[K’
+  111 |                         chef_->[01;31m[KloopTarg[m[K(p);
+      |                                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:16:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K At global scope:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:177:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid HeadChef::findTarg()[m[K’
+  177 | void [01;31m[KHeadChef[m[K::findTarg() {
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:177:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid HeadChef::findTarg()[m[K’
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:1[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass HeadChef[m[K’ defined here
+   30 | class [01;36m[KHeadChef[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::orderMotors()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:197:200:[m[K [01;31m[Kerror: [m[K‘[01m[KSeekTarg[m[K’ was not declared in this scope; did you mean ‘[01m[KseekSTarg[m[K’?
+  197 | arg || mode == DrawArcSun || mode == DrawArcTarg || mode == [01;31m[KSeekTarg[m[K || mode == SeekTargTimer) {
+      |                                                             [01;31m[K^~~~~~~~[m[K
+      |                                                             [32m[KseekSTarg[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:197:220:[m[K [01;31m[Kerror: [m[K‘[01m[KSeekTargTimer[m[K’ was not declared in this scope
+  197 | rcSun || mode == DrawArcTarg || mode == SeekTarg || mode == [01;31m[KSeekTargTimer[m[K) {
+      |                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K At global scope:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:308:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid HeadChef::loopTarg(double)[m[K’
+  308 | void [01;31m[KHeadChef[m[K::loopTarg(double size) {
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:308:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid HeadChef::loopTarg(double)[m[K’
+In file included from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:1[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass HeadChef[m[K’ defined here
+   30 | class [01;36m[KHeadChef[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In member function ‘[01m[Kvoid HeadChef::seekLoopPos()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:358:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktheta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  358 |                 double [01;35m[Ktheta[m[K = sTargVecC.y;
+      |                        [01;35m[K^~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:359:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kphi[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  359 |                 double [01;35m[Kphi[m[K = sTargVecC.z;
+      |                        [01;35m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

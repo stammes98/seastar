@@ -1,0 +1,14 @@
+msg/DesiredPointing.idl
+msg/DesiredPointing.msg
+msg/MotorCommand.idl
+msg/MotorCommand.msg
+msg/SkyEphemeris.idl
+msg/SkyEphemeris.msg
+msg/SkyScanOffsetAngles.idl
+msg/SkyScanOffsetAngles.msg
+msg/SkyScanPointingAngles.idl
+msg/SkyScanPointingAngles.msg
+srv/PointMotors.idl
+srv/PointMotors.srv
+srv/PointMotors_Request.msg
+srv/PointMotors_Response.msg

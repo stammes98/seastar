@@ -1,0 +1,4 @@
+Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager': CMAKE_PREFIX_PATH=/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_manager -- -j4 -l4
+Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_manager -- -j4 -l4
+Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager': CMAKE_PREFIX_PATH=/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/motor_manager
+Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_manager' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/motor_manager

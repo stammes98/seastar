@@ -1,0 +1,25 @@
+[0.012s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter': CMAKE_PREFIX_PATH=/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/sunspotter -- -j4 -l4
+[0.205s] [ 50%] [32mBuilding CXX object CMakeFiles/sunspotter.dir/src/publisher_member_function.cpp.o[0m
+[12.567s] [100%] [32m[1mLinking CXX executable sunspotter[0m
+[15.783s] [100%] Built target sunspotter
+[15.799s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/sunspotter -- -j4 -l4
+[15.878s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter': CMAKE_PREFIX_PATH=/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/sunspotter
+[15.921s] -- Install configuration: ""
+[15.922s] -- Execute custom install script
+[15.924s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/lib/sunspotter//sunspotter
+[15.926s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/ament_index/resource_index/package_run_dependencies/sunspotter
+[15.926s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/ament_index/resource_index/parent_prefix_path/sunspotter
+[15.927s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/ament_prefix_path.sh
+[15.928s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/ament_prefix_path.dsv
+[15.928s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/path.sh
+[15.929s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/path.dsv
+[15.929s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.bash
+[15.930s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.sh
+[15.930s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.zsh
+[15.931s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.dsv
+[15.931s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.dsv
+[15.936s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/ament_index/resource_index/packages/sunspotter
+[15.936s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/cmake/sunspotterConfig.cmake
+[15.936s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/cmake/sunspotterConfig-version.cmake
+[15.937s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.xml
+[15.952s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/sunspotter

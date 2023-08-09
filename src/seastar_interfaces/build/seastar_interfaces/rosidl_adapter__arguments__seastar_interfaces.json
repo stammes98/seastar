@@ -1,0 +1,7 @@
+{
+  "package_name": "seastar_interfaces",
+  "non_idl_tuples": [
+    "/home/seastar/seastar_ws/src/seastar_interfaces:msg/SkyEphemeris.msg",
+    "/home/seastar/seastar_ws/src/seastar_interfaces:msg/SkyScanOffset.msg"
+  ]
+}

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/seastar/steve_summer_seastar_ws/build/motor_state_manager/motor_state_manager" "TARGETS" "motor_state_manager" "DESTINATION" "lib/motor_state_manager")

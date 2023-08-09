@@ -1,0 +1,42 @@
+[0.057s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_state_manager -- -j4 -l4
+[0.175s] [ 33%] [32mBuilding CXX object CMakeFiles/motor_state_manager.dir/src/motor_state_manager.cpp.o[0m
+[0.185s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[4.826s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[4.826s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:12:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.827s]    12 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[4.827s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[4.894s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In constructor ‘[01m[KMSM::MSM()[m[K’:
+[4.894s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:27:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.894s]    27 |                 for (int i = 0; [01;35m[Ki < ports.size()[m[K; ++i) {
+[4.894s]       |                                 [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[4.910s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:[m[K In member function ‘[01m[Kvoid MSM::comLoop()[m[K’:
+[4.910s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:94:39:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kres[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.910s]    94 |                                 char* [01;35m[Kres[m[K = getResponse(fd_);
+[4.911s]       |                                       [01;35m[K^~~[m[K
+[4.911s] [01m[K/home/seastar/steve_summer_seastar_ws/src/motor_state_manager/src/motor_state_manager.cpp:109:31:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kres[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.911s]   109 |                         char* [01;35m[Kres[m[K = getResponse(fd_);
+[4.911s]       |                               [01;35m[K^~~[m[K
+[12.674s] [ 66%] [32m[1mLinking CXX executable motor_state_manager[0m
+[13.257s] [100%] Built target motor_state_manager
+[13.272s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_state_manager -- -j4 -l4
+[13.349s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/motor_state_manager
+[13.382s] -- Install configuration: ""
+[13.382s] -- Execute custom install script
+[13.382s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/motor_state_manager/motor_state_manager
+[13.382s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/motor_state_manager/motorsettings.cfg
+[13.383s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/ament_index/resource_index/package_run_dependencies/motor_state_manager
+[13.383s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/ament_index/resource_index/parent_prefix_path/motor_state_manager
+[13.383s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/ament_prefix_path.sh
+[13.383s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/ament_prefix_path.dsv
+[13.383s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/path.sh
+[13.383s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/path.dsv
+[13.384s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.bash
+[13.384s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.sh
+[13.384s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.zsh
+[13.384s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.dsv
+[13.384s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.dsv
+[13.387s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/ament_index/resource_index/packages/motor_state_manager
+[13.387s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/cmake/motor_state_managerConfig.cmake
+[13.388s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/cmake/motor_state_managerConfig-version.cmake
+[13.388s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.xml
+[13.395s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/motor_state_manager

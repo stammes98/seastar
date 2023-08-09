@@ -1,0 +1,15 @@
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/ament_index/resource_index/package_run_dependencies/motor_manager
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/ament_index/resource_index/parent_prefix_path/motor_manager
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/ament_prefix_path.sh
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/ament_prefix_path.dsv
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/path.sh
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/environment/path.dsv
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.bash
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.sh
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.zsh
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/local_setup.dsv
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/package.dsv
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/ament_index/resource_index/packages/motor_manager
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/cmake/motor_managerConfig.cmake
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/cmake/motor_managerConfig-version.cmake
+/home/seastar/steve_summer_seastar_ws/install/motor_manager/share/motor_manager/package.xml

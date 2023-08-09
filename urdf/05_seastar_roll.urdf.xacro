@@ -1,0 +1,33 @@
+<!-- upright to roll -->
+<joint name="upright1_to_roll_joint" type="revolute">
+	<parent link="upright1_link"/>
+	<child link="roll_link"/>
+	<origin xyz="${upright1_l} 0 0" rpy="0 -${pi/2} 0"/>
+	<axis xyz="1 0 0"/>
+	<limit lower="-3.64774" upper="0.558505" velocity="100" effort="100"/>
+</joint>
+
+<!-- the robot roll_link is a 4in x xxin x 1/2 in aluminium plate between the two uprights -->
+<xacro:property name="roll_l" value="0.6"/>
+<xacro:property name="roll_w" value="0.100"/>
+<xacro:property name="roll_h" value="0.0125"/>
+<xacro:property name="roll_m" value="0.5"/>
+<link name="roll_link">
+	<visual>
+		<origin xyz="${roll_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${roll_l} ${roll_w} ${roll_h}"/>
+		</geometry>
+		<material name="white"/>
+	</visual>
+	<collision>
+		<origin xyz="${roll_l/2} 0 0" rpy="0 0 0"/>
+		<geometry>
+			<box size="${roll_l} ${roll_w} ${roll_h}"/>
+		</geometry>
+	</collision>
+	<xacro:inertial_box mass="${roll_m}" x="${roll_l}" y="${roll_w}" z="${roll_h}">
+		<origin xyz="${roll_l/2} 0 0" rpy="0 0 0"/>
+	</xacro:inertial_box>
+</link>
+
