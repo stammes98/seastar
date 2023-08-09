@@ -52,7 +52,7 @@ HeadChef::HeadChef() : Node("head_chef") {
 	solarVecS.y = DEG2RAD((tAz));
 	solarVecS.z = DEG2RAD(tAlt);
 	
-	//pid1.enableLog();
+	pid1.enableLog();
 	//pid2.enableLog();
 	
 	//Setup subscriptions and publications 
@@ -149,8 +149,6 @@ void HeadChef::ephemUpdate(const seastar_interfaces::msg::SkyEphemeris& msg) {
 	//solarVecS.y = DEG2RAD(180.0);
 	//solarVecS.z = DEG2RAD(30.0);
 	
-	solarVecC = rotateSpher(solarVecS, imu);
-	
 	orderMotors();
 	publishJointState();
 }
@@ -241,7 +239,7 @@ void HeadChef::orderMotors() {
 		message.data = "0 0.0,0.0,0.0";
 		commPub_->publish(message);
 		
-		//pid1.closeLog();
+		pid1.closeLog();
 		//pid2.closeLog();
 		//Sends command to home the motors (for debugging convience)
 		message.data = "0H";
@@ -618,6 +616,8 @@ void HeadChef::imuUpdate(const geometry_msgs::msg::QuaternionStamped msg) {
 	//solarVecS.x = 1;
 	//solarVecS.y = DEG2RAD(solarAz);
 	//solarVecS.z = DEG2RAD(solarAlt);
+	
+	solarVecC = rotateSpher(solarVecS, imu);
 	
 	sTargVecS.x = 1;
 	sTargVecS.y = DEG2RAD(sTargAz);
