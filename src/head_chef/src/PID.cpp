@@ -33,6 +33,10 @@ double PID::update(double input, bool verbose) {
 	dt_ = diff.count();
 	err_ = setpoint_ - input;
 	
+	if (!hasStarted) {
+		hasStarted = true;
+		dt_ = 0.25;
+	}
 
 	
 	double Kp = (p_ * err_);

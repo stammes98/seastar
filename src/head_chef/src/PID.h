@@ -9,7 +9,7 @@
 #include <iostream>
 #include <fstream>
 
-#define INTEGRAL_CLAMP 100000.0
+#define INTEGRAL_CLAMP 50000.0
 
 //My custom PID implemented class. Most function names are self explaining. Best practice is to use the longer definitions
 //The derivative terms use timers, dt is the difference in time between the prior call to update() and the current call to update()
@@ -49,6 +49,7 @@ private:
 	double err_ = 0.0;
 	double lastErr_ = 0.0;
 	bool doLogging = false;
+	bool hasStarted = false;
 	std::ofstream outFile;
 	std::chrono::time_point<std::chrono::high_resolution_clock> logStart_;
 	

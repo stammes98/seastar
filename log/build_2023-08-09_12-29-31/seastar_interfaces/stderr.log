@@ -1,0 +1,24 @@
+[01m[K/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/srv/detail/dds_fastrtps/point_motors__type_support.cpp:309:6:[m[K [01;35m[Kwarning: [m[Kredundant redeclaration of ‘[01m[Kbool seastar_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(const MotorCommand&, eprosima::fastcdr::Cdr&)[m[K’ in same scope [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wredundant-decls-Wredundant-decls]8;;[m[K]
+  309 | bool [01;35m[Kcdr_serialize[m[K(
+      |      [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/srv/detail/dds_fastrtps/point_motors__type_support.cpp:49:6:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kbool seastar_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(const MotorCommand&, eprosima::fastcdr::Cdr&)[m[K’
+   49 | bool [01;36m[Kcdr_serialize[m[K(
+      |      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/srv/detail/dds_fastrtps/point_motors__type_support.cpp:312:6:[m[K [01;35m[Kwarning: [m[Kredundant redeclaration of ‘[01m[Kbool seastar_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(eprosima::fastcdr::Cdr&, seastar_interfaces::msg::MotorCommand&)[m[K’ in same scope [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wredundant-decls-Wredundant-decls]8;;[m[K]
+  312 | bool [01;35m[Kcdr_deserialize[m[K(
+      |      [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/srv/detail/dds_fastrtps/point_motors__type_support.cpp:52:6:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kbool seastar_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(eprosima::fastcdr::Cdr&, seastar_interfaces::msg::MotorCommand&)[m[K’
+   52 | bool [01;36m[Kcdr_deserialize[m[K(
+      |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/srv/detail/dds_fastrtps/point_motors__type_support.cpp:315:8:[m[K [01;35m[Kwarning: [m[Kredundant redeclaration of ‘[01m[Ksize_t seastar_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(const MotorCommand&, size_t)[m[K’ in same scope [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wredundant-decls-Wredundant-decls]8;;[m[K]
+  315 | size_t [01;35m[Kget_serialized_size[m[K(
+      |        [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/srv/detail/dds_fastrtps/point_motors__type_support.cpp:55:8:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Ksize_t seastar_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(const MotorCommand&, size_t)[m[K’
+   55 | size_t [01;36m[Kget_serialized_size[m[K(
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/srv/detail/dds_fastrtps/point_motors__type_support.cpp:319:1:[m[K [01;35m[Kwarning: [m[Kredundant redeclaration of ‘[01m[Ksize_t seastar_interfaces::msg::typesupport_fastrtps_cpp::max_serialized_size_MotorCommand(bool&, bool&, size_t)[m[K’ in same scope [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wredundant-decls-Wredundant-decls]8;;[m[K]
+  319 | [01;35m[Kmax_serialized_size_MotorCommand[m[K(
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_typesupport_fastrtps_cpp/seastar_interfaces/srv/detail/dds_fastrtps/point_motors__type_support.cpp:59:1:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Ksize_t seastar_interfaces::msg::typesupport_fastrtps_cpp::max_serialized_size_MotorCommand(bool&, bool&, size_t)[m[K’
+   59 | [01;36m[Kmax_serialized_size_MotorCommand[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

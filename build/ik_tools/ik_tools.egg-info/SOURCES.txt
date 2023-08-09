@@ -1,7 +1,11 @@
+colcon_build.rc
+colcon_command_prefix_setup_py.sh
+colcon_command_prefix_setup_py.sh.env
 ik_helper.py
 package.xml
 setup.cfg
 setup.py
+__pycache__/ik_helper.cpython-310.pyc
 ik_tools/__init__.py
 ik_tools/ik_tools.py
 ik_tools.egg-info/PKG-INFO
@@ -11,4 +15,11 @@ ik_tools.egg-info/entry_points.txt
 ik_tools.egg-info/requires.txt
 ik_tools.egg-info/top_level.txt
 ik_tools.egg-info/zip-safe
+ik_tools/__pycache__/__init__.cpython-310.pyc
+ik_tools/__pycache__/ik_tools.cpython-310.pyc
+prefix_override/sitecustomize.py
+prefix_override/__pycache__/sitecustomize.cpython-310.pyc
 resource/ik_tools
+share/ik_tools/hook/pythonpath_develop.dsv
+share/ik_tools/hook/pythonpath_develop.ps1
+share/ik_tools/hook/pythonpath_develop.sh

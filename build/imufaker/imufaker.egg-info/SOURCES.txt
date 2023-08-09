@@ -1,3 +1,6 @@
+colcon_build.rc
+colcon_command_prefix_setup_py.sh
+colcon_command_prefix_setup_py.sh.env
 package.xml
 setup.cfg
 setup.py
@@ -10,4 +13,11 @@ imufaker.egg-info/entry_points.txt
 imufaker.egg-info/requires.txt
 imufaker.egg-info/top_level.txt
 imufaker.egg-info/zip-safe
+imufaker/__pycache__/__init__.cpython-310.pyc
+imufaker/__pycache__/imufaker.cpython-310.pyc
+prefix_override/sitecustomize.py
+prefix_override/__pycache__/sitecustomize.cpython-310.pyc
 resource/imufaker
+share/imufaker/hook/pythonpath_develop.dsv
+share/imufaker/hook/pythonpath_develop.ps1
+share/imufaker/hook/pythonpath_develop.sh

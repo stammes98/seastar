@@ -172,7 +172,7 @@ PID getFromFile(std::string filePath) {
 	try {
 		cfg.readFile(filePath.c_str());
 		if (cfg.lookupValue("p", p) && cfg.lookupValue("i", i) && cfg.lookupValue("d", d) && cfg.lookupValue("min", min) && cfg.lookupValue("max", max)) {
-			printf("PID settings succesfully loaded from %s.\n", fileName.c_str());
+			printf("PID settings succesfully loaded from %s.\n", filePath.c_str());
 		} else {
 			printf("ERROR: PID settings unable to be loaded from %s\n", filePath.c_str());
 		}

@@ -1,0 +1,841 @@
+[0.569s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.569s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f5e4fb6d5d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5e4fd88a60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5e4fd88a60>>, mixin_verb=('build',))
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.598s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/seastar/steve_summer_seastar_ws'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'ignore_ament_install'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['colcon_pkg']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'colcon_pkg'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['colcon_meta']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'colcon_meta'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['ros']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'ros'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['cmake', 'python']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'cmake'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'python'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extensions ['python_setup_py']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation) by extension 'python_setup_py'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extension 'ignore'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extension 'ignore_ament_install'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extensions ['colcon_pkg']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extension 'colcon_pkg'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extensions ['colcon_meta']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extension 'colcon_meta'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extensions ['ros']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extension 'ros'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extensions ['cmake', 'python']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extension 'cmake'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extension 'python'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extensions ['python_setup_py']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(documentation/docs) by extension 'python_setup_py'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['ignore', 'ignore_ament_install']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ignore'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ignore_ament_install'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['colcon_pkg']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'colcon_pkg'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['colcon_meta']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'colcon_meta'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['ros']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ros'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['cmake', 'python']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'cmake'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'python'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['python_setup_py']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'python_setup_py'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'ignore_ament_install'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['colcon_pkg']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'colcon_pkg'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['colcon_meta']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'colcon_meta'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['ros']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'ros'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['cmake', 'python']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'cmake'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'python'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['python_setup_py']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'python_setup_py'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extensions ['ignore', 'ignore_ament_install']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extension 'ignore'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extension 'ignore_ament_install'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extensions ['colcon_pkg']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extension 'colcon_pkg'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extensions ['colcon_meta']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extension 'colcon_meta'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extensions ['ros']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extension 'ros'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extensions ['cmake', 'python']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extension 'cmake'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extension 'python'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extensions ['python_setup_py']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(recipes) by extension 'python_setup_py'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extension 'colcon_meta'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extension 'ros'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extensions ['cmake', 'python']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extension 'cmake'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extension 'python'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extensions ['python_setup_py']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(settings) by extension 'python_setup_py'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluespace_ai_xsens_ros_mti_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluespace_ai_xsens_ros_mti_driver) by extension 'ignore'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluespace_ai_xsens_ros_mti_driver) by extension 'ignore_ament_install'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluespace_ai_xsens_ros_mti_driver) by extensions ['colcon_pkg']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluespace_ai_xsens_ros_mti_driver) by extension 'colcon_pkg'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluespace_ai_xsens_ros_mti_driver) by extensions ['colcon_meta']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluespace_ai_xsens_ros_mti_driver) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluespace_ai_xsens_ros_mti_driver) by extensions ['ros']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluespace_ai_xsens_ros_mti_driver) by extension 'ros'
+[0.621s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bluespace_ai_xsens_ros_mti_driver' with type 'ros.ament_cmake' and name 'bluespace_ai_xsens_mti_driver'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/hamburger_helper) by extensions ['ignore', 'ignore_ament_install']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/hamburger_helper) by extension 'ignore'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/hamburger_helper) by extension 'ignore_ament_install'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/hamburger_helper) by extensions ['colcon_pkg']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/hamburger_helper) by extension 'colcon_pkg'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/hamburger_helper) by extensions ['colcon_meta']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/hamburger_helper) by extension 'colcon_meta'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/hamburger_helper) by extensions ['ros']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/hamburger_helper) by extension 'ros'
+[0.622s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hamburger_helper' with type 'ros.ament_python' and name 'hamburger_helper'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/head_chef) by extensions ['ignore', 'ignore_ament_install']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/head_chef) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/head_chef) by extension 'ignore_ament_install'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/head_chef) by extensions ['colcon_pkg']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/head_chef) by extension 'colcon_pkg'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/head_chef) by extensions ['colcon_meta']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/head_chef) by extension 'colcon_meta'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/head_chef) by extensions ['ros']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/head_chef) by extension 'ros'
+[0.624s] DEBUG:colcon.colcon_core.package_identification:Package 'src/head_chef' with type 'ros.ament_cmake' and name 'head_chef'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_solver) by extensions ['ignore', 'ignore_ament_install']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_solver) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_solver) by extension 'ignore_ament_install'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_solver) by extensions ['colcon_pkg']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_solver) by extension 'colcon_pkg'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_solver) by extensions ['colcon_meta']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_solver) by extension 'colcon_meta'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_solver) by extensions ['ros']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_solver) by extension 'ros'
+[0.625s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ik_solver' with type 'ros.ament_python' and name 'ik_solver'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_tools) by extension 'ignore'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_tools) by extension 'ignore_ament_install'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_tools) by extensions ['colcon_pkg']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_tools) by extension 'colcon_pkg'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_tools) by extensions ['colcon_meta']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_tools) by extension 'colcon_meta'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_tools) by extensions ['ros']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik_tools) by extension 'ros'
+[0.626s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ik_tools' with type 'ros.ament_python' and name 'ik_tools'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/imufaker) by extensions ['ignore', 'ignore_ament_install']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/imufaker) by extension 'ignore'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/imufaker) by extension 'ignore_ament_install'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/imufaker) by extensions ['colcon_pkg']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/imufaker) by extension 'colcon_pkg'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/imufaker) by extensions ['colcon_meta']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/imufaker) by extension 'colcon_meta'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/imufaker) by extensions ['ros']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/imufaker) by extension 'ros'
+[0.627s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imufaker' with type 'ros.ament_python' and name 'imufaker'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_state_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_state_manager) by extension 'ignore'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_state_manager) by extension 'ignore_ament_install'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_state_manager) by extensions ['colcon_pkg']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_state_manager) by extension 'colcon_pkg'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_state_manager) by extensions ['colcon_meta']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_state_manager) by extension 'colcon_meta'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_state_manager) by extensions ['ros']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_state_manager) by extension 'ros'
+[0.628s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_state_manager' with type 'ros.ament_cmake' and name 'motor_state_manager'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/seastar_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/seastar_interfaces) by extension 'ignore'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/seastar_interfaces) by extension 'ignore_ament_install'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/seastar_interfaces) by extensions ['colcon_pkg']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/seastar_interfaces) by extension 'colcon_pkg'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/seastar_interfaces) by extensions ['colcon_meta']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/seastar_interfaces) by extension 'colcon_meta'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/seastar_interfaces) by extensions ['ros']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/seastar_interfaces) by extension 'ros'
+[0.629s] DEBUG:colcon.colcon_core.package_identification:Package 'src/seastar_interfaces' with type 'ros.ament_cmake' and name 'seastar_interfaces'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/solar_ephemeris) by extensions ['ignore', 'ignore_ament_install']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/solar_ephemeris) by extension 'ignore'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(src/solar_ephemeris) by extension 'ignore_ament_install'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/solar_ephemeris) by extensions ['colcon_pkg']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/solar_ephemeris) by extension 'colcon_pkg'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/solar_ephemeris) by extensions ['colcon_meta']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/solar_ephemeris) by extension 'colcon_meta'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/solar_ephemeris) by extensions ['ros']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/solar_ephemeris) by extension 'ros'
+[0.630s] DEBUG:colcon.colcon_core.package_identification:Package 'src/solar_ephemeris' with type 'ros.ament_python' and name 'solar_ephemeris'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunspotter) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunspotter) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunspotter) by extension 'ignore_ament_install'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunspotter) by extensions ['colcon_pkg']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunspotter) by extension 'colcon_pkg'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunspotter) by extensions ['colcon_meta']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunspotter) by extension 'colcon_meta'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunspotter) by extensions ['ros']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/sunspotter) by extension 'ros'
+[0.632s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sunspotter' with type 'ros.ament_cmake' and name 'sunspotter'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_cam) by extension 'ignore'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_cam) by extension 'ignore_ament_install'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_cam) by extensions ['colcon_pkg']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_cam) by extension 'colcon_pkg'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_cam) by extensions ['colcon_meta']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_cam) by extension 'colcon_meta'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_cam) by extensions ['ros']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_cam) by extension 'ros'
+[0.634s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_cam' with type 'ros.ament_python' and name 'test_cam'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extension 'ignore'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extension 'ignore_ament_install'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extensions ['colcon_pkg']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extension 'colcon_pkg'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extensions ['colcon_meta']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extension 'colcon_meta'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extensions ['ros']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extension 'ros'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extensions ['cmake', 'python']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extension 'cmake'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extension 'python'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extensions ['python_setup_py']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(urdf) by extension 'python_setup_py'
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.675s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.675s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.682s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/seastar/steve_summer_seastar_ws/install
+[0.686s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 304 installed packages in /opt/ros/humble
+[0.687s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'bluespace_ai_xsens_mti_driver' build argument 'cmake_args' from command line to 'None'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'bluespace_ai_xsens_mti_driver' build argument 'cmake_target' from command line to 'None'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'bluespace_ai_xsens_mti_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'bluespace_ai_xsens_mti_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'bluespace_ai_xsens_mti_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'bluespace_ai_xsens_mti_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'bluespace_ai_xsens_mti_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'bluespace_ai_xsens_mti_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'bluespace_ai_xsens_mti_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.770s] DEBUG:colcon.colcon_core.verb:Building package 'bluespace_ai_xsens_mti_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/bluespace_ai_xsens_ros_mti_driver', 'symlink_install': True, 'test_result_base': None}
+[0.771s] Level 5:colcon.colcon_core.verb:set package 'hamburger_helper' build argument 'cmake_args' from command line to 'None'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'hamburger_helper' build argument 'cmake_target' from command line to 'None'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'hamburger_helper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'hamburger_helper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'hamburger_helper' build argument 'cmake_clean_first' from command line to 'False'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'hamburger_helper' build argument 'cmake_force_configure' from command line to 'False'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'hamburger_helper' build argument 'ament_cmake_args' from command line to 'None'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'hamburger_helper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'hamburger_helper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.772s] DEBUG:colcon.colcon_core.verb:Building package 'hamburger_helper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/hamburger_helper', 'symlink_install': True, 'test_result_base': None}
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'ik_solver' build argument 'cmake_args' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'ik_solver' build argument 'cmake_target' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'ik_solver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'ik_solver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'ik_solver' build argument 'cmake_clean_first' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'ik_solver' build argument 'cmake_force_configure' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'ik_solver' build argument 'ament_cmake_args' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'ik_solver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'ik_solver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.773s] DEBUG:colcon.colcon_core.verb:Building package 'ik_solver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/ik_solver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/ik_solver', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/ik_solver', 'symlink_install': True, 'test_result_base': None}
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'ik_tools' build argument 'cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'ik_tools' build argument 'cmake_target' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'ik_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'ik_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'ik_tools' build argument 'cmake_clean_first' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'ik_tools' build argument 'cmake_force_configure' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'ik_tools' build argument 'ament_cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'ik_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'ik_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.774s] DEBUG:colcon.colcon_core.verb:Building package 'ik_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/ik_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/ik_tools', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/ik_tools', 'symlink_install': True, 'test_result_base': None}
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'imufaker' build argument 'cmake_args' from command line to 'None'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'imufaker' build argument 'cmake_target' from command line to 'None'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'imufaker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.776s] Level 5:colcon.colcon_core.verb:set package 'imufaker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.776s] Level 5:colcon.colcon_core.verb:set package 'imufaker' build argument 'cmake_clean_first' from command line to 'False'
+[0.776s] Level 5:colcon.colcon_core.verb:set package 'imufaker' build argument 'cmake_force_configure' from command line to 'False'
+[0.776s] Level 5:colcon.colcon_core.verb:set package 'imufaker' build argument 'ament_cmake_args' from command line to 'None'
+[0.776s] Level 5:colcon.colcon_core.verb:set package 'imufaker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.776s] Level 5:colcon.colcon_core.verb:set package 'imufaker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.776s] DEBUG:colcon.colcon_core.verb:Building package 'imufaker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/imufaker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/imufaker', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/imufaker', 'symlink_install': True, 'test_result_base': None}
+[0.777s] Level 5:colcon.colcon_core.verb:set package 'motor_state_manager' build argument 'cmake_args' from command line to 'None'
+[0.777s] Level 5:colcon.colcon_core.verb:set package 'motor_state_manager' build argument 'cmake_target' from command line to 'None'
+[0.777s] Level 5:colcon.colcon_core.verb:set package 'motor_state_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.777s] Level 5:colcon.colcon_core.verb:set package 'motor_state_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.777s] Level 5:colcon.colcon_core.verb:set package 'motor_state_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.777s] Level 5:colcon.colcon_core.verb:set package 'motor_state_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.777s] Level 5:colcon.colcon_core.verb:set package 'motor_state_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.777s] Level 5:colcon.colcon_core.verb:set package 'motor_state_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.777s] Level 5:colcon.colcon_core.verb:set package 'motor_state_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.777s] DEBUG:colcon.colcon_core.verb:Building package 'motor_state_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/motor_state_manager', 'symlink_install': True, 'test_result_base': None}
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'seastar_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'seastar_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'seastar_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'seastar_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'seastar_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'seastar_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'seastar_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'seastar_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'seastar_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.778s] DEBUG:colcon.colcon_core.verb:Building package 'seastar_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/seastar_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'sunspotter' build argument 'cmake_args' from command line to 'None'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'sunspotter' build argument 'cmake_target' from command line to 'None'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'sunspotter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'sunspotter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'sunspotter' build argument 'cmake_clean_first' from command line to 'False'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'sunspotter' build argument 'cmake_force_configure' from command line to 'False'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'sunspotter' build argument 'ament_cmake_args' from command line to 'None'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'sunspotter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'sunspotter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.779s] DEBUG:colcon.colcon_core.verb:Building package 'sunspotter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/sunspotter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/sunspotter', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/sunspotter', 'symlink_install': True, 'test_result_base': None}
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'test_cam' build argument 'cmake_args' from command line to 'None'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'test_cam' build argument 'cmake_target' from command line to 'None'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'test_cam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'test_cam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'test_cam' build argument 'cmake_clean_first' from command line to 'False'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'test_cam' build argument 'cmake_force_configure' from command line to 'False'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'test_cam' build argument 'ament_cmake_args' from command line to 'None'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'test_cam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'test_cam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.780s] DEBUG:colcon.colcon_core.verb:Building package 'test_cam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/test_cam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/test_cam', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/test_cam', 'symlink_install': True, 'test_result_base': None}
+[0.781s] Level 5:colcon.colcon_core.verb:set package 'head_chef' build argument 'cmake_args' from command line to 'None'
+[0.781s] Level 5:colcon.colcon_core.verb:set package 'head_chef' build argument 'cmake_target' from command line to 'None'
+[0.781s] Level 5:colcon.colcon_core.verb:set package 'head_chef' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.781s] Level 5:colcon.colcon_core.verb:set package 'head_chef' build argument 'cmake_clean_cache' from command line to 'False'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'head_chef' build argument 'cmake_clean_first' from command line to 'False'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'head_chef' build argument 'cmake_force_configure' from command line to 'False'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'head_chef' build argument 'ament_cmake_args' from command line to 'None'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'head_chef' build argument 'catkin_cmake_args' from command line to 'None'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'head_chef' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.782s] DEBUG:colcon.colcon_core.verb:Building package 'head_chef' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/head_chef', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/head_chef', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/head_chef', 'symlink_install': True, 'test_result_base': None}
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'solar_ephemeris' build argument 'cmake_args' from command line to 'None'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'solar_ephemeris' build argument 'cmake_target' from command line to 'None'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'solar_ephemeris' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'solar_ephemeris' build argument 'cmake_clean_cache' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'solar_ephemeris' build argument 'cmake_clean_first' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'solar_ephemeris' build argument 'cmake_force_configure' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'solar_ephemeris' build argument 'ament_cmake_args' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'solar_ephemeris' build argument 'catkin_cmake_args' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'solar_ephemeris' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.784s] DEBUG:colcon.colcon_core.verb:Building package 'solar_ephemeris' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris', 'merge_install': False, 'path': '/home/seastar/steve_summer_seastar_ws/src/solar_ephemeris', 'symlink_install': True, 'test_result_base': None}
+[0.786s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.790s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.790s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/seastar_interfaces' with build type 'ament_cmake'
+[0.790s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/seastar/steve_summer_seastar_ws/src/seastar_interfaces'
+[0.795s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.796s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.796s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.805s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/bluespace_ai_xsens_ros_mti_driver' with build type 'ament_cmake'
+[0.805s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/seastar/steve_summer_seastar_ws/src/bluespace_ai_xsens_ros_mti_driver'
+[0.808s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.808s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.814s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/hamburger_helper' with build type 'ament_python'
+[0.814s] Level 1:colcon.colcon_core.shell:create_environment_hook('hamburger_helper', 'ament_prefix_path')
+[0.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/hook/ament_prefix_path.ps1'
+[0.816s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/hook/ament_prefix_path.dsv'
+[0.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/hook/ament_prefix_path.sh'
+[0.819s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.819s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.826s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/ik_solver' with build type 'ament_python'
+[0.827s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_solver', 'ament_prefix_path')
+[0.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/hook/ament_prefix_path.ps1'
+[0.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/hook/ament_prefix_path.dsv'
+[0.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/hook/ament_prefix_path.sh'
+[0.832s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.832s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces -- -j4 -l4
+[0.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver -- -j4 -l4
+[1.411s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/seastar/steve_summer_seastar_ws/src/hamburger_helper'
+[1.414s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.414s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.959s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/seastar/steve_summer_seastar_ws/src/ik_solver'
+[1.962s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.962s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver -- -j4 -l4
+[2.238s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver
+[2.328s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bluespace_ai_xsens_mti_driver)
+[2.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver' for CMake module files
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver' for CMake config files
+[2.339s] Level 1:colcon.colcon_core.shell:create_environment_hook('bluespace_ai_xsens_mti_driver', 'cmake_prefix_path')
+[2.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/hook/cmake_prefix_path.ps1'
+[2.343s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/hook/cmake_prefix_path.dsv'
+[2.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/hook/cmake_prefix_path.sh'
+[2.348s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/lib'
+[2.349s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/bin'
+[2.349s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/lib/pkgconfig/bluespace_ai_xsens_mti_driver.pc'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/lib/python3.10/site-packages'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/bin'
+[2.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.ps1'
+[2.355s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.dsv'
+[2.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.sh'
+[2.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.bash'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.zsh'
+[2.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/colcon-core/packages/bluespace_ai_xsens_mti_driver)
+[2.515s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bluespace_ai_xsens_mti_driver)
+[2.529s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver' for CMake module files
+[2.530s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver' for CMake config files
+[2.530s] Level 1:colcon.colcon_core.shell:create_environment_hook('bluespace_ai_xsens_mti_driver', 'cmake_prefix_path')
+[2.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/hook/cmake_prefix_path.ps1'
+[2.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/hook/cmake_prefix_path.dsv'
+[2.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/hook/cmake_prefix_path.sh'
+[2.535s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/lib'
+[2.535s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/bin'
+[2.535s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/lib/pkgconfig/bluespace_ai_xsens_mti_driver.pc'
+[2.536s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/lib/python3.10/site-packages'
+[2.536s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/bin'
+[2.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.ps1'
+[2.540s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.dsv'
+[2.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.sh'
+[2.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.bash'
+[2.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.zsh'
+[2.543s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/colcon-core/packages/bluespace_ai_xsens_mti_driver)
+[2.554s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/ik_tools' with build type 'ament_python'
+[2.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_tools', 'ament_prefix_path')
+[2.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/hook/ament_prefix_path.ps1'
+[2.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/hook/ament_prefix_path.dsv'
+[2.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/hook/ament_prefix_path.sh'
+[2.563s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.563s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.343s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/seastar/steve_summer_seastar_ws/src/ik_tools'
+[3.345s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.345s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/ik_solver': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/ik_solver/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/ik_solver/build --no-deps install_data
+[3.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/prefix_override:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/hamburger_helper/build --no-deps install_data
+[3.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces -- -j4 -l4
+[3.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces
+[4.034s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(seastar_interfaces)
+[4.038s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces' for CMake module files
+[4.040s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces' for CMake config files
+[4.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('seastar_interfaces', 'cmake_prefix_path')
+[4.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/cmake_prefix_path.ps1'
+[4.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces
+[4.046s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/cmake_prefix_path.dsv'
+[4.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/cmake_prefix_path.sh'
+[4.048s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib'
+[4.048s] Level 1:colcon.colcon_core.shell:create_environment_hook('seastar_interfaces', 'ld_library_path_lib')
+[4.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/ld_library_path_lib.ps1'
+[4.051s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/ld_library_path_lib.dsv'
+[4.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/ld_library_path_lib.sh'
+[4.052s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/bin'
+[4.052s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/pkgconfig/seastar_interfaces.pc'
+[4.053s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/python3.10/site-packages'
+[4.053s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/bin'
+[4.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.ps1'
+[4.068s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.dsv'
+[4.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.sh'
+[4.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.bash'
+[4.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.zsh'
+[4.070s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/colcon-core/packages/seastar_interfaces)
+[4.388s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(seastar_interfaces)
+[4.392s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces' for CMake module files
+[4.394s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces' for CMake config files
+[4.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('seastar_interfaces', 'cmake_prefix_path')
+[4.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/cmake_prefix_path.ps1'
+[4.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/cmake_prefix_path.dsv'
+[4.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/cmake_prefix_path.sh'
+[4.403s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib'
+[4.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('seastar_interfaces', 'ld_library_path_lib')
+[4.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/ld_library_path_lib.ps1'
+[4.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/ld_library_path_lib.dsv'
+[4.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/hook/ld_library_path_lib.sh'
+[4.409s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/bin'
+[4.409s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/pkgconfig/seastar_interfaces.pc'
+[4.410s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/python3.10/site-packages'
+[4.410s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/bin'
+[4.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.ps1'
+[4.414s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.dsv'
+[4.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.sh'
+[4.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.bash'
+[4.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.zsh'
+[4.418s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/colcon-core/packages/seastar_interfaces)
+[4.419s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/imufaker' with build type 'ament_python'
+[4.420s] Level 1:colcon.colcon_core.shell:create_environment_hook('imufaker', 'ament_prefix_path')
+[4.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/hook/ament_prefix_path.ps1'
+[4.424s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/hook/ament_prefix_path.dsv'
+[4.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/hook/ament_prefix_path.sh'
+[4.428s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.428s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.903s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/seastar/steve_summer_seastar_ws/src/imufaker'
+[4.906s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.906s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/ik_tools': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/ik_tools/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/ik_tools/build --no-deps install_data
+[6.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/imufaker': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/imufaker/prefix_override:/home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/imufaker/build --no-deps install_data
+[7.108s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_solver', 'pythonpath_develop')
+[7.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/ik_solver/share/ik_solver/hook/pythonpath_develop.ps1'
+[7.112s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/build/ik_solver/share/ik_solver/hook/pythonpath_develop.dsv'
+[7.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/ik_solver/share/ik_solver/hook/pythonpath_develop.sh'
+[7.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/ik_solver' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/ik_solver/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/ik_solver/build --no-deps install_data
+[7.117s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_solver' for CMake module files
+[7.118s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_solver' for CMake config files
+[7.119s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_solver/lib'
+[7.119s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_solver/bin'
+[7.119s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/pkgconfig/ik_solver.pc'
+[7.119s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/python3.10/site-packages'
+[7.119s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_solver', 'pythonpath')
+[7.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/hook/pythonpath.ps1'
+[7.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/hook/pythonpath.dsv'
+[7.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/hook/pythonpath.sh'
+[7.132s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_solver/bin'
+[7.132s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ik_solver)
+[7.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/package.ps1'
+[7.136s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/package.dsv'
+[7.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/package.sh'
+[7.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/package.bash'
+[7.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/ik_solver/package.zsh'
+[7.141s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/ik_solver/share/colcon-core/packages/ik_solver)
+[7.142s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/motor_state_manager' with build type 'ament_cmake'
+[7.143s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/seastar/steve_summer_seastar_ws/src/motor_state_manager'
+[7.149s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.149s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.169s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_state_manager -- -j4 -l4
+[7.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/motor_state_manager -- -j4 -l4
+[7.332s] Level 1:colcon.colcon_core.shell:create_environment_hook('hamburger_helper', 'pythonpath_develop')
+[7.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/share/hamburger_helper/hook/pythonpath_develop.ps1'
+[7.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/prefix_override:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/hamburger_helper/build --no-deps install_data
+[7.337s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/share/hamburger_helper/hook/pythonpath_develop.dsv'
+[7.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/share/hamburger_helper/hook/pythonpath_develop.sh'
+[7.343s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper' for CMake module files
+[7.344s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper' for CMake config files
+[7.347s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib'
+[7.347s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/bin'
+[7.348s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/pkgconfig/hamburger_helper.pc'
+[7.348s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages'
+[7.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('hamburger_helper', 'pythonpath')
+[7.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/hook/pythonpath.ps1'
+[7.352s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/hook/pythonpath.dsv'
+[7.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/hook/pythonpath.sh'
+[7.356s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/bin'
+[7.356s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hamburger_helper)
+[7.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/package.ps1'
+[7.360s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/package.dsv'
+[7.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/package.sh'
+[7.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/package.bash'
+[7.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/hamburger_helper/package.zsh'
+[7.363s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/share/colcon-core/packages/hamburger_helper)
+[7.365s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/sunspotter' with build type 'ament_cmake'
+[7.366s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/seastar/steve_summer_seastar_ws/src/sunspotter'
+[7.368s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.369s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.397s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/sunspotter -- -j4 -l4
+[7.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/motor_state_manager
+[7.519s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_state_manager)
+[7.523s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager' for CMake module files
+[7.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/motor_state_manager
+[7.525s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager' for CMake config files
+[7.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_state_manager', 'cmake_prefix_path')
+[7.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/hook/cmake_prefix_path.ps1'
+[7.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/hook/cmake_prefix_path.dsv'
+[7.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/hook/cmake_prefix_path.sh'
+[7.541s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib'
+[7.542s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/bin'
+[7.542s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/pkgconfig/motor_state_manager.pc'
+[7.542s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/python3.10/site-packages'
+[7.543s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/bin'
+[7.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.ps1'
+[7.547s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.dsv'
+[7.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.sh'
+[7.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.bash'
+[7.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.zsh'
+[7.550s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/colcon-core/packages/motor_state_manager)
+[7.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/sunspotter -- -j4 -l4
+[7.671s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/sunspotter
+[7.732s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_state_manager)
+[7.736s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager' for CMake module files
+[7.737s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager' for CMake config files
+[7.737s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_state_manager', 'cmake_prefix_path')
+[7.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/hook/cmake_prefix_path.ps1'
+[7.742s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/hook/cmake_prefix_path.dsv'
+[7.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/hook/cmake_prefix_path.sh'
+[7.747s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib'
+[7.748s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/bin'
+[7.748s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/pkgconfig/motor_state_manager.pc'
+[7.748s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/python3.10/site-packages'
+[7.749s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/bin'
+[7.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.ps1'
+[7.755s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.dsv'
+[7.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.sh'
+[7.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.bash'
+[7.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.zsh'
+[7.759s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/colcon-core/packages/motor_state_manager)
+[7.760s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/test_cam' with build type 'ament_python'
+[7.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_cam', 'ament_prefix_path')
+[7.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/hook/ament_prefix_path.ps1'
+[7.767s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/hook/ament_prefix_path.dsv'
+[7.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/hook/ament_prefix_path.sh'
+[7.772s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.774s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.795s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sunspotter)
+[7.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/sunspotter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/sunspotter
+[7.798s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter' for CMake module files
+[7.799s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter' for CMake config files
+[7.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('sunspotter', 'cmake_prefix_path')
+[7.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/hook/cmake_prefix_path.ps1'
+[7.801s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/hook/cmake_prefix_path.dsv'
+[7.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/hook/cmake_prefix_path.sh'
+[7.802s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/lib'
+[7.802s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/bin'
+[7.802s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/lib/pkgconfig/sunspotter.pc'
+[7.802s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/lib/python3.10/site-packages'
+[7.803s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/bin'
+[7.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.ps1'
+[7.806s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.dsv'
+[7.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.sh'
+[7.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.bash'
+[7.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.zsh'
+[7.808s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/colcon-core/packages/sunspotter)
+[8.438s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/seastar/steve_summer_seastar_ws/src/test_cam'
+[8.443s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.443s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sunspotter)
+[8.460s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter' for CMake module files
+[8.461s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter' for CMake config files
+[8.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('sunspotter', 'cmake_prefix_path')
+[8.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/hook/cmake_prefix_path.ps1'
+[8.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/hook/cmake_prefix_path.dsv'
+[8.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/hook/cmake_prefix_path.sh'
+[8.465s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/lib'
+[8.465s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/bin'
+[8.465s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/lib/pkgconfig/sunspotter.pc'
+[8.466s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/lib/python3.10/site-packages'
+[8.466s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/sunspotter/bin'
+[8.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.ps1'
+[8.470s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.dsv'
+[8.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.sh'
+[8.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.bash'
+[8.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.zsh'
+[8.472s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/sunspotter/share/colcon-core/packages/sunspotter)
+[8.474s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/head_chef' with build type 'ament_cmake'
+[8.474s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/seastar/steve_summer_seastar_ws/src/head_chef'
+[8.477s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.477s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[8.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_tools', 'pythonpath_develop')
+[8.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/ik_tools/share/ik_tools/hook/pythonpath_develop.ps1'
+[8.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/ik_tools' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/ik_tools/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/ik_tools/build --no-deps install_data
+[8.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/build/ik_tools/share/ik_tools/hook/pythonpath_develop.dsv'
+[8.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/ik_tools/share/ik_tools/hook/pythonpath_develop.sh'
+[8.641s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_tools' for CMake module files
+[8.642s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_tools' for CMake config files
+[8.643s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_tools/lib'
+[8.643s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_tools/bin'
+[8.643s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/pkgconfig/ik_tools.pc'
+[8.644s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/python3.10/site-packages'
+[8.644s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik_tools', 'pythonpath')
+[8.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/hook/pythonpath.ps1'
+[8.647s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/hook/pythonpath.dsv'
+[8.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/hook/pythonpath.sh'
+[8.649s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/ik_tools/bin'
+[8.649s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ik_tools)
+[8.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/package.ps1'
+[8.653s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/package.dsv'
+[8.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/package.sh'
+[8.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/package.bash'
+[8.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/package.zsh'
+[8.656s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/ik_tools/share/colcon-core/packages/ik_tools)
+[8.658s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/seastar/steve_summer_seastar_ws/src/solar_ephemeris' with build type 'ament_python'
+[8.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('solar_ephemeris', 'ament_prefix_path')
+[8.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/hook/ament_prefix_path.ps1'
+[8.672s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/hook/ament_prefix_path.dsv'
+[8.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/hook/ament_prefix_path.sh'
+[8.678s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.678s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.559s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/seastar/steve_summer_seastar_ws/src/solar_ephemeris'
+[9.563s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.563s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.640s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/test_cam': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/test_cam/prefix_override:/home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/test_cam/build --no-deps install_data
+[9.961s] Level 1:colcon.colcon_core.shell:create_environment_hook('imufaker', 'pythonpath_develop')
+[9.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/imufaker/share/imufaker/hook/pythonpath_develop.ps1'
+[9.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/build/imufaker/share/imufaker/hook/pythonpath_develop.dsv'
+[9.966s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/imufaker' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/imufaker/prefix_override:/home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/imufaker/build --no-deps install_data
+[9.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/imufaker/share/imufaker/hook/pythonpath_develop.sh'
+[9.972s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/imufaker' for CMake module files
+[9.972s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/imufaker' for CMake config files
+[9.973s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/imufaker/lib'
+[9.973s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/imufaker/bin'
+[9.974s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/imufaker/lib/pkgconfig/imufaker.pc'
+[9.974s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages'
+[9.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('imufaker', 'pythonpath')
+[9.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/hook/pythonpath.ps1'
+[9.978s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/hook/pythonpath.dsv'
+[9.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/hook/pythonpath.sh'
+[9.980s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/imufaker/bin'
+[9.980s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imufaker)
+[9.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/package.ps1'
+[9.984s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/package.dsv'
+[9.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/package.sh'
+[9.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/package.bash'
+[9.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/imufaker/share/imufaker/package.zsh'
+[9.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/imufaker/share/colcon-core/packages/imufaker)
+[10.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/prefix_override:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/build --no-deps install_data
+[12.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_cam', 'pythonpath_develop')
+[12.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/test_cam/share/test_cam/hook/pythonpath_develop.ps1'
+[12.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/test_cam' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/test_cam/prefix_override:/home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/test_cam/build --no-deps install_data
+[12.428s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/build/test_cam/share/test_cam/hook/pythonpath_develop.dsv'
+[12.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/test_cam/share/test_cam/hook/pythonpath_develop.sh'
+[12.432s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/test_cam' for CMake module files
+[12.432s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/test_cam' for CMake config files
+[12.433s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/test_cam/lib'
+[12.433s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/test_cam/bin'
+[12.433s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/test_cam/lib/pkgconfig/test_cam.pc'
+[12.433s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages'
+[12.433s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_cam', 'pythonpath')
+[12.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/hook/pythonpath.ps1'
+[12.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/hook/pythonpath.dsv'
+[12.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/hook/pythonpath.sh'
+[12.437s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/test_cam/bin'
+[12.438s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_cam)
+[12.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/package.ps1'
+[12.442s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/package.dsv'
+[12.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/package.sh'
+[12.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/package.bash'
+[12.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/test_cam/share/test_cam/package.zsh'
+[12.449s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/test_cam/share/colcon-core/packages/test_cam)
+[13.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('solar_ephemeris', 'pythonpath_develop')
+[13.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/share/solar_ephemeris/hook/pythonpath_develop.ps1'
+[13.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris' returned '0': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/prefix_override:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/build --no-deps install_data
+[13.045s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/share/solar_ephemeris/hook/pythonpath_develop.dsv'
+[13.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/share/solar_ephemeris/hook/pythonpath_develop.sh'
+[13.048s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris' for CMake module files
+[13.049s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris' for CMake config files
+[13.049s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib'
+[13.049s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/bin'
+[13.049s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/pkgconfig/solar_ephemeris.pc'
+[13.049s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages'
+[13.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('solar_ephemeris', 'pythonpath')
+[13.051s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/hook/pythonpath.ps1'
+[13.051s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/hook/pythonpath.dsv'
+[13.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/hook/pythonpath.sh'
+[13.052s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/bin'
+[13.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(solar_ephemeris)
+[13.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/package.ps1'
+[13.054s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/package.dsv'
+[13.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/package.sh'
+[13.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/package.bash'
+[13.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/solar_ephemeris/package.zsh'
+[13.056s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/share/colcon-core/packages/solar_ephemeris)
+[34.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '0': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[34.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/head_chef
+[34.459s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(head_chef)
+[34.463s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef' for CMake module files
+[34.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '0': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/head_chef
+[34.465s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef' for CMake config files
+[34.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('head_chef', 'cmake_prefix_path')
+[34.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/hook/cmake_prefix_path.ps1'
+[34.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/hook/cmake_prefix_path.dsv'
+[34.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/hook/cmake_prefix_path.sh'
+[34.471s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/lib'
+[34.471s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/bin'
+[34.471s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/lib/pkgconfig/head_chef.pc'
+[34.471s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/lib/python3.10/site-packages'
+[34.472s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/bin'
+[34.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.ps1'
+[34.475s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.dsv'
+[34.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.sh'
+[34.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.bash'
+[34.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.zsh'
+[34.478s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/head_chef/share/colcon-core/packages/head_chef)
+[34.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(head_chef)
+[34.558s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef' for CMake module files
+[34.558s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef' for CMake config files
+[34.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('head_chef', 'cmake_prefix_path')
+[34.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/hook/cmake_prefix_path.ps1'
+[34.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/hook/cmake_prefix_path.dsv'
+[34.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/hook/cmake_prefix_path.sh'
+[34.561s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/lib'
+[34.562s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/bin'
+[34.562s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/lib/pkgconfig/head_chef.pc'
+[34.562s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/lib/python3.10/site-packages'
+[34.562s] Level 1:colcon.colcon_core.environment:checking '/home/seastar/steve_summer_seastar_ws/install/head_chef/bin'
+[34.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.ps1'
+[34.565s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.dsv'
+[34.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.sh'
+[34.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.bash'
+[34.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.zsh'
+[34.567s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/seastar/steve_summer_seastar_ws/install/head_chef/share/colcon-core/packages/head_chef)
+[34.567s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[34.567s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[34.567s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[34.567s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[34.576s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[34.576s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[34.576s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[34.591s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[34.593s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/seastar/steve_summer_seastar_ws/install/local_setup.ps1'
+[34.594s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/seastar/steve_summer_seastar_ws/install/_local_setup_util_ps1.py'
+[34.596s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/seastar/steve_summer_seastar_ws/install/setup.ps1'
+[34.598s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/seastar/steve_summer_seastar_ws/install/local_setup.sh'
+[34.599s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/seastar/steve_summer_seastar_ws/install/_local_setup_util_sh.py'
+[34.600s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/seastar/steve_summer_seastar_ws/install/setup.sh'
+[34.603s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/seastar/steve_summer_seastar_ws/install/local_setup.bash'
+[34.604s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/seastar/steve_summer_seastar_ws/install/setup.bash'
+[34.607s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/seastar/steve_summer_seastar_ws/install/local_setup.zsh'
+[34.607s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/seastar/steve_summer_seastar_ws/install/setup.zsh'

@@ -1,0 +1,201 @@
+[0.056s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces -- -j4 -l4
+[0.633s] [  4%] Built target seastar_interfaces__cpp
+[0.633s] [ 12%] Built target seastar_interfaces__rosidl_generator_c
+[0.633s] [ 12%] Built target ament_cmake_python_symlink_seastar_interfaces
+[0.634s] [ 23%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.634s] [ 35%] Built target seastar_interfaces__rosidl_typesupport_cpp
+[0.634s] [ 46%] Built target seastar_interfaces__rosidl_typesupport_introspection_cpp
+[0.634s] [ 57%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_c
+[0.634s] [ 69%] Built target seastar_interfaces__rosidl_typesupport_introspection_c
+[0.635s] [ 80%] Built target seastar_interfaces__rosidl_typesupport_c
+[0.635s] [ 80%] Built target seastar_interfaces
+[0.636s] [ 81%] Built target seastar_interfaces__py
+[0.636s] [ 91%] Built target seastar_interfaces__rosidl_generator_py
+[0.636s] [ 94%] Built target seastar_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.637s] [ 97%] Built target seastar_interfaces__rosidl_typesupport_c__pyext
+[0.637s] [100%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.668s] running egg_info
+[0.669s] writing seastar_interfaces.egg-info/PKG-INFO
+[0.669s] writing dependency_links to seastar_interfaces.egg-info/dependency_links.txt
+[0.669s] writing top-level names to seastar_interfaces.egg-info/top_level.txt
+[2.472s] writing manifest file 'seastar_interfaces.egg-info/SOURCES.txt'
+[2.522s] [100%] Built target ament_cmake_python_build_seastar_interfaces_egg
+[2.566s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces -- -j4 -l4
+[3.030s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces
+[3.088s] -- Install configuration: ""
+[3.089s] -- Execute custom install script
+[3.090s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/ament_index/resource_index/rosidl_interfaces/seastar_interfaces
+[3.091s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/desired_pointing.h
+[3.091s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__functions.h
+[3.091s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__struct.h
+[3.091s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__type_support.h
+[3.092s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__functions.h
+[3.092s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__struct.h
+[3.092s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__type_support.h
+[3.092s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__functions.h
+[3.092s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__struct.h
+[3.093s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__type_support.h
+[3.093s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__functions.h
+[3.093s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__struct.h
+[3.093s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__type_support.h
+[3.093s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__functions.h
+[3.094s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__struct.h
+[3.094s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__type_support.h
+[3.094s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/motor_command.h
+[3.094s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.095s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_ephemeris.h
+[3.095s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_scan_offset_angles.h
+[3.095s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_scan_pointing_angles.h
+[3.095s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__functions.h
+[3.095s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__struct.h
+[3.096s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__type_support.h
+[3.096s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/point_motors.h
+[3.096s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/library_path.sh
+[3.096s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/library_path.dsv
+[3.098s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__rosidl_typesupport_fastrtps_c.h
+[3.098s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h
+[3.098s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__rosidl_typesupport_fastrtps_c.h
+[3.098s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__rosidl_typesupport_fastrtps_c.h
+[3.098s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__rosidl_typesupport_fastrtps_c.h
+[3.099s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.099s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__rosidl_typesupport_fastrtps_c.h
+[3.100s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__rosidl_typesupport_introspection_c.h
+[3.100s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__rosidl_typesupport_introspection_c.h
+[3.100s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__rosidl_typesupport_introspection_c.h
+[3.100s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__rosidl_typesupport_introspection_c.h
+[3.100s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__rosidl_typesupport_introspection_c.h
+[3.101s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.101s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__rosidl_typesupport_introspection_c.h
+[3.102s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/desired_pointing.hpp
+[3.102s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__builder.hpp
+[3.102s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__struct.hpp
+[3.102s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__traits.hpp
+[3.103s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__builder.hpp
+[3.103s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__struct.hpp
+[3.103s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__traits.hpp
+[3.103s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__builder.hpp
+[3.104s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__struct.hpp
+[3.104s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__traits.hpp
+[3.104s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__builder.hpp
+[3.104s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__struct.hpp
+[3.104s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__traits.hpp
+[3.105s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__builder.hpp
+[3.105s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__struct.hpp
+[3.105s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__traits.hpp
+[3.105s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/motor_command.hpp
+[3.105s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_ephemeris.hpp
+[3.106s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_scan_offset_angles.hpp
+[3.106s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_scan_pointing_angles.hpp
+[3.106s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__builder.hpp
+[3.106s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__struct.hpp
+[3.107s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__traits.hpp
+[3.107s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/point_motors.hpp
+[3.108s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__rosidl_typesupport_fastrtps_cpp.hpp
+[3.108s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp
+[3.108s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__rosidl_typesupport_fastrtps_cpp.hpp
+[3.109s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__rosidl_typesupport_fastrtps_cpp.hpp
+[3.109s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__rosidl_typesupport_fastrtps_cpp.hpp
+[3.109s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.109s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__rosidl_typesupport_fastrtps_cpp.hpp
+[3.110s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__rosidl_typesupport_introspection_cpp.hpp
+[3.110s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp
+[3.111s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__rosidl_typesupport_introspection_cpp.hpp
+[3.111s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__rosidl_typesupport_introspection_cpp.hpp
+[3.111s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__rosidl_typesupport_introspection_cpp.hpp
+[3.113s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__rosidl_typesupport_introspection_cpp.hpp
+[3.113s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/pythonpath.sh
+[3.114s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/pythonpath.dsv
+[3.114s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.114s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.114s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.114s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.114s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/__init__.py
+[3.115s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/_seastar_interfaces_s.ep.rosidl_typesupport_c.c
+[3.115s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/_seastar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.115s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/_seastar_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.115s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/libseastar_interfaces__rosidl_generator_py.so
+[3.115s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/__init__.py
+[3.116s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_desired_pointing.py
+[3.118s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_desired_pointing_s.c
+[3.118s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_motor_command.py
+[3.118s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_motor_command_s.c
+[3.118s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_ephemeris.py
+[3.119s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_ephemeris_s.c
+[3.119s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_scan_offset_angles.py
+[3.119s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_scan_offset_angles_s.c
+[3.119s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_scan_pointing_angles.py
+[3.119s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_scan_pointing_angles_s.c
+[3.119s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.119s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.120s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.120s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/srv/__init__.py
+[3.120s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/srv/_point_motors.py
+[3.120s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/srv/_point_motors_s.c
+[3.120s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.126s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.127s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.127s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyEphemeris.idl
+[3.127s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyScanOffsetAngles.idl
+[3.127s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyScanPointingAngles.idl
+[3.127s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/DesiredPointing.idl
+[3.127s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/MotorCommand.idl
+[3.128s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/srv/PointMotors.idl
+[3.128s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyEphemeris.msg
+[3.128s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyScanOffsetAngles.msg
+[3.128s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyScanPointingAngles.msg
+[3.128s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/DesiredPointing.msg
+[3.128s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/MotorCommand.msg
+[3.128s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/srv/PointMotors.srv
+[3.128s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/srv/PointMotors_Request.msg
+[3.129s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/srv/PointMotors_Response.msg
+[3.129s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/ament_index/resource_index/package_run_dependencies/seastar_interfaces
+[3.129s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/ament_index/resource_index/parent_prefix_path/seastar_interfaces
+[3.129s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/ament_prefix_path.sh
+[3.129s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/ament_prefix_path.dsv
+[3.129s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/path.sh
+[3.129s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/path.dsv
+[3.129s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/local_setup.bash
+[3.130s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/local_setup.sh
+[3.130s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/local_setup.zsh
+[3.130s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/local_setup.dsv
+[3.130s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.dsv
+[3.138s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/ament_index/resource_index/packages/seastar_interfaces
+[3.138s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.139s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.139s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.139s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.139s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.139s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.139s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.139s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfacesConfig.cmake
+[3.139s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfacesConfig-version.cmake
+[3.140s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.xml
+[3.140s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_generator_c.so
+[3.140s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.140s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_introspection_c.so
+[3.140s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_c.so
+[3.140s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.141s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.141s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_cpp.so
+[3.210s] Listing '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces'...
+[3.211s] Listing '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg'...
+[3.211s] Listing '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/srv'...
+[3.221s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_generator_py.so
+[3.222s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_cExport.cmake
+[3.222s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.223s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.223s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.224s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.224s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.224s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_cExport.cmake
+[3.225s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.226s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_cppExport.cmake
+[3.228s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.228s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.229s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.229s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.230s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_cppExport.cmake
+[3.231s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.231s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_pyExport.cmake
+[3.231s] -- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.252s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces

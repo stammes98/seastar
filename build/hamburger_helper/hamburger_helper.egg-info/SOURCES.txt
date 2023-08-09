@@ -1,5 +1,8 @@
 DataFileSystem.py
 HamburgerLib.py
+colcon_build.rc
+colcon_command_prefix_setup_py.sh
+colcon_command_prefix_setup_py.sh.env
 package.xml
 setup.cfg
 setup.py
@@ -14,4 +17,11 @@ hamburger_helper.egg-info/entry_points.txt
 hamburger_helper.egg-info/requires.txt
 hamburger_helper.egg-info/top_level.txt
 hamburger_helper.egg-info/zip-safe
+hamburger_helper/__pycache__/__init__.cpython-310.pyc
+hamburger_helper/__pycache__/hamburger_helper.cpython-310.pyc
+prefix_override/sitecustomize.py
+prefix_override/__pycache__/sitecustomize.cpython-310.pyc
 resource/hamburger_helper
+share/hamburger_helper/hook/pythonpath_develop.dsv
+share/hamburger_helper/hook/pythonpath_develop.ps1
+share/hamburger_helper/hook/pythonpath_develop.sh

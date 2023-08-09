@@ -1,3 +1,6 @@
+colcon_build.rc
+colcon_command_prefix_setup_py.sh
+colcon_command_prefix_setup_py.sh.env
 ik_helper.py
 package.xml
 setup.cfg
@@ -12,4 +15,12 @@ ik_solver.egg-info/entry_points.txt
 ik_solver.egg-info/requires.txt
 ik_solver.egg-info/top_level.txt
 ik_solver.egg-info/zip-safe
+ik_solver/__pycache__/__init__.cpython-310.pyc
+ik_solver/__pycache__/ik_solver.cpython-310.pyc
+ik_solver/__pycache__/ik_tester.cpython-310.pyc
+prefix_override/sitecustomize.py
+prefix_override/__pycache__/sitecustomize.cpython-310.pyc
 resource/ik_solver
+share/ik_solver/hook/pythonpath_develop.dsv
+share/ik_solver/hook/pythonpath_develop.ps1
+share/ik_solver/hook/pythonpath_develop.sh

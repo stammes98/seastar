@@ -6,5 +6,5 @@ CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_CPP_BUILDING
 
 CXX_INCLUDES = -I/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c
 
-CXX_FLAGS = -std=gnu++14 -fPIC -Wall
+CXX_FLAGS = -std=gnu++14 -fPIC -Wall -Wextra -Wpedantic
 

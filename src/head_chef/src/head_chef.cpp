@@ -37,13 +37,14 @@ HeadChef::HeadChef() : Node("head_chef") {
 	commVels[2] = 0.0;
 	commVels[3] = 0.0;
 	
-	//Set PID values. Need to extract to .cfg file soon for easier testing / tuning
+	//Set PID values from config files
 	pid1 = getFromFile("/home/seastar/steve_summer_seastar_ws/settings/pid1.cfg");
 	pid2 = getFromFile("/home/seastar/steve_summer_seastar_ws/settings/pid2.cfg");
 	pid3 = getFromFile("/home/seastar/steve_summer_seastar_ws/settings/pid3.cfg");
 	
 	//Load our scripts
 	cs = ChefScript("/recipes/testScript.rcp");
+	//Gives reference to this object so the script can call our functions.
 	cs.hireChef(this);
 	
 	//For testing
@@ -51,6 +52,7 @@ HeadChef::HeadChef() : Node("head_chef") {
 	solarVecS.y = DEG2RAD((tAz));
 	solarVecS.z = DEG2RAD(tAlt);
 	
+	//pid1.enableLog();
 	//pid2.enableLog();
 	
 	//Setup subscriptions and publications 
@@ -200,6 +202,15 @@ void HeadChef::findStayTarg(double t) {
 void HeadChef::orderMotors() {
 	cook();
 	if (isRunning) {
+		for (int i = 0; i < 4; ++i) {
+			while (desiredMotorPs[i] > 200000 || desiredMotorPs[i] < 0) {
+				if (desiredMotorPs[i] > 200000) {
+					desiredMotorPs[i] -= 200000;
+				} else {
+					desiredMotorPs[i] += 200000;
+				}
+			}
+		}
 		if (mode == SunSeeking || mode == SunSeekingTest || mode == SunSeekingTimer || mode == DrawCircleSun || mode == DrawCircleTarg || mode == DrawArcSun || mode == DrawArcTarg || mode == TargSeeking || mode == TargSeekingTimer) {
 			pid1.setSetpoint(desiredMotorPs[0]);
 			commVels[0] = pid1.update(motorPs[0]);
@@ -230,6 +241,7 @@ void HeadChef::orderMotors() {
 		message.data = "0 0.0,0.0,0.0";
 		commPub_->publish(message);
 		
+		//pid1.closeLog();
 		//pid2.closeLog();
 		//Sends command to home the motors (for debugging convience)
 		message.data = "0H";
@@ -610,6 +622,8 @@ void HeadChef::imuUpdate(const geometry_msgs::msg::QuaternionStamped msg) {
 	sTargVecS.x = 1;
 	sTargVecS.y = DEG2RAD(sTargAz);
 	sTargVecS.z = DEG2RAD(sTargAlt);
+	
+	//printf("%f %f\n", sTargAz, sTargAlt);
 	
 	
 	sTargVecC = rotateSpher(sTargVecS, imu);

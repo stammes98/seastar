@@ -3,8 +3,10 @@ import matplotlib.pyplot as plt
 
 P, I, D, inP, setpoint, err, dErr, integral, t = np.loadtxt("PID.csv", unpack=True, delimiter=',', skiprows=1)
 
-plt.figure()
-plt.plot(t, setpoint, label="Target value")
-plt.plot(t, inP, label="Actual value")
-plt.legend()
+fig, ax = plt.subplots()
+ax.plot(t, setpoint, color='b', label='setpoint')
+ax.plot(t, inP, color='r', label='Actual')
+
+ax2 = ax.twinx()
+ax2.plot(t, integral, color='k', linestyle='--', label='Integral')
 plt.show()

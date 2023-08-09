@@ -1,0 +1,24 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/sousChef.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/PID.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable head_chef[0m
+[100%] Built target head_chef
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/lib/head_chef/head_chef
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/package_run_dependencies/head_chef
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/parent_prefix_path/head_chef
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/path.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/path.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.bash
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.sh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.zsh
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.dsv
+-- Symlinking: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.dsv
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/packages/head_chef
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/cmake/head_chefConfig.cmake
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/cmake/head_chefConfig-version.cmake
+-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.xml

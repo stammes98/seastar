@@ -1,0 +1,24 @@
+[1.880s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/test_cam': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/test_cam/prefix_override:/home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/test_cam/build --no-deps install_data
+[2.482s] running develop
+[2.482s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.483s]   warnings.warn(
+[2.485s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.486s]   warnings.warn(
+[2.581s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[2.581s]   warnings.warn(
+[2.582s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[2.582s]   warnings.warn(
+[2.823s] running egg_info
+[2.824s] writing test_cam.egg-info/PKG-INFO
+[2.824s] writing dependency_links to test_cam.egg-info/dependency_links.txt
+[2.824s] writing entry points to test_cam.egg-info/entry_points.txt
+[2.825s] writing requirements to test_cam.egg-info/requires.txt
+[2.825s] writing top-level names to test_cam.egg-info/top_level.txt
+[4.502s] writing manifest file 'test_cam.egg-info/SOURCES.txt'
+[4.567s] running build_ext
+[4.567s] Creating /home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages/test-cam.egg-link (link to .)
+[4.569s] Installing test_cam script to /home/seastar/steve_summer_seastar_ws/install/test_cam/lib/test_cam
+[4.569s] 
+[4.569s] Installed /home/seastar/steve_summer_seastar_ws/build/test_cam
+[4.569s] running install_data
+[4.667s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/test_cam' returned '0': PYTHONPATH=/home/seastar/steve_summer_seastar_ws/build/test_cam/prefix_override:/home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/seastar/steve_summer_seastar_ws/build/test_cam/build --no-deps install_data

@@ -1,7 +1,15 @@
+colcon_build.rc
+colcon_command_prefix_setup_py.sh
+colcon_command_prefix_setup_py.sh.env
 package.xml
 setup.cfg
 setup.py
+prefix_override/sitecustomize.py
+prefix_override/__pycache__/sitecustomize.cpython-310.pyc
 resource/test_cam
+share/test_cam/hook/pythonpath_develop.dsv
+share/test_cam/hook/pythonpath_develop.ps1
+share/test_cam/hook/pythonpath_develop.sh
 test_cam/__init__.py
 test_cam/test_cam.py
 test_cam.egg-info/PKG-INFO
@@ -11,3 +19,5 @@ test_cam.egg-info/entry_points.txt
 test_cam.egg-info/requires.txt
 test_cam.egg-info/top_level.txt
 test_cam.egg-info/zip-safe
+test_cam/__pycache__/__init__.cpython-310.pyc
+test_cam/__pycache__/test_cam.cpython-310.pyc

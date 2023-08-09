@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing ik_tools.egg-info/PKG-INFO
+writing dependency_links to ik_tools.egg-info/dependency_links.txt
+writing entry points to ik_tools.egg-info/entry_points.txt
+writing requirements to ik_tools.egg-info/requires.txt
+writing top-level names to ik_tools.egg-info/top_level.txt
+writing manifest file 'ik_tools.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/python3.10/site-packages/ik-tools.egg-link (link to .)
+Installing ik_tools script to /home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/ik_tools
+
+Installed /home/seastar/steve_summer_seastar_ws/build/ik_tools
+running install_data
+creating /home/seastar/steve_summer_seastar_ws/install/ik_tools/share/ik_tools/launch
