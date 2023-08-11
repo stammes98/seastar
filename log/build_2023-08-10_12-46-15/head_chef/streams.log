@@ -1,0 +1,61 @@
+[0.061s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.202s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[0.210s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[4.861s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[4.861s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:36:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChefCommand>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.861s]    36 |         if ([01;35m[KexecLine >= comms_.size()[m[K) {
+[4.861s]       |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[4.863s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.864s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.864s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.864s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.864s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.864s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.864s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:13[m[K,
+[4.864s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:2[m[K:
+[4.864s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:46:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ChefScript[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[4.864s]    46 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(),"Running line %d: %d - %f\n", execLine, (int) c, p);
+[4.864s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[4.864s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:46:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ChefScript[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[4.864s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:46:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.864s]    46 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Running line %d: %d - %f\n", execLine, (int) c, p);
+[4.864s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[4.864s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.864s]    46 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Running line %d: %d - %f\n", execLine, (int) c, p);
+[4.864s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[4.864s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:46:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.865s]    46 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Running line %d: %d - %f\n", execLine, (int) c, p);
+[4.865s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[4.865s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.865s]    46 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Running line %d: %d - %f\n", execLine, (int) c, p);
+[4.865s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[4.865s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:46:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.865s]    46 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(),"Running line %d: %d - %f\n", execLine, (int) c, p);
+[4.865s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[4.865s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.865s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.866s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.866s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:13[m[K,
+[4.866s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:2[m[K:
+[4.866s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:46:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ChefScript[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[4.866s]    46 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(),"Running line %d: %d - %f\n", execLine, (int) c, p);
+[4.866s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[4.866s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:46:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ChefScript[m[K’ has no member named ‘[01m[Kget_logger[m[K’
+[4.866s]    46 |         RCLCPP_INFO(this->[01;31m[Kget_logger[m[K(),"Running line %d: %d - %f\n", execLine, (int) c, p);
+[4.866s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[5.363s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:132: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o] Error 1
+[5.363s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[5.363s] gmake: *** [Makefile:146: all] Error 2
+[5.368s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

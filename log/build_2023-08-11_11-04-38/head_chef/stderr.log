@@ -1,0 +1,20 @@
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KMotorState doIk(double, double, double)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:383:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kresponse[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  383 |         MotorState [01;35m[Kresponse[m[K;
+      |                    [01;35m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:394:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KDOF[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  394 |         int [01;35m[KDOF[m[K = 3;
+      |             [01;35m[K^~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:451:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  451 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:382:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpolar[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  382 | MotorState doIk(double tAz, double tAlt, [01;35m[Kdouble polar[m[K) {
+      |                                          [01;35m[K~~~~~~~^~~~~[m[K
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/sousChef.cpp.o:(.data+0x0): multiple definition of `EPS_'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.data+0x0): first defined here
+/usr/bin/ld: CMakeFiles/head_chef.dir/src/ChefScript.cpp.o:(.data+0x0): multiple definition of `EPS_'; CMakeFiles/head_chef.dir/src/head_chef.cpp.o:(.data+0x0): first defined here
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:279: head_chef] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

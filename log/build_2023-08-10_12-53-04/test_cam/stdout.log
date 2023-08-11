@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing test_cam.egg-info/PKG-INFO
+writing dependency_links to test_cam.egg-info/dependency_links.txt
+writing entry points to test_cam.egg-info/entry_points.txt
+writing requirements to test_cam.egg-info/requires.txt
+writing top-level names to test_cam.egg-info/top_level.txt
+writing manifest file 'test_cam.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages/test-cam.egg-link (link to .)
+Installing test_cam script to /home/seastar/steve_summer_seastar_ws/install/test_cam/lib/test_cam
+
+Installed /home/seastar/steve_summer_seastar_ws/build/test_cam
+running install_data

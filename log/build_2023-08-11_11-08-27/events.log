@@ -1,0 +1,858 @@
+[0.000000] (-) TimerEvent: {}
+[0.000231] (bluespace_ai_xsens_mti_driver) JobQueued: {'identifier': 'bluespace_ai_xsens_mti_driver', 'dependencies': OrderedDict()}
+[0.000274] (hamburger_helper) JobQueued: {'identifier': 'hamburger_helper', 'dependencies': OrderedDict()}
+[0.000308] (ik_solver) JobQueued: {'identifier': 'ik_solver', 'dependencies': OrderedDict()}
+[0.000329] (ik_tools) JobQueued: {'identifier': 'ik_tools', 'dependencies': OrderedDict()}
+[0.000348] (imufaker) JobQueued: {'identifier': 'imufaker', 'dependencies': OrderedDict()}
+[0.000768] (motor_state_manager) JobQueued: {'identifier': 'motor_state_manager', 'dependencies': OrderedDict()}
+[0.000796] (seastar_interfaces) JobQueued: {'identifier': 'seastar_interfaces', 'dependencies': OrderedDict()}
+[0.001135] (sunspotter) JobQueued: {'identifier': 'sunspotter', 'dependencies': OrderedDict()}
+[0.001163] (test_cam) JobQueued: {'identifier': 'test_cam', 'dependencies': OrderedDict()}
+[0.001344] (head_chef) JobQueued: {'identifier': 'head_chef', 'dependencies': OrderedDict([('seastar_interfaces', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces')])}
+[0.001377] (solar_ephemeris) JobQueued: {'identifier': 'solar_ephemeris', 'dependencies': OrderedDict([('seastar_interfaces', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces')])}
+[0.001413] (seastar_interfaces) JobStarted: {'identifier': 'seastar_interfaces'}
+[0.007850] (bluespace_ai_xsens_mti_driver) JobStarted: {'identifier': 'bluespace_ai_xsens_mti_driver'}
+[0.014261] (hamburger_helper) JobStarted: {'identifier': 'hamburger_helper'}
+[0.025427] (ik_solver) JobStarted: {'identifier': 'ik_solver'}
+[0.039129] (seastar_interfaces) JobProgress: {'identifier': 'seastar_interfaces', 'progress': 'cmake'}
+[0.039732] (seastar_interfaces) JobProgress: {'identifier': 'seastar_interfaces', 'progress': 'build'}
+[0.040383] (seastar_interfaces) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--build', '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.042999] (bluespace_ai_xsens_mti_driver) JobProgress: {'identifier': 'bluespace_ai_xsens_mti_driver', 'progress': 'cmake'}
+[0.043728] (bluespace_ai_xsens_mti_driver) JobProgress: {'identifier': 'bluespace_ai_xsens_mti_driver', 'progress': 'build'}
+[0.043998] (bluespace_ai_xsens_mti_driver) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--build', '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver', '--', '-j4', '-l4'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098700] (-) TimerEvent: {}
+[0.199080] (-) TimerEvent: {}
+[0.299638] (-) TimerEvent: {}
+[0.400066] (-) TimerEvent: {}
+[0.490999] (seastar_interfaces) StdoutLine: {'line': b'[ 11%] Built target seastar_interfaces__rosidl_generator_c\n'}
+[0.491809] (seastar_interfaces) StdoutLine: {'line': b'[ 12%] Built target seastar_interfaces__cpp\n'}
+[0.492382] (seastar_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_seastar_interfaces\n'}
+[0.492567] (seastar_interfaces) StdoutLine: {'line': b'[ 23%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.493184] (seastar_interfaces) StdoutLine: {'line': b'[ 35%] Built target seastar_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.493389] (seastar_interfaces) StdoutLine: {'line': b'[ 46%] Built target seastar_interfaces__rosidl_typesupport_c\n'}
+[0.493532] (seastar_interfaces) StdoutLine: {'line': b'[ 57%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.493668] (seastar_interfaces) StdoutLine: {'line': b'[ 69%] Built target seastar_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.493798] (seastar_interfaces) StdoutLine: {'line': b'[ 80%] Built target seastar_interfaces__rosidl_typesupport_cpp\n'}
+[0.493930] (seastar_interfaces) StdoutLine: {'line': b'[ 80%] Built target seastar_interfaces\n'}
+[0.494057] (seastar_interfaces) StdoutLine: {'line': b'[ 81%] Built target seastar_interfaces__py\n'}
+[0.494182] (seastar_interfaces) StdoutLine: {'line': b'[ 91%] Built target seastar_interfaces__rosidl_generator_py\n'}
+[0.494304] (seastar_interfaces) StdoutLine: {'line': b'[ 94%] Built target seastar_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.494443] (seastar_interfaces) StdoutLine: {'line': b'[100%] Built target seastar_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.494565] (seastar_interfaces) StdoutLine: {'line': b'[100%] Built target seastar_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.494688] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'[100%] Built target xsens_mti_node\n'}
+[0.500181] (-) TimerEvent: {}
+[0.528817] (seastar_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.530490] (seastar_interfaces) StdoutLine: {'line': b'writing seastar_interfaces.egg-info/PKG-INFO\n'}
+[0.531065] (seastar_interfaces) StdoutLine: {'line': b'writing dependency_links to seastar_interfaces.egg-info/dependency_links.txt\n'}
+[0.532701] (seastar_interfaces) StdoutLine: {'line': b'writing top-level names to seastar_interfaces.egg-info/top_level.txt\n'}
+[0.600297] (-) TimerEvent: {}
+[0.700759] (-) TimerEvent: {}
+[0.801412] (-) TimerEvent: {}
+[0.901853] (-) TimerEvent: {}
+[0.907940] (bluespace_ai_xsens_mti_driver) CommandEnded: {'returncode': 0}
+[1.002111] (-) TimerEvent: {}
+[1.013037] (bluespace_ai_xsens_mti_driver) JobProgress: {'identifier': 'bluespace_ai_xsens_mti_driver', 'progress': 'install'}
+[1.079763] (bluespace_ai_xsens_mti_driver) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--install', '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/bluespace_ai_xsens_mti_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.102206] (-) TimerEvent: {}
+[1.135430] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.135813] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.135950] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/launch/display.launch.py\n'}
+[1.136086] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/launch/xsens_mti_node.launch.py\n'}
+[1.136217] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/param/xsens_mti_node.yaml\n'}
+[1.136342] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/rviz/display.rviz\n'}
+[1.136467] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/urdf/MTi_1.stl\n'}
+[1.136591] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/urdf/MTi_1.urdf\n'}
+[1.136713] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/urdf/MTi_10.stl\n'}
+[1.136834] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/urdf/MTi_10.urdf\n'}
+[1.136956] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/urdf/MTi_6xx.stl\n'}
+[1.137081] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/urdf/MTi_6xx.urdf\n'}
+[1.137189] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/ament_index/resource_index/package_run_dependencies/bluespace_ai_xsens_mti_driver\n'}
+[1.137307] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/ament_index/resource_index/parent_prefix_path/bluespace_ai_xsens_mti_driver\n'}
+[1.137556] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/environment/ament_prefix_path.sh\n'}
+[1.138073] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/environment/ament_prefix_path.dsv\n'}
+[1.139131] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/environment/path.sh\n'}
+[1.139940] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/environment/path.dsv\n'}
+[1.140611] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/local_setup.bash\n'}
+[1.141166] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/local_setup.sh\n'}
+[1.141701] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/local_setup.zsh\n'}
+[1.142258] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/local_setup.dsv\n'}
+[1.142747] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Symlinking: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.dsv\n'}
+[1.157271] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/ament_index/resource_index/packages/bluespace_ai_xsens_mti_driver\n'}
+[1.157515] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/cmake/bluespace_ai_xsens_mti_driverConfig.cmake\n'}
+[1.157635] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/cmake/bluespace_ai_xsens_mti_driverConfig-version.cmake\n'}
+[1.157751] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/share/bluespace_ai_xsens_mti_driver/package.xml\n'}
+[1.157892] (bluespace_ai_xsens_mti_driver) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver/lib/bluespace_ai_xsens_mti_driver/xsens_mti_node\n'}
+[1.174048] (bluespace_ai_xsens_mti_driver) CommandEnded: {'returncode': 0}
+[1.202361] (-) TimerEvent: {}
+[1.302860] (-) TimerEvent: {}
+[1.311855] (bluespace_ai_xsens_mti_driver) JobEnded: {'identifier': 'bluespace_ai_xsens_mti_driver', 'rc': 0}
+[1.312848] (ik_tools) JobStarted: {'identifier': 'ik_tools'}
+[1.402963] (-) TimerEvent: {}
+[1.503368] (-) TimerEvent: {}
+[1.603815] (-) TimerEvent: {}
+[1.704256] (-) TimerEvent: {}
+[1.804754] (-) TimerEvent: {}
+[1.905369] (-) TimerEvent: {}
+[1.986928] (hamburger_helper) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/build', '--no-deps', 'install_data'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'seastar', 'XDG_SESSION_TYPE': 'wayland', 'OCTAVE_PATH': '/usr/local/share/openrave-0.9/octave:', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/seastar', 'OLDPWD': '/home/seastar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5015', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'seastar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'seastar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.777B91', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/seastar/steve_summer_seastar_ws/build/hamburger_helper/prefix_override:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages:/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.989892] (ik_solver) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/seastar/steve_summer_seastar_ws/build/ik_solver/build', '--no-deps', 'install_data'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/ik_solver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'seastar', 'XDG_SESSION_TYPE': 'wayland', 'OCTAVE_PATH': '/usr/local/share/openrave-0.9/octave:', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/seastar', 'OLDPWD': '/home/seastar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5015', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'seastar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'seastar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.777B91', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/seastar/steve_summer_seastar_ws/build/ik_solver', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/seastar/steve_summer_seastar_ws/build/ik_solver/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/python3.10/site-packages:/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.005474] (-) TimerEvent: {}
+[2.105828] (-) TimerEvent: {}
+[2.206176] (-) TimerEvent: {}
+[2.306517] (-) TimerEvent: {}
+[2.406911] (-) TimerEvent: {}
+[2.417263] (seastar_interfaces) StdoutLine: {'line': b"writing manifest file 'seastar_interfaces.egg-info/SOURCES.txt'\n"}
+[2.483710] (seastar_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_seastar_interfaces_egg\n'}
+[2.507026] (-) TimerEvent: {}
+[2.510544] (seastar_interfaces) CommandEnded: {'returncode': 0}
+[2.578015] (hamburger_helper) StdoutLine: {'line': b'running develop\n'}
+[2.578540] (hamburger_helper) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.578755] (hamburger_helper) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.581530] (hamburger_helper) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.581755] (hamburger_helper) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.595762] (ik_solver) StdoutLine: {'line': b'running develop\n'}
+[2.596339] (ik_solver) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.596513] (ik_solver) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.599277] (ik_solver) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.599557] (ik_solver) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.607109] (-) TimerEvent: {}
+[2.707431] (-) TimerEvent: {}
+[2.746771] (hamburger_helper) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release\n'}
+[2.747050] (hamburger_helper) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.747157] (hamburger_helper) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release\n'}
+[2.747253] (hamburger_helper) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.754022] (ik_solver) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release\n'}
+[2.754292] (ik_solver) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.754567] (ik_solver) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release\n'}
+[2.754726] (ik_solver) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.802076] (seastar_interfaces) JobProgress: {'identifier': 'seastar_interfaces', 'progress': 'install'}
+[2.802170] (seastar_interfaces) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--install', '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/seastar_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.807544] (-) TimerEvent: {}
+[2.859655] (seastar_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.860792] (seastar_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.861131] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/ament_index/resource_index/rosidl_interfaces/seastar_interfaces\n'}
+[2.862257] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/desired_pointing.h\n'}
+[2.862523] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__functions.h\n'}
+[2.862703] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__struct.h\n'}
+[2.862878] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__type_support.h\n'}
+[2.863047] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__functions.h\n'}
+[2.863410] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__struct.h\n'}
+[2.863602] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__type_support.h\n'}
+[2.863774] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__functions.h\n'}
+[2.863942] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__struct.h\n'}
+[2.865763] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__type_support.h\n'}
+[2.865981] (ik_tools) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/seastar/steve_summer_seastar_ws/build/ik_tools/build', '--no-deps', 'install_data'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/ik_tools', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'seastar', 'XDG_SESSION_TYPE': 'wayland', 'OCTAVE_PATH': '/usr/local/share/openrave-0.9/octave:', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/seastar', 'OLDPWD': '/home/seastar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5015', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'seastar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'seastar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.777B91', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/seastar/steve_summer_seastar_ws/build/ik_tools', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/seastar/steve_summer_seastar_ws/build/ik_tools/prefix_override:/home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/python3.10/site-packages:/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.866948] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__functions.h\n'}
+[2.867100] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__struct.h\n'}
+[2.867228] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__type_support.h\n'}
+[2.867352] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__functions.h\n'}
+[2.867525] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__struct.h\n'}
+[2.867670] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__type_support.h\n'}
+[2.867793] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/motor_command.h\n'}
+[2.867911] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.868140] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_ephemeris.h\n'}
+[2.868268] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_scan_offset_angles.h\n'}
+[2.868391] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_scan_pointing_angles.h\n'}
+[2.868504] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__functions.h\n'}
+[2.868621] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__struct.h\n'}
+[2.868741] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__type_support.h\n'}
+[2.868857] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/point_motors.h\n'}
+[2.868978] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/library_path.sh\n'}
+[2.869097] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/library_path.dsv\n'}
+[2.869286] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__rosidl_typesupport_fastrtps_c.h\n'}
+[2.869416] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h\n'}
+[2.869571] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__rosidl_typesupport_fastrtps_c.h\n'}
+[2.869742] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__rosidl_typesupport_fastrtps_c.h\n'}
+[2.869879] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__rosidl_typesupport_fastrtps_c.h\n'}
+[2.870056] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.870221] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__rosidl_typesupport_fastrtps_c.h\n'}
+[2.870892] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__rosidl_typesupport_introspection_c.h\n'}
+[2.871111] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__rosidl_typesupport_introspection_c.h\n'}
+[2.871306] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__rosidl_typesupport_introspection_c.h\n'}
+[2.871552] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__rosidl_typesupport_introspection_c.h\n'}
+[2.871758] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__rosidl_typesupport_introspection_c.h\n'}
+[2.871975] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.872171] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__rosidl_typesupport_introspection_c.h\n'}
+[2.873222] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/desired_pointing.hpp\n'}
+[2.873467] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__builder.hpp\n'}
+[2.873633] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__struct.hpp\n'}
+[2.873806] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__traits.hpp\n'}
+[2.874008] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__builder.hpp\n'}
+[2.874220] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__struct.hpp\n'}
+[2.874424] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__traits.hpp\n'}
+[2.874632] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__builder.hpp\n'}
+[2.874838] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__struct.hpp\n'}
+[2.875047] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__traits.hpp\n'}
+[2.875262] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__builder.hpp\n'}
+[2.875500] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__struct.hpp\n'}
+[2.875704] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__traits.hpp\n'}
+[2.875908] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__builder.hpp\n'}
+[2.876120] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__struct.hpp\n'}
+[2.876338] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__traits.hpp\n'}
+[2.883424] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/motor_command.hpp\n'}
+[2.883696] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_ephemeris.hpp\n'}
+[2.883865] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_scan_offset_angles.hpp\n'}
+[2.884001] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/sky_scan_pointing_angles.hpp\n'}
+[2.884181] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__builder.hpp\n'}
+[2.884305] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__struct.hpp\n'}
+[2.884427] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__traits.hpp\n'}
+[2.884541] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/point_motors.hpp\n'}
+[2.884650] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.884771] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.884885] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.885004] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.885115] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.885241] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.885359] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.885546] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/desired_pointing__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.885723] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.885898] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_ephemeris__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.886066] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_offset_angles__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.886201] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/msg/detail/sky_scan_pointing_angles__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.886387] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/include/seastar_interfaces/seastar_interfaces/srv/detail/point_motors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.886560] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/pythonpath.sh\n'}
+[2.886734] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/pythonpath.dsv\n'}
+[2.886894] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.887020] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.887196] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.887459] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.887646] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/__init__.py\n'}
+[2.887827] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/_seastar_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[2.888006] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/_seastar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.888199] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/_seastar_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.888375] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/libseastar_interfaces__rosidl_generator_py.so\n'}
+[2.888541] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/__init__.py\n'}
+[2.888674] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_desired_pointing.py\n'}
+[2.888847] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_desired_pointing_s.c\n'}
+[2.889022] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_motor_command.py\n'}
+[2.889195] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_motor_command_s.c\n'}
+[2.889320] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_ephemeris.py\n'}
+[2.889494] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_ephemeris_s.c\n'}
+[2.889652] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_scan_offset_angles.py\n'}
+[2.889829] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_scan_offset_angles_s.c\n'}
+[2.889949] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_scan_pointing_angles.py\n'}
+[2.890069] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg/_sky_scan_pointing_angles_s.c\n'}
+[2.890188] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.890369] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.890495] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.890625] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/srv/__init__.py\n'}
+[2.890782] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/srv/_point_motors.py\n'}
+[2.891699] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/srv/_point_motors_s.c\n'}
+[2.892382] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.900991] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.901720] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/seastar_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.901939] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyEphemeris.idl\n'}
+[2.902122] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyScanOffsetAngles.idl\n'}
+[2.902284] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyScanPointingAngles.idl\n'}
+[2.902436] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/DesiredPointing.idl\n'}
+[2.902580] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/MotorCommand.idl\n'}
+[2.902722] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/srv/PointMotors.idl\n'}
+[2.902859] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyEphemeris.msg\n'}
+[2.902991] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyScanOffsetAngles.msg\n'}
+[2.903123] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/SkyScanPointingAngles.msg\n'}
+[2.903245] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/DesiredPointing.msg\n'}
+[2.903368] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/msg/MotorCommand.msg\n'}
+[2.903553] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/srv/PointMotors.srv\n'}
+[2.903691] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/srv/PointMotors_Request.msg\n'}
+[2.903825] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/srv/PointMotors_Response.msg\n'}
+[2.903974] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/ament_index/resource_index/package_run_dependencies/seastar_interfaces\n'}
+[2.904110] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/ament_index/resource_index/parent_prefix_path/seastar_interfaces\n'}
+[2.904239] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/ament_prefix_path.sh\n'}
+[2.904372] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/ament_prefix_path.dsv\n'}
+[2.904503] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/path.sh\n'}
+[2.904627] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/environment/path.dsv\n'}
+[2.904750] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/local_setup.bash\n'}
+[2.904876] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/local_setup.sh\n'}
+[2.905000] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/local_setup.zsh\n'}
+[2.905122] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/local_setup.dsv\n'}
+[2.905243] (seastar_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.dsv\n'}
+[2.907638] (-) TimerEvent: {}
+[2.911027] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/ament_index/resource_index/packages/seastar_interfaces\n'}
+[2.911658] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.912312] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.913248] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.914196] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.915028] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.915590] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.919441] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.919649] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfacesConfig.cmake\n'}
+[2.919796] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfacesConfig-version.cmake\n'}
+[2.919922] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/package.xml\n'}
+[2.920044] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_generator_c.so\n'}
+[2.920172] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.920294] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.920417] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_c.so\n'}
+[2.920539] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.920660] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.920782] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.974663] (seastar_interfaces) StdoutLine: {'line': b"Listing '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces'...\n"}
+[2.974944] (seastar_interfaces) StdoutLine: {'line': b"Listing '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/msg'...\n"}
+[2.975118] (seastar_interfaces) StdoutLine: {'line': b"Listing '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages/seastar_interfaces/srv'...\n"}
+[2.990433] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib/libseastar_interfaces__rosidl_generator_py.so\n'}
+[2.990752] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_cExport.cmake\n'}
+[2.990954] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.991129] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.991291] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.991470] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.991650] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.991799] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[2.991936] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.992068] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_cppExport.cmake\n'}
+[2.992196] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.992320] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.992444] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.992563] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.992677] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[2.992790] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/seastar_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.992894] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_pyExport.cmake\n'}
+[2.992994] (seastar_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/share/seastar_interfaces/cmake/export_seastar_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.999699] (seastar_interfaces) CommandEnded: {'returncode': 0}
+[3.009285] (-) TimerEvent: {}
+[3.064706] (ik_solver) StdoutLine: {'line': b'running egg_info\n'}
+[3.065412] (ik_solver) StdoutLine: {'line': b'writing ik_solver.egg-info/PKG-INFO\n'}
+[3.066090] (ik_solver) StdoutLine: {'line': b'writing dependency_links to ik_solver.egg-info/dependency_links.txt\n'}
+[3.066681] (ik_solver) StdoutLine: {'line': b'writing entry points to ik_solver.egg-info/entry_points.txt\n'}
+[3.067159] (ik_solver) StdoutLine: {'line': b'writing requirements to ik_solver.egg-info/requires.txt\n'}
+[3.067571] (ik_solver) StdoutLine: {'line': b'writing top-level names to ik_solver.egg-info/top_level.txt\n'}
+[3.084639] (hamburger_helper) StdoutLine: {'line': b'running egg_info\n'}
+[3.085038] (hamburger_helper) StdoutLine: {'line': b'writing hamburger_helper.egg-info/PKG-INFO\n'}
+[3.085429] (hamburger_helper) StdoutLine: {'line': b'writing dependency_links to hamburger_helper.egg-info/dependency_links.txt\n'}
+[3.085691] (hamburger_helper) StdoutLine: {'line': b'writing entry points to hamburger_helper.egg-info/entry_points.txt\n'}
+[3.085927] (hamburger_helper) StdoutLine: {'line': b'writing requirements to hamburger_helper.egg-info/requires.txt\n'}
+[3.086131] (hamburger_helper) StdoutLine: {'line': b'writing top-level names to hamburger_helper.egg-info/top_level.txt\n'}
+[3.109400] (-) TimerEvent: {}
+[3.210182] (-) TimerEvent: {}
+[3.313415] (-) TimerEvent: {}
+[3.338663] (seastar_interfaces) JobEnded: {'identifier': 'seastar_interfaces', 'rc': 0}
+[3.339629] (imufaker) JobStarted: {'identifier': 'imufaker'}
+[3.413528] (-) TimerEvent: {}
+[3.460803] (ik_tools) StdoutLine: {'line': b'running develop\n'}
+[3.461271] (ik_tools) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.461414] (ik_tools) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.463659] (ik_tools) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.463902] (ik_tools) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.513634] (-) TimerEvent: {}
+[3.610484] (ik_tools) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release\n'}
+[3.610716] (ik_tools) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.610913] (ik_tools) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release\n'}
+[3.611053] (ik_tools) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.613726] (-) TimerEvent: {}
+[3.714063] (-) TimerEvent: {}
+[3.814430] (-) TimerEvent: {}
+[3.904818] (ik_tools) StdoutLine: {'line': b'running egg_info\n'}
+[3.905198] (ik_tools) StdoutLine: {'line': b'writing ik_tools.egg-info/PKG-INFO\n'}
+[3.905579] (ik_tools) StdoutLine: {'line': b'writing dependency_links to ik_tools.egg-info/dependency_links.txt\n'}
+[3.905829] (ik_tools) StdoutLine: {'line': b'writing entry points to ik_tools.egg-info/entry_points.txt\n'}
+[3.906031] (ik_tools) StdoutLine: {'line': b'writing requirements to ik_tools.egg-info/requires.txt\n'}
+[3.906230] (ik_tools) StdoutLine: {'line': b'writing top-level names to ik_tools.egg-info/top_level.txt\n'}
+[3.914535] (-) TimerEvent: {}
+[4.014870] (-) TimerEvent: {}
+[4.115228] (-) TimerEvent: {}
+[4.215653] (-) TimerEvent: {}
+[4.316006] (-) TimerEvent: {}
+[4.416341] (-) TimerEvent: {}
+[4.516672] (-) TimerEvent: {}
+[4.617015] (-) TimerEvent: {}
+[4.717373] (-) TimerEvent: {}
+[4.817746] (-) TimerEvent: {}
+[4.855583] (imufaker) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/seastar/steve_summer_seastar_ws/build/imufaker/build', '--no-deps', 'install_data'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/imufaker', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'seastar', 'XDG_SESSION_TYPE': 'wayland', 'OCTAVE_PATH': '/usr/local/share/openrave-0.9/octave:', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/seastar', 'OLDPWD': '/home/seastar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5015', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'seastar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'seastar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.777B91', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/seastar/steve_summer_seastar_ws/build/imufaker', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/seastar/steve_summer_seastar_ws/build/imufaker/prefix_override:/home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages:/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[4.917845] (-) TimerEvent: {}
+[5.018285] (-) TimerEvent: {}
+[5.118742] (-) TimerEvent: {}
+[5.219166] (-) TimerEvent: {}
+[5.316694] (hamburger_helper) StdoutLine: {'line': b"writing manifest file 'hamburger_helper.egg-info/SOURCES.txt'\n"}
+[5.319269] (-) TimerEvent: {}
+[5.338776] (ik_solver) StdoutLine: {'line': b"writing manifest file 'ik_solver.egg-info/SOURCES.txt'\n"}
+[5.393819] (hamburger_helper) StdoutLine: {'line': b'running build_ext\n'}
+[5.394596] (hamburger_helper) StdoutLine: {'line': b'Creating /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/python3.10/site-packages/hamburger-helper.egg-link (link to .)\n'}
+[5.396420] (hamburger_helper) StdoutLine: {'line': b'Installing hamburger_helper script to /home/seastar/steve_summer_seastar_ws/install/hamburger_helper/lib/hamburger_helper\n'}
+[5.397222] (hamburger_helper) StdoutLine: {'line': b'\n'}
+[5.397486] (hamburger_helper) StdoutLine: {'line': b'Installed /home/seastar/steve_summer_seastar_ws/build/hamburger_helper\n'}
+[5.397847] (hamburger_helper) StdoutLine: {'line': b'running install_data\n'}
+[5.406184] (ik_solver) StdoutLine: {'line': b'running build_ext\n'}
+[5.406570] (ik_solver) StdoutLine: {'line': b'Creating /home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/python3.10/site-packages/ik-solver.egg-link (link to .)\n'}
+[5.408339] (ik_solver) StdoutLine: {'line': b'Installing ik_solver script to /home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/ik_solver\n'}
+[5.408640] (ik_solver) StdoutLine: {'line': b'Installing ik_tester script to /home/seastar/steve_summer_seastar_ws/install/ik_solver/lib/ik_solver\n'}
+[5.408967] (ik_solver) StdoutLine: {'line': b'\n'}
+[5.409142] (ik_solver) StdoutLine: {'line': b'Installed /home/seastar/steve_summer_seastar_ws/build/ik_solver\n'}
+[5.409309] (ik_solver) StdoutLine: {'line': b'running install_data\n'}
+[5.419436] (-) TimerEvent: {}
+[5.429055] (imufaker) StdoutLine: {'line': b'running develop\n'}
+[5.429539] (imufaker) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.429715] (imufaker) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.432205] (imufaker) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.432517] (imufaker) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.516195] (hamburger_helper) CommandEnded: {'returncode': 0}
+[5.522111] (-) TimerEvent: {}
+[5.537181] (hamburger_helper) JobEnded: {'identifier': 'hamburger_helper', 'rc': 0}
+[5.538278] (motor_state_manager) JobStarted: {'identifier': 'motor_state_manager'}
+[5.552181] (ik_solver) CommandEnded: {'returncode': 0}
+[5.569331] (ik_solver) JobEnded: {'identifier': 'ik_solver', 'rc': 0}
+[5.574194] (sunspotter) JobStarted: {'identifier': 'sunspotter'}
+[5.577011] (imufaker) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release\n'}
+[5.577468] (imufaker) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.577680] (imufaker) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release\n'}
+[5.577809] (imufaker) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.579621] (motor_state_manager) JobProgress: {'identifier': 'motor_state_manager', 'progress': 'cmake'}
+[5.589761] (motor_state_manager) JobProgress: {'identifier': 'motor_state_manager', 'progress': 'build'}
+[5.589869] (motor_state_manager) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--build', '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager', '--', '-j4', '-l4'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.596186] (sunspotter) JobProgress: {'identifier': 'sunspotter', 'progress': 'cmake'}
+[5.596299] (sunspotter) JobProgress: {'identifier': 'sunspotter', 'progress': 'build'}
+[5.596364] (sunspotter) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--build', '/home/seastar/steve_summer_seastar_ws/build/sunspotter', '--', '-j4', '-l4'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/sunspotter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/sunspotter'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.622226] (-) TimerEvent: {}
+[5.680565] (motor_state_manager) StdoutLine: {'line': b'[100%] Built target motor_state_manager\n'}
+[5.696405] (motor_state_manager) CommandEnded: {'returncode': 0}
+[5.697939] (sunspotter) StdoutLine: {'line': b'[100%] Built target sunspotter\n'}
+[5.714325] (sunspotter) CommandEnded: {'returncode': 0}
+[5.722342] (-) TimerEvent: {}
+[5.788484] (motor_state_manager) JobProgress: {'identifier': 'motor_state_manager', 'progress': 'install'}
+[5.788592] (motor_state_manager) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--install', '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/motor_state_manager'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.799042] (sunspotter) JobProgress: {'identifier': 'sunspotter', 'progress': 'install'}
+[5.800519] (sunspotter) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--install', '/home/seastar/steve_summer_seastar_ws/build/sunspotter'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/sunspotter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/sunspotter'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.822447] (-) TimerEvent: {}
+[5.836144] (motor_state_manager) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.836990] (motor_state_manager) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.837601] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/motor_state_manager/motor_state_manager\n'}
+[5.837991] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/lib/motor_state_manager/motorsettings.cfg\n'}
+[5.838412] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/ament_index/resource_index/package_run_dependencies/motor_state_manager\n'}
+[5.838815] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/ament_index/resource_index/parent_prefix_path/motor_state_manager\n'}
+[5.839194] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/ament_prefix_path.sh\n'}
+[5.839574] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/ament_prefix_path.dsv\n'}
+[5.839943] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/path.sh\n'}
+[5.840305] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/environment/path.dsv\n'}
+[5.840666] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.bash\n'}
+[5.841029] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.sh\n'}
+[5.841388] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.zsh\n'}
+[5.841750] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/local_setup.dsv\n'}
+[5.842041] (motor_state_manager) StdoutLine: {'line': b'-- Symlinking: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.dsv\n'}
+[5.846593] (sunspotter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.847251] (sunspotter) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.847719] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/lib/sunspotter//sunspotter\n'}
+[5.852016] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/ament_index/resource_index/packages/motor_state_manager\n'}
+[5.852333] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/cmake/motor_state_managerConfig.cmake\n'}
+[5.852483] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/cmake/motor_state_managerConfig-version.cmake\n'}
+[5.852586] (motor_state_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/motor_state_manager/share/motor_state_manager/package.xml\n'}
+[5.852688] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/ament_index/resource_index/package_run_dependencies/sunspotter\n'}
+[5.852798] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/ament_index/resource_index/parent_prefix_path/sunspotter\n'}
+[5.852894] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/ament_prefix_path.sh\n'}
+[5.852989] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/ament_prefix_path.dsv\n'}
+[5.853083] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/path.sh\n'}
+[5.853194] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/environment/path.dsv\n'}
+[5.853287] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.bash\n'}
+[5.853377] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.sh\n'}
+[5.853470] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.zsh\n'}
+[5.853568] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/local_setup.dsv\n'}
+[5.853670] (sunspotter) StdoutLine: {'line': b'-- Symlinking: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.dsv\n'}
+[5.871649] (motor_state_manager) CommandEnded: {'returncode': 0}
+[5.872363] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/ament_index/resource_index/packages/sunspotter\n'}
+[5.872508] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/cmake/sunspotterConfig.cmake\n'}
+[5.872612] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/cmake/sunspotterConfig-version.cmake\n'}
+[5.872716] (sunspotter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/sunspotter/share/sunspotter/package.xml\n'}
+[5.874320] (imufaker) StdoutLine: {'line': b'running egg_info\n'}
+[5.875045] (imufaker) StdoutLine: {'line': b'writing imufaker.egg-info/PKG-INFO\n'}
+[5.875320] (imufaker) StdoutLine: {'line': b'writing dependency_links to imufaker.egg-info/dependency_links.txt\n'}
+[5.875851] (imufaker) StdoutLine: {'line': b'writing entry points to imufaker.egg-info/entry_points.txt\n'}
+[5.876204] (imufaker) StdoutLine: {'line': b'writing requirements to imufaker.egg-info/requires.txt\n'}
+[5.876461] (imufaker) StdoutLine: {'line': b'writing top-level names to imufaker.egg-info/top_level.txt\n'}
+[5.889866] (sunspotter) CommandEnded: {'returncode': 0}
+[5.922558] (-) TimerEvent: {}
+[5.998733] (motor_state_manager) JobEnded: {'identifier': 'motor_state_manager', 'rc': 0}
+[5.999728] (test_cam) JobStarted: {'identifier': 'test_cam'}
+[6.023040] (-) TimerEvent: {}
+[6.041398] (sunspotter) JobEnded: {'identifier': 'sunspotter', 'rc': 0}
+[6.042626] (head_chef) JobStarted: {'identifier': 'head_chef'}
+[6.047273] (ik_tools) StdoutLine: {'line': b"writing manifest file 'ik_tools.egg-info/SOURCES.txt'\n"}
+[6.096480] (ik_tools) StdoutLine: {'line': b'running build_ext\n'}
+[6.096755] (ik_tools) StdoutLine: {'line': b'Creating /home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/python3.10/site-packages/ik-tools.egg-link (link to .)\n'}
+[6.097609] (ik_tools) StdoutLine: {'line': b'Installing ik_tools script to /home/seastar/steve_summer_seastar_ws/install/ik_tools/lib/ik_tools\n'}
+[6.097864] (ik_tools) StdoutLine: {'line': b'\n'}
+[6.098007] (ik_tools) StdoutLine: {'line': b'Installed /home/seastar/steve_summer_seastar_ws/build/ik_tools\n'}
+[6.098112] (ik_tools) StdoutLine: {'line': b'running install_data\n'}
+[6.123159] (-) TimerEvent: {}
+[6.223565] (-) TimerEvent: {}
+[6.323847] (-) TimerEvent: {}
+[6.424187] (-) TimerEvent: {}
+[6.524554] (-) TimerEvent: {}
+[6.536796] (head_chef) JobProgress: {'identifier': 'head_chef', 'progress': 'cmake'}
+[6.537756] (head_chef) JobProgress: {'identifier': 'head_chef', 'progress': 'build'}
+[6.538185] (head_chef) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--build', '/home/seastar/steve_summer_seastar_ws/build/head_chef', '--', '-j4', '-l4'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/head_chef', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/head_chef'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble')]), 'shell': False}
+[6.542001] (ik_tools) CommandEnded: {'returncode': 0}
+[6.560637] (ik_tools) JobEnded: {'identifier': 'ik_tools', 'rc': 0}
+[6.563551] (solar_ephemeris) JobStarted: {'identifier': 'solar_ephemeris'}
+[6.624666] (-) TimerEvent: {}
+[6.669798] (head_chef) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o\x1b[0m\n'}
+[6.679077] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[Kcc1plus:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory\n'}
+[6.690792] (head_chef) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/head_chef.dir/src/sousChef.cpp.o\x1b[0m\n'}
+[6.698663] (head_chef) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o\x1b[0m\n'}
+[6.710734] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[Kcc1plus:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory\n'}
+[6.724768] (-) TimerEvent: {}
+[6.728858] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[Kcc1plus:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory\n'}
+[6.824867] (-) TimerEvent: {}
+[6.925214] (-) TimerEvent: {}
+[7.025572] (-) TimerEvent: {}
+[7.126019] (-) TimerEvent: {}
+[7.226377] (-) TimerEvent: {}
+[7.326749] (-) TimerEvent: {}
+[7.427117] (-) TimerEvent: {}
+[7.527440] (-) TimerEvent: {}
+[7.627905] (-) TimerEvent: {}
+[7.728293] (-) TimerEvent: {}
+[7.757292] (imufaker) StdoutLine: {'line': b"writing manifest file 'imufaker.egg-info/SOURCES.txt'\n"}
+[7.825225] (test_cam) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/seastar/steve_summer_seastar_ws/build/test_cam/build', '--no-deps', 'install_data'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/test_cam', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'seastar', 'XDG_SESSION_TYPE': 'wayland', 'OCTAVE_PATH': '/usr/local/share/openrave-0.9/octave:', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/seastar', 'OLDPWD': '/home/seastar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5015', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'seastar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'seastar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.777B91', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/seastar/steve_summer_seastar_ws/build/test_cam', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/seastar/steve_summer_seastar_ws/build/test_cam/prefix_override:/home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages:/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[7.828470] (imufaker) StdoutLine: {'line': b'running build_ext\n'}
+[7.828730] (-) TimerEvent: {}
+[7.828978] (imufaker) StdoutLine: {'line': b'Creating /home/seastar/steve_summer_seastar_ws/install/imufaker/lib/python3.10/site-packages/imufaker.egg-link (link to .)\n'}
+[7.830298] (imufaker) StdoutLine: {'line': b'Installing imufaker script to /home/seastar/steve_summer_seastar_ws/install/imufaker/lib/imufaker\n'}
+[7.830639] (imufaker) StdoutLine: {'line': b'\n'}
+[7.830802] (imufaker) StdoutLine: {'line': b'Installed /home/seastar/steve_summer_seastar_ws/build/imufaker\n'}
+[7.830963] (imufaker) StdoutLine: {'line': b'running install_data\n'}
+[7.928862] (-) TimerEvent: {}
+[7.955695] (imufaker) CommandEnded: {'returncode': 0}
+[7.992310] (imufaker) JobEnded: {'identifier': 'imufaker', 'rc': 0}
+[8.029174] (-) TimerEvent: {}
+[8.129748] (-) TimerEvent: {}
+[8.230140] (-) TimerEvent: {}
+[8.330539] (-) TimerEvent: {}
+[8.430953] (-) TimerEvent: {}
+[8.531349] (-) TimerEvent: {}
+[8.631724] (-) TimerEvent: {}
+[8.691827] (solar_ephemeris) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/build', '--no-deps', 'install_data'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'seastar', 'XDG_SESSION_TYPE': 'wayland', 'OCTAVE_PATH': '/usr/local/share/openrave-0.9/octave:', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/seastar', 'OLDPWD': '/home/seastar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5015', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'seastar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'seastar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.777B91', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/seastar/steve_summer_seastar_ws/build/solar_ephemeris/prefix_override:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages:/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces'}, 'shell': False}
+[8.731832] (-) TimerEvent: {}
+[8.816223] (test_cam) StdoutLine: {'line': b'running develop\n'}
+[8.817338] (test_cam) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[8.817685] (test_cam) StderrLine: {'line': b'  warnings.warn(\n'}
+[8.820808] (test_cam) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[8.821132] (test_cam) StderrLine: {'line': b'  warnings.warn(\n'}
+[8.831927] (-) TimerEvent: {}
+[8.932374] (-) TimerEvent: {}
+[9.011445] (test_cam) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release\n'}
+[9.011709] (test_cam) StderrLine: {'line': b'  warnings.warn(\n'}
+[9.011899] (test_cam) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release\n'}
+[9.012023] (test_cam) StderrLine: {'line': b'  warnings.warn(\n'}
+[9.032485] (-) TimerEvent: {}
+[9.132969] (-) TimerEvent: {}
+[9.233328] (-) TimerEvent: {}
+[9.333695] (-) TimerEvent: {}
+[9.370210] (test_cam) StdoutLine: {'line': b'running egg_info\n'}
+[9.371076] (test_cam) StdoutLine: {'line': b'writing test_cam.egg-info/PKG-INFO\n'}
+[9.371957] (test_cam) StdoutLine: {'line': b'writing dependency_links to test_cam.egg-info/dependency_links.txt\n'}
+[9.372680] (test_cam) StdoutLine: {'line': b'writing entry points to test_cam.egg-info/entry_points.txt\n'}
+[9.373286] (test_cam) StdoutLine: {'line': b'writing requirements to test_cam.egg-info/requires.txt\n'}
+[9.373817] (test_cam) StdoutLine: {'line': b'writing top-level names to test_cam.egg-info/top_level.txt\n'}
+[9.433809] (-) TimerEvent: {}
+[9.534276] (-) TimerEvent: {}
+[9.610724] (solar_ephemeris) StdoutLine: {'line': b'running develop\n'}
+[9.611193] (solar_ephemeris) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[9.611354] (solar_ephemeris) StderrLine: {'line': b'  warnings.warn(\n'}
+[9.612681] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KMotorState doIk(double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.612907] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:394:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KDOF\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.613079] (head_chef) StderrLine: {'line': b'  394 |         int \x1b[01;35m\x1b[KDOF\x1b[m\x1b[K = 3;\n'}
+[9.613185] (head_chef) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[9.613289] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:382:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpolar\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.613399] (head_chef) StderrLine: {'line': b'  382 | MotorState doIk(double tAz, double tAlt, \x1b[01;35m\x1b[Kdouble polar\x1b[m\x1b[K) {\n'}
+[9.613504] (head_chef) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[9.613840] (solar_ephemeris) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[9.613989] (solar_ephemeris) StderrLine: {'line': b'  warnings.warn(\n'}
+[9.634380] (-) TimerEvent: {}
+[9.734856] (-) TimerEvent: {}
+[9.806507] (solar_ephemeris) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release\n'}
+[9.806739] (solar_ephemeris) StderrLine: {'line': b'  warnings.warn(\n'}
+[9.806916] (solar_ephemeris) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release\n'}
+[9.807062] (solar_ephemeris) StderrLine: {'line': b'  warnings.warn(\n'}
+[9.834986] (-) TimerEvent: {}
+[9.935390] (-) TimerEvent: {}
+[10.035774] (-) TimerEvent: {}
+[10.145687] (-) TimerEvent: {}
+[10.171223] (solar_ephemeris) StdoutLine: {'line': b'running egg_info\n'}
+[10.171601] (solar_ephemeris) StdoutLine: {'line': b'writing solar_ephemeris.egg-info/PKG-INFO\n'}
+[10.172208] (solar_ephemeris) StdoutLine: {'line': b'writing dependency_links to solar_ephemeris.egg-info/dependency_links.txt\n'}
+[10.172796] (solar_ephemeris) StdoutLine: {'line': b'writing entry points to solar_ephemeris.egg-info/entry_points.txt\n'}
+[10.173322] (solar_ephemeris) StdoutLine: {'line': b'writing requirements to solar_ephemeris.egg-info/requires.txt\n'}
+[10.173799] (solar_ephemeris) StdoutLine: {'line': b'writing top-level names to solar_ephemeris.egg-info/top_level.txt\n'}
+[10.245792] (-) TimerEvent: {}
+[10.346169] (-) TimerEvent: {}
+[10.446544] (-) TimerEvent: {}
+[10.546924] (-) TimerEvent: {}
+[10.647294] (-) TimerEvent: {}
+[10.747682] (-) TimerEvent: {}
+[10.848064] (-) TimerEvent: {}
+[10.948432] (-) TimerEvent: {}
+[11.048881] (-) TimerEvent: {}
+[11.149255] (-) TimerEvent: {}
+[11.249661] (-) TimerEvent: {}
+[11.350070] (-) TimerEvent: {}
+[11.450439] (-) TimerEvent: {}
+[11.550801] (-) TimerEvent: {}
+[11.651168] (-) TimerEvent: {}
+[11.751547] (-) TimerEvent: {}
+[11.851910] (-) TimerEvent: {}
+[11.952282] (-) TimerEvent: {}
+[12.052737] (-) TimerEvent: {}
+[12.128207] (test_cam) StdoutLine: {'line': b"writing manifest file 'test_cam.egg-info/SOURCES.txt'\n"}
+[12.152845] (-) TimerEvent: {}
+[12.196456] (test_cam) StdoutLine: {'line': b'running build_ext\n'}
+[12.196927] (test_cam) StdoutLine: {'line': b'Creating /home/seastar/steve_summer_seastar_ws/install/test_cam/lib/python3.10/site-packages/test-cam.egg-link (link to .)\n'}
+[12.198627] (test_cam) StdoutLine: {'line': b'Installing test_cam script to /home/seastar/steve_summer_seastar_ws/install/test_cam/lib/test_cam\n'}
+[12.199201] (test_cam) StdoutLine: {'line': b'\n'}
+[12.199431] (test_cam) StdoutLine: {'line': b'Installed /home/seastar/steve_summer_seastar_ws/build/test_cam\n'}
+[12.199559] (test_cam) StdoutLine: {'line': b'running install_data\n'}
+[12.252964] (-) TimerEvent: {}
+[12.332777] (test_cam) CommandEnded: {'returncode': 0}
+[12.362873] (-) TimerEvent: {}
+[12.367153] (test_cam) JobEnded: {'identifier': 'test_cam', 'rc': 0}
+[12.462993] (-) TimerEvent: {}
+[12.546999] (solar_ephemeris) StdoutLine: {'line': b"writing manifest file 'solar_ephemeris.egg-info/SOURCES.txt'\n"}
+[12.563112] (-) TimerEvent: {}
+[12.624814] (solar_ephemeris) StdoutLine: {'line': b'running build_ext\n'}
+[12.625161] (solar_ephemeris) StdoutLine: {'line': b'Creating /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/python3.10/site-packages/solar-ephemeris.egg-link (link to .)\n'}
+[12.626692] (solar_ephemeris) StdoutLine: {'line': b'Installing solar_ephemeris script to /home/seastar/steve_summer_seastar_ws/install/solar_ephemeris/lib/solar_ephemeris\n'}
+[12.627099] (solar_ephemeris) StdoutLine: {'line': b'\n'}
+[12.627250] (solar_ephemeris) StdoutLine: {'line': b'Installed /home/seastar/steve_summer_seastar_ws/build/solar_ephemeris\n'}
+[12.627403] (solar_ephemeris) StdoutLine: {'line': b'running install_data\n'}
+[12.663242] (-) TimerEvent: {}
+[12.729855] (solar_ephemeris) CommandEnded: {'returncode': 0}
+[12.753837] (solar_ephemeris) JobEnded: {'identifier': 'solar_ephemeris', 'rc': 0}
+[12.763391] (-) TimerEvent: {}
+[12.863827] (-) TimerEvent: {}
+[12.964236] (-) TimerEvent: {}
+[13.064639] (-) TimerEvent: {}
+[13.165030] (-) TimerEvent: {}
+[13.265444] (-) TimerEvent: {}
+[13.369676] (-) TimerEvent: {}
+[13.470058] (-) TimerEvent: {}
+[13.581713] (-) TimerEvent: {}
+[13.682095] (-) TimerEvent: {}
+[13.782513] (-) TimerEvent: {}
+[13.882909] (-) TimerEvent: {}
+[13.983303] (-) TimerEvent: {}
+[14.028712] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid signal_callback_handler(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.028974] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:16:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksignum\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.029106] (head_chef) StderrLine: {'line': b'   16 | void signal_callback_handler(\x1b[01;35m\x1b[Kint signum\x1b[m\x1b[K) {\n'}
+[14.029226] (head_chef) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[14.083463] (-) TimerEvent: {}
+[14.183831] (-) TimerEvent: {}
+[14.284258] (-) TimerEvent: {}
+[14.384630] (-) TimerEvent: {}
+[14.484986] (-) TimerEvent: {}
+[14.585406] (-) TimerEvent: {}
+[14.685796] (-) TimerEvent: {}
+[14.786194] (-) TimerEvent: {}
+[14.886610] (-) TimerEvent: {}
+[14.953218] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ChefScript::execNextLine()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.953466] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:37:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ChefCommand>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.953602] (head_chef) StderrLine: {'line': b'   37 |         if (\x1b[01;35m\x1b[KexecLine >= comms_.size()\x1b[m\x1b[K) {\n'}
+[14.953721] (head_chef) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.954368] (head_chef) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[14.954547] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[14.954670] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[14.954787] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[14.954901] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[14.955034] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[14.955151] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[14.955266] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[14.955401] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[14.955527] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[14.955641] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[14.955757] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:13\x1b[m\x1b[K,\n'}
+[14.955881] (head_chef) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:2\x1b[m\x1b[K:\n'}
+[14.956012] (head_chef) StderrLine: {'line': b'\x1b[01m\x1b[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:47:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktoo many arguments for format [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args\x07-Wformat-extra-args\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.956140] (head_chef) StderrLine: {'line': b'   47 |         RCLCPP_INFO(chef_->get_logger(),\x1b[01;35m\x1b[K"Running line %d"\x1b[m\x1b[K, execLine, (int) c, p);\n'}
+[14.956255] (head_chef) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.986730] (-) TimerEvent: {}
+[15.087109] (-) TimerEvent: {}
+[15.187462] (-) TimerEvent: {}
+[15.287828] (-) TimerEvent: {}
+[15.388216] (-) TimerEvent: {}
+[15.488608] (-) TimerEvent: {}
+[15.589006] (-) TimerEvent: {}
+[15.689417] (-) TimerEvent: {}
+[15.789889] (-) TimerEvent: {}
+[15.890412] (-) TimerEvent: {}
+[15.990959] (-) TimerEvent: {}
+[16.091353] (-) TimerEvent: {}
+[16.191728] (-) TimerEvent: {}
+[16.292092] (-) TimerEvent: {}
+[16.392495] (-) TimerEvent: {}
+[16.492894] (-) TimerEvent: {}
+[16.593289] (-) TimerEvent: {}
+[16.693709] (-) TimerEvent: {}
+[16.794125] (-) TimerEvent: {}
+[16.894525] (-) TimerEvent: {}
+[16.994902] (-) TimerEvent: {}
+[17.095292] (-) TimerEvent: {}
+[17.195695] (-) TimerEvent: {}
+[17.296114] (-) TimerEvent: {}
+[17.396515] (-) TimerEvent: {}
+[17.496875] (-) TimerEvent: {}
+[17.597249] (-) TimerEvent: {}
+[17.697653] (-) TimerEvent: {}
+[17.798052] (-) TimerEvent: {}
+[17.898451] (-) TimerEvent: {}
+[17.998853] (-) TimerEvent: {}
+[18.099236] (-) TimerEvent: {}
+[18.199712] (-) TimerEvent: {}
+[18.300156] (-) TimerEvent: {}
+[18.400501] (-) TimerEvent: {}
+[18.500851] (-) TimerEvent: {}
+[18.601205] (-) TimerEvent: {}
+[18.701539] (-) TimerEvent: {}
+[18.801843] (-) TimerEvent: {}
+[18.902160] (-) TimerEvent: {}
+[19.002514] (-) TimerEvent: {}
+[19.102873] (-) TimerEvent: {}
+[19.203228] (-) TimerEvent: {}
+[19.303606] (-) TimerEvent: {}
+[19.403966] (-) TimerEvent: {}
+[19.504305] (-) TimerEvent: {}
+[19.604608] (-) TimerEvent: {}
+[19.704964] (-) TimerEvent: {}
+[19.805291] (-) TimerEvent: {}
+[19.905633] (-) TimerEvent: {}
+[20.005984] (-) TimerEvent: {}
+[20.106339] (-) TimerEvent: {}
+[20.206712] (-) TimerEvent: {}
+[20.307122] (-) TimerEvent: {}
+[20.407426] (-) TimerEvent: {}
+[20.507729] (-) TimerEvent: {}
+[20.608046] (-) TimerEvent: {}
+[20.708351] (-) TimerEvent: {}
+[20.808652] (-) TimerEvent: {}
+[20.908997] (-) TimerEvent: {}
+[21.009350] (-) TimerEvent: {}
+[21.109720] (-) TimerEvent: {}
+[21.210043] (-) TimerEvent: {}
+[21.310372] (-) TimerEvent: {}
+[21.410694] (-) TimerEvent: {}
+[21.511030] (-) TimerEvent: {}
+[21.611363] (-) TimerEvent: {}
+[21.711768] (-) TimerEvent: {}
+[21.812108] (-) TimerEvent: {}
+[21.912427] (-) TimerEvent: {}
+[22.012754] (-) TimerEvent: {}
+[22.113102] (-) TimerEvent: {}
+[22.213439] (-) TimerEvent: {}
+[22.313771] (-) TimerEvent: {}
+[22.414101] (-) TimerEvent: {}
+[22.514442] (-) TimerEvent: {}
+[22.614775] (-) TimerEvent: {}
+[22.715106] (-) TimerEvent: {}
+[22.815440] (-) TimerEvent: {}
+[22.915753] (-) TimerEvent: {}
+[23.016087] (-) TimerEvent: {}
+[23.116408] (-) TimerEvent: {}
+[23.216755] (-) TimerEvent: {}
+[23.317085] (-) TimerEvent: {}
+[23.417467] (-) TimerEvent: {}
+[23.517797] (-) TimerEvent: {}
+[23.618127] (-) TimerEvent: {}
+[23.718454] (-) TimerEvent: {}
+[23.818784] (-) TimerEvent: {}
+[23.919096] (-) TimerEvent: {}
+[24.019440] (-) TimerEvent: {}
+[24.119740] (-) TimerEvent: {}
+[24.220038] (-) TimerEvent: {}
+[24.320339] (-) TimerEvent: {}
+[24.420633] (-) TimerEvent: {}
+[24.520929] (-) TimerEvent: {}
+[24.621225] (-) TimerEvent: {}
+[24.721523] (-) TimerEvent: {}
+[24.821822] (-) TimerEvent: {}
+[24.922122] (-) TimerEvent: {}
+[25.022423] (-) TimerEvent: {}
+[25.122723] (-) TimerEvent: {}
+[25.223036] (-) TimerEvent: {}
+[25.323341] (-) TimerEvent: {}
+[25.423661] (-) TimerEvent: {}
+[25.523956] (-) TimerEvent: {}
+[25.624257] (-) TimerEvent: {}
+[25.724553] (-) TimerEvent: {}
+[25.824855] (-) TimerEvent: {}
+[25.925154] (-) TimerEvent: {}
+[26.025459] (-) TimerEvent: {}
+[26.125763] (-) TimerEvent: {}
+[26.226068] (-) TimerEvent: {}
+[26.326376] (-) TimerEvent: {}
+[26.426705] (-) TimerEvent: {}
+[26.527011] (-) TimerEvent: {}
+[26.627312] (-) TimerEvent: {}
+[26.727621] (-) TimerEvent: {}
+[26.827922] (-) TimerEvent: {}
+[26.928227] (-) TimerEvent: {}
+[27.028521] (-) TimerEvent: {}
+[27.128817] (-) TimerEvent: {}
+[27.229121] (-) TimerEvent: {}
+[27.329420] (-) TimerEvent: {}
+[27.429718] (-) TimerEvent: {}
+[27.530026] (-) TimerEvent: {}
+[27.630324] (-) TimerEvent: {}
+[27.730620] (-) TimerEvent: {}
+[27.830921] (-) TimerEvent: {}
+[27.931223] (-) TimerEvent: {}
+[28.031536] (-) TimerEvent: {}
+[28.131810] (-) TimerEvent: {}
+[28.232103] (-) TimerEvent: {}
+[28.332396] (-) TimerEvent: {}
+[28.432694] (-) TimerEvent: {}
+[28.532992] (-) TimerEvent: {}
+[28.633291] (-) TimerEvent: {}
+[28.733588] (-) TimerEvent: {}
+[28.833938] (-) TimerEvent: {}
+[28.934287] (-) TimerEvent: {}
+[29.034655] (-) TimerEvent: {}
+[29.135075] (-) TimerEvent: {}
+[29.235428] (-) TimerEvent: {}
+[29.335745] (-) TimerEvent: {}
+[29.436048] (-) TimerEvent: {}
+[29.536360] (-) TimerEvent: {}
+[29.636673] (-) TimerEvent: {}
+[29.736986] (-) TimerEvent: {}
+[29.837307] (-) TimerEvent: {}
+[29.937743] (-) TimerEvent: {}
+[30.038153] (-) TimerEvent: {}
+[30.138470] (-) TimerEvent: {}
+[30.238803] (-) TimerEvent: {}
+[30.339156] (-) TimerEvent: {}
+[30.439462] (-) TimerEvent: {}
+[30.456360] (head_chef) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable head_chef\x1b[0m\n'}
+[30.539602] (-) TimerEvent: {}
+[30.640029] (-) TimerEvent: {}
+[30.740455] (-) TimerEvent: {}
+[30.841017] (-) TimerEvent: {}
+[30.941647] (-) TimerEvent: {}
+[31.042233] (-) TimerEvent: {}
+[31.142810] (-) TimerEvent: {}
+[31.243469] (-) TimerEvent: {}
+[31.343911] (-) TimerEvent: {}
+[31.444284] (-) TimerEvent: {}
+[31.544762] (-) TimerEvent: {}
+[31.645116] (-) TimerEvent: {}
+[31.745459] (-) TimerEvent: {}
+[31.845807] (-) TimerEvent: {}
+[31.946186] (-) TimerEvent: {}
+[32.046610] (-) TimerEvent: {}
+[32.134740] (head_chef) StdoutLine: {'line': b'[100%] Built target head_chef\n'}
+[32.143800] (head_chef) CommandEnded: {'returncode': 0}
+[32.146692] (-) TimerEvent: {}
+[32.201786] (head_chef) JobProgress: {'identifier': 'head_chef', 'progress': 'install'}
+[32.202577] (head_chef) Command: {'cmd': ['/home/seastar/.local/bin/cmake', '--install', '/home/seastar/steve_summer_seastar_ws/build/head_chef'], 'cwd': '/home/seastar/steve_summer_seastar_ws/build/head_chef', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'seastar'), ('XDG_SESSION_TYPE', 'wayland'), ('OCTAVE_PATH', '/usr/local/share/openrave-0.9/octave:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:/usr/local/lib/openrave0.9-plugins:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/seastar'), ('OLDPWD', '/home/seastar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5015'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'seastar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'seastar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/bin:/opt/ros/humble/bin:/home/seastar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/seastar:@/tmp/.ICE-unix/1813,unix/seastar:/tmp/.ICE-unix/1813'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e5b8c014_69e5_498c_8634_93fe356864e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.777B91'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/seastar/steve_summer_seastar_ws/build/head_chef'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:/usr/local/:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble')]), 'shell': False}
+[32.228541] (head_chef) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[32.228999] (head_chef) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[32.229304] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/lib/head_chef/head_chef\n'}
+[32.229500] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/package_run_dependencies/head_chef\n'}
+[32.229666] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/parent_prefix_path/head_chef\n'}
+[32.229846] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/ament_prefix_path.sh\n'}
+[32.230018] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/ament_prefix_path.dsv\n'}
+[32.230196] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/path.sh\n'}
+[32.230368] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/path.dsv\n'}
+[32.230533] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.bash\n'}
+[32.230699] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.sh\n'}
+[32.230885] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.zsh\n'}
+[32.231052] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.dsv\n'}
+[32.231187] (head_chef) StdoutLine: {'line': b'-- Symlinking: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.dsv\n'}
+[32.234259] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/packages/head_chef\n'}
+[32.234442] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/cmake/head_chefConfig.cmake\n'}
+[32.234556] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/cmake/head_chefConfig-version.cmake\n'}
+[32.234682] (head_chef) StdoutLine: {'line': b'-- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.xml\n'}
+[32.239836] (head_chef) CommandEnded: {'returncode': 0}
+[32.248662] (-) TimerEvent: {}
+[32.315978] (head_chef) JobEnded: {'identifier': 'head_chef', 'rc': 0}
+[32.316659] (-) EventReactorShutdown: {}

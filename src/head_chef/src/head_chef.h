@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <memory>
 #include <chrono>
+#include <thread>
 #include <functional>
 #include <string>
 #include <iostream>
@@ -164,7 +165,8 @@ public:
 	Vector3 sTargVecS = {1.0, 0.0, 0.0};
 	Vector3 sTargVecC = {1.0, 0.0, 0.0};
 	
-	ChefMode mode = WaitForComm; //Current chef mode
+	//ChefMode mode = IKTest; //Current chef mode
+	ChefMode mode = WaitForComm;
 	//ChefMode mode = SunSeeking;
 	bool openedLog = false; //Track if we have the log open, and if we need to close it
 	std::ofstream logFile; //The log

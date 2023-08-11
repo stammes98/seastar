@@ -4,7 +4,14 @@
 #include <iostream>
 #include <cmath>
 #include <libconfig.h++>
+#include <Eigen/Dense>
 #include "PID.h"
+
+using Eigen::Map;
+using Eigen::MatrixXd;
+using Eigen::MatrixXf;
+using Eigen::Vector3f;
+using Eigen::VectorXf;
 
 #ifndef SOUS_CHEF_H
 #define SOUS_CHEF_H
@@ -13,7 +20,7 @@
 #define DEG2RAD(a)		(a * PI / 180)
 #define RAD2DEG(a)		(a * 180 / PI)
 
-enum ChefMode {
+enum ChefMode { 
 	Homing,
 	WaitForComm,
 	SunSeeking,
@@ -28,6 +35,7 @@ enum ChefMode {
 	DrawArcSun,
 	DrawArcTarg,
 	PIDTest,
+	IKTest,
 	Shutdown
 };
 
@@ -37,12 +45,62 @@ struct Vector3 {
 	double z;
 };
 
+struct Vector6 {
+	double x;
+	double y;
+	double z;
+	double a;
+	double b;
+	double c;
+};
+
 struct Quat {
 	double x;
 	double y;
 	double z;
 	double w;
 };
+
+struct MotorState {
+	double q1;
+	double q2;
+	double q3;
+};
+
+struct Mat3 {
+	double m11;
+	double m12;
+	double m13;
+	double m21;
+	double m22;
+	double m23;
+	double m31;
+	double m32;
+	double m33;
+};
+
+struct Mat6 {
+	double m11;
+	double m12;
+	double m13;
+	double m21;
+	double m22;
+	double m23;
+	double m31;
+	double m32;
+	double m33;
+	double m41;
+	double m42;
+	double m43;
+	double m51;
+	double m52;
+	double m53;
+	double m61;
+	double m62;
+	double m63;
+};
+
+const double EPS_ = 1e-12;
 
 //Split a string into a vector of strings given a token
 std::vector<std::string> split(std::string s, std::string delimiter);
@@ -80,5 +138,24 @@ Quat fixQuat(const Quat& q);
 
 //Load settings into a PID
 PID getFromFile(std::string filePath);
+
+Vector6 getPoseErr(Mat3 targ, Mat3 cur);
+double getErrPose(Mat3 targ, Mat3 cur);
+Vector3 rot_to_omega(Mat3 R);
+
+Mat3 motor1(double q);
+Mat3 motor2(double q);
+Mat3 motor3(double q);
+
+Mat3 doFk(double q1, double q2, double q3);
+Mat3 sunMat(double az, double alt);
+
+Mat3 transpose(Mat3 mat);
+Mat3 dotMats(Mat3 a, Mat3 b);
+Mat6 getJacobian(double q1, double q2, double q3);
+
+Vector3 matDotVec(Mat3 a, Vector3 b);
+
+MotorState doIk(double tAz, double tAlt, double polar);
 
 #endif

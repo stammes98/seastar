@@ -1,0 +1,39 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/sousChef.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KVector6 getPoseErr(Mat3, Mat3)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:264:34:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KMat3[m[K’ to non-scalar type ‘[01m[KVector3[m[K’ requested
+  264 |         Vector3 rot_err = [01;31m[KdotMats(transpose(cur), targ)[m[K;
+      |                           [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:265:53:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Krot_err[m[K’ from ‘[01m[KVector3[m[K’ to ‘[01m[KMat3[m[K’
+  265 |         Vector3 w_err = matDotVec(cur, rot_to_omega([01;31m[Krot_err[m[K);
+      |                                                     [01;31m[K^~~~~~~[m[K
+      |                                                     [01;31m[K|[m[K
+      |                                                     [01;31m[KVector3[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KMat3 sunMat(double, double)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:304:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kphi[m[K’ was not declared in this scope
+  304 |         res.m23 = sin(az) * sin([01;31m[Kphi[m[K);
+      |                                 [01;31m[K^~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KMotorState doIk(double, double, double)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:437:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kfki[m[K’ was not declared in this scope; did you mean ‘[01m[Kfk[m[K’?
+  437 |                 [01;31m[Kfki[m[K = doFk(q1, q2, q3);
+      |                 [01;31m[K^~~[m[K
+      |                 [32m[Kfk[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:394:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KDOF[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  394 |         int [01;35m[KDOF[m[K = 3;
+      |             [01;35m[K^~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:451:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  451 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:382:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpolar[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  382 | MotorState doIk(double tAz, double tAlt, [01;35m[Kdouble polar[m[K) {
+      |                                          [01;35m[K~~~~~~~^~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:16:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:90: CMakeFiles/head_chef.dir/src/sousChef.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

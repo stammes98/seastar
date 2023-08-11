@@ -7,20 +7,23 @@
 
 <body>
 <h1>Motor State Manager Node</h1>
-<p>Handles motor connections in pairs of 2. Indexing from zero, each pair of motors will listen to commands and publish its position on numbered topics. </p>
+<p>Handles motor connections in groups. Indexing from zero, each pair of motors will listen to commands and publish its position on numbered topics. </p>
 <p><a href='../index.html'>Return home</a></p>
 <p>Motor kinematics restrains are stored in motor_state_manager/include/motorsettings.cfg</p>
 
 <h4>Subscribed topics</h4>
 <ul>
-<li>"/motor_commands" - a string formatted as "MOTOR_INDEX V1,V2" which sets velocities of each pair.</li>
+<li>"/motor_commands" - a string formatted as "MOTOR_INDEX V1,V2,V3" which sets velocities of each set.</li>
 </ul>
 
 <h4>Published topics</h4>
 <ul>
-<li>"/motorsN" - N is index of motor pair. Publishes positions of motor pair in stepper space.</li>
+<li>"/motorsN" - N is index of motor group. Publishes positions of motors in stepper space.</li>
 </ul>
 </body>
+
+<h4>Temporary Changes</h4>
+<p>In order to demo 2 axis tracking better, the third motor has been commented out of motor_state_manager. To re-enable the third motor, remove the comments from lines 95-100 and 109-112 in motor_state_manager.cpp</p>
 
 <p>Special notes: Sometimes the ports get confused because of the IMU. Line 29 of motor_state_manager.cpp should work in its current state, however if the IMU is changed, or the order of motor connections changes, so will this</p>
 </html>

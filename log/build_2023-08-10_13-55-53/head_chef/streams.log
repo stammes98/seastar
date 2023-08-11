@@ -1,0 +1,46 @@
+[0.042s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.168s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/ChefScript.cpp.o[0m
+[0.174s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[4.824s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[4.825s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:37:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChefCommand>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.825s]    37 |         if ([01;35m[KexecLine >= comms_.size()[m[K) {
+[4.825s]       |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[4.825s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.826s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:13[m[K,
+[4.826s]                  from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:2[m[K:
+[4.826s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:47:41:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+[4.826s]    47 |         RCLCPP_INFO(chef_->get_logger(),[01;35m[K"Running line %d"[m[K, execLine, (int) c, p);
+[4.826s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[5.428s] [ 33%] [32m[1mLinking CXX executable head_chef[0m
+[6.828s] [100%] Built target head_chef
+[6.837s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '0': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[6.900s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/head_chef
+[6.931s] -- Install configuration: ""
+[6.932s] -- Execute custom install script
+[6.932s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/lib/head_chef/head_chef
+[6.932s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/package_run_dependencies/head_chef
+[6.932s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/parent_prefix_path/head_chef
+[6.933s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/ament_prefix_path.sh
+[6.933s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/ament_prefix_path.dsv
+[6.933s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/path.sh
+[6.933s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/environment/path.dsv
+[6.934s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.bash
+[6.934s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.sh
+[6.934s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.zsh
+[6.934s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/local_setup.dsv
+[6.935s] -- Symlinking: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.dsv
+[6.938s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/ament_index/resource_index/packages/head_chef
+[6.938s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/cmake/head_chefConfig.cmake
+[6.938s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/cmake/head_chefConfig-version.cmake
+[6.939s] -- Up-to-date symlink: /home/seastar/steve_summer_seastar_ws/install/head_chef/share/head_chef/package.xml
+[6.945s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '0': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --install /home/seastar/steve_summer_seastar_ws/build/head_chef

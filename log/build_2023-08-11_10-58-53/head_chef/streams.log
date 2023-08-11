@@ -1,0 +1,41 @@
+[0.470s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': AMENT_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.616s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/sousChef.cpp.o[0m
+[0.623s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[0.628s] [ 33%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/head_chef.cpp.o[0m
+[0.665s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[2.967s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KVector6 getPoseErr(Mat3, Mat3)[m[K’:
+[2.967s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:264:34:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KMat3[m[K’ to non-scalar type ‘[01m[KVector3[m[K’ requested
+[2.967s]   264 |         Vector3 rot_err = [01;31m[KdotMats(transpose(cur), targ)[m[K;
+[2.967s]       |                           [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.967s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:265:53:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Krot_err[m[K’ from ‘[01m[KVector3[m[K’ to ‘[01m[KMat3[m[K’
+[2.967s]   265 |         Vector3 w_err = matDotVec(cur, rot_to_omega([01;31m[Krot_err[m[K);
+[2.967s]       |                                                     [01;31m[K^~~~~~~[m[K
+[2.967s]       |                                                     [01;31m[K|[m[K
+[2.967s]       |                                                     [01;31m[KVector3[m[K
+[2.971s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KMat3 sunMat(double, double)[m[K’:
+[2.971s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:304:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kphi[m[K’ was not declared in this scope
+[2.972s]   304 |         res.m23 = sin(az) * sin([01;31m[Kphi[m[K);
+[2.972s]       |                                 [01;31m[K^~~[m[K
+[3.204s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KMotorState doIk(double, double, double)[m[K’:
+[3.204s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:437:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kfki[m[K’ was not declared in this scope; did you mean ‘[01m[Kfk[m[K’?
+[3.204s]   437 |                 [01;31m[Kfki[m[K = doFk(q1, q2, q3);
+[3.204s]       |                 [01;31m[K^~~[m[K
+[3.204s]       |                 [32m[Kfk[m[K
+[3.205s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:394:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KDOF[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.205s]   394 |         int [01;35m[KDOF[m[K = 3;
+[3.205s]       |             [01;35m[K^~~[m[K
+[3.205s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:451:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[3.205s]   451 | [01;35m[K}[m[K
+[3.205s]       | [01;35m[K^[m[K
+[3.205s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:382:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpolar[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.205s]   382 | MotorState doIk(double tAz, double tAlt, [01;35m[Kdouble polar[m[K) {
+[3.205s]       |                                          [01;35m[K~~~~~~~^~~~~[m[K
+[6.874s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[6.874s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:16:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.875s]    16 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+[6.875s]       |                              [01;35m[K~~~~^~~~~~[m[K
+[7.417s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:90: CMakeFiles/head_chef.dir/src/sousChef.cpp.o] Error 1
+[7.418s] gmake[2]: *** Waiting for unfinished jobs....
+[22.945s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[22.945s] gmake: *** [Makefile:146: all] Error 2
+[22.951s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': AMENT_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

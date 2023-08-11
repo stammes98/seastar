@@ -19,6 +19,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(seastar_interfaces REQUIRED)
+find_package(Eigen3 REQUIRED)
 
 find_path(LIBCONFIG_INCLUDE_DIR libconfig.h++
  HINTS ${LIBCONFIG_DIR} $ENV{LIBCONFIG_DIR}
@@ -42,7 +43,7 @@ target_link_libraries(head_chef ${LIBCONFIG_LIBRARY})
 target_compile_features(head_chef PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
 
-ament_target_dependencies(head_chef rclcpp std_msgs tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs seastar_interfaces)
+ament_target_dependencies(head_chef rclcpp std_msgs tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs seastar_interfaces Eigen3)
 
 install(TARGETS head_chef
   DESTINATION lib/${PROJECT_NAME})

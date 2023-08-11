@@ -33,8 +33,9 @@ Goto = 19,		//GOTO
 Noop = 20		//NOOP
 */
 void ChefScript::execNextLine() {
+	RCLCPP_INFO(chef_->get_logger(),"Running line %d of %d", execLine, (int) comms_.size());
 	if (execLine >= comms_.size()) {
-		printf("End of script reached. Ending execution.\n");
+		RCLCPP_INFO(chef_->get_logger(), "End of ChefScript reached");
 		isDone = true;
 		return;
 	}
@@ -43,7 +44,7 @@ void ChefScript::execNextLine() {
 	Command c = curComm.comm_;
 	double p = curComm.param_;
 	
-	printf("Running line %d: %d - %f\n", execLine, (int) c, p);
+	RCLCPP_INFO(chef_->get_logger(),"Running line %d", execLine, (int) c, p);
 	
 	execLine++;
 	switch (c) {
@@ -130,7 +131,7 @@ void ChefScript::execNextLine() {
 		case Goto:
 			{
 			int newLine = (int) p;
-			execLine = newLine;
+			execLine = newLine-1;
 			chef_->mode = WaitForComm;
 			chef_->doneWithCommand = true;
 			printf("GOTO called, jumping to %d\n", execLine);
@@ -149,37 +150,39 @@ void ChefScript::hireChef(HeadChef* chef) {
 }
 
 void ChefScript::loadScript(std::string scriptPath) {
-	std::string filePath = std::string(std::filesystem::current_path().c_str()) + scriptPath;
-	printf("Loading script from %s\n", filePath.c_str());
+	std::string filePath = scriptPath;
+	RCLCPP_INFO(chef_->get_logger(),"Loading script from %s", filePath.c_str());
 	
 	std::ifstream infile(filePath);
 	std::string line;
 	
 	bool validScript = true;
 	
-	int l = 1;
+	int l = 0;
 	while (std::getline(infile, line)) {
 		//std::cout << line << std::endl;
 		bool goodLine = isValidCommand(line);
 		validScript &= goodLine;
 		if (!goodLine) {
-			printf("ERROR: Line %d\n", l);
+			RCLCPP_ERROR(chef_->get_logger(),"ERROR: Line %d", l);
 			break;
 		}
 		++l;
-
-		
+	}
+	
+	if (l == 0) {
+		RCLCPP_ERROR(chef_->get_logger(),"Zero lines loaded?");
 	}
 	
 	if (validScript) {
-		std::cout << "Script loaded successfully\n";
+		RCLCPP_INFO(chef_->get_logger(),"Script loaded successfully");
 	} else {
-		std::cout << "Script did not load successfully\n";
+		RCLCPP_ERROR(chef_->get_logger(),"Script did not load successfully");
 		exit(-1);
 	}
 	
 	for (ChefCommand c : comms_) {
-		std::cout << c.comm_ << ", " << c.param_ << std::endl;
+		RCLCPP_INFO(chef_->get_logger(), "%d - %f", (int) c.comm_, c.param_);
 	}
 	
 	//execNextLine();
@@ -207,7 +210,9 @@ bool ChefScript::isValidCommand(std::string inLine) {
 					comms_.push_back(ChefCommand(static_cast<Command>(i)));
 				}
 				return true;
-			} 
+			} else {
+				RCLCPP_INFO(chef_->get_logger(),"Comm param mismatch");
+			}
 			return false;
 		}
 	}

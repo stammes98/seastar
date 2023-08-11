@@ -187,3 +187,269 @@ PID getFromFile(std::string filePath) {
 	} 
 	return PID(p, i, d, min, max);
 }
+
+Vector3 rot_to_omega(Mat3 R) {
+	Vector3 el;
+	Vector3 res;
+	el.x = R.m32 - R.m23;
+	el.y = R.m13 - R.m31;
+	el.z = R.m21 - R.m12;
+	
+	double traceR = R.m11 + R.m22 + R.m33;
+	
+	double norm_el = sqrt((el.x * el.x) + (el.y * el.y) + (el.z * el.z));
+	if (norm_el > EPS_) {
+		double s1 = atan2(norm_el, traceR) / norm_el;
+		res.x = el.x * s1;
+		res.y = el.y * s1;
+		res.z = el.z * s1;
+	} else if (R.m11 > 0 && R.m22 > 0 and R.m33 > 0) {
+		res.x = 0.0;
+		res.y = 0.0;
+		res.z = 0.0;
+	} else {
+		double s1 = PI / 2;
+		res.x = s1 * (R.m11 + 1.0);
+		res.y = s1 * (R.m22 + 1.0);
+		res.z = s1 * (R.m33 + 1.0);
+	}
+	return res;
+}
+
+
+
+Vector3 matDotVec(Mat3 a, Vector3 b) {
+	Vector3 res;
+	res.x = (a.m11 * b.x) + (a.m12 * b.y) + (a.m13 * b.z);
+	res.y = (a.m21 * b.x) + (a.m22 * b.y) + (a.m23 * b.z);
+	res.z = (a.m31 * b.x) + (a.m32 * b.y) + (a.m33 * b.z);
+	return res;
+}
+
+Mat3 transpose(Mat3 mat) {
+	Mat3 res;
+	res.m11 = mat.m11;
+	res.m12 = mat.m21;
+	res.m13 = mat.m31;
+	res.m21 = mat.m12;
+	res.m22 = mat.m22;
+	res.m23 = mat.m32;
+	res.m31 = mat.m13;
+	res.m32 = mat.m23;
+	res.m33 = mat.m33;
+	return res;
+}
+Mat3 dotMats(Mat3 a, Mat3 b) {
+	Mat3 res;
+	res.m11 = (a.m11 * b.m11) + (a.m12 * b.m21) + (a.m13 * b.m31);
+	res.m12 = (a.m11 * b.m12) + (a.m12 * b.m22) + (a.m13 * b.m32);
+	res.m13 = (a.m11 * b.m13) + (a.m12 * b.m23) + (a.m13 * b.m33);
+	
+	res.m21 = (a.m21 * b.m11) + (a.m22 * b.m21) + (a.m23 * b.m31);
+	res.m22 = (a.m21 * b.m12) + (a.m22 * b.m22) + (a.m23 * b.m32);
+	res.m23 = (a.m21 * b.m13) + (a.m22 * b.m23) + (a.m23 * b.m33);
+	
+	res.m31 = (a.m31 * b.m11) + (a.m32 * b.m21) + (a.m33 * b.m31);
+	res.m32 = (a.m31 * b.m12) + (a.m32 * b.m22) + (a.m33 * b.m32);
+	res.m33 = (a.m31 * b.m13) + (a.m32 * b.m23) + (a.m33 * b.m33);  
+	
+	return res;
+}
+
+Vector6 getPoseErr(Mat3 targ, Mat3 cur) {
+	Vector6 res;
+	res.x = 0;
+	res.y = 0;
+	res.z = 0;
+	Mat3 rot_err = dotMats(transpose(cur), targ);
+	Vector3 w_err = matDotVec(cur, rot_to_omega(rot_err));
+	res.a = w_err.x;
+	res.b = w_err.y;
+	res.c = w_err.z;
+	return res;
+}
+
+double getErrPose(Mat3 targ, Mat3 cur) {
+	Vector6 errVec = getPoseErr(targ, cur);
+	return sqrt((errVec.x * errVec.x) + (errVec.y * errVec.y) + (errVec.z * errVec.z) + (errVec.a * errVec.a) + (errVec.b * errVec.b) + (errVec.c * errVec.c));
+}
+
+Mat3 doFk(double q1, double q2, double q3) {
+	double s1 = sin(q1);
+	double s2 = sin(q2);
+	double s3 = sin(q3);
+	double c1 = cos(q1);
+	double c2 = cos(q2);
+	double c3 = cos(q3);
+	Mat3 res;
+	res.m11 = s2 * s3;
+	res.m12 = c3 * s2;
+	res.m13 = c2;
+	res.m21 = c1 * c2 * s3 - c3 * s1;
+	res.m22 = c1 * c2 * c3 + s1 * s3;
+	res.m23 = -c1 * s2;
+	res.m31 = -c1 * c3 - c2 * s1 * s3;
+	res.m32 = c1 * s3 - c2 * c3 * s1;
+	res.m33 = s1 * s2;
+	return res;
+	
+}
+Mat3 sunMat(double az, double alt) {
+	Mat3 res;
+	res.m11 = cos(az) * cos(alt);
+	res.m12 = -sin(az);
+	res.m13 = cos(az) * sin(alt);
+	res.m21 = sin(az) * cos(alt);
+	res.m22 = cos(az);
+	res.m23 = sin(az) * sin(alt);
+	res.m31 = -sin(alt);
+	res.m32 = 0.0;
+	res.m33 = cos(alt);
+	return res;
+}
+
+Mat3 motor1(double q) {
+	Mat3 res;
+	double s = sin(q);
+	double c = cos(q);
+	res.m11 = 0.0;
+	res.m12 = -s;
+	res.m13 = -c;
+	res.m21 = 0.0;
+	res.m22 = c;
+	res.m23 = -s;
+	res.m31 = 1.0;
+	res.m32 = 0.0;
+	res.m33 = 0.0;
+	return res;
+}
+
+Mat3 motor2(double q) {
+	return motor1(q);
+}
+
+Mat3 motor3(double q) {
+	Mat3 res;
+	double c = cos(q);
+	double s = sin(q);
+	res.m11 = c;
+	res.m12 = -s;
+	res.m13 = 0.0;
+	res.m21 = s;
+	res.m22 = c;
+	res.m23 = 0.0;
+	res.m31 = 0.0;
+	res.m32 = 0.0;
+	res.m33 = 1.0;
+	return res;
+}
+
+Mat6 getJacobian(double q1, double q2, double q3) {
+	Mat6 res;
+	res.m11 = 0.0;
+	res.m12 = 0.0;
+	res.m13 = 0.0;
+	res.m21 = 0.0;
+	res.m22 = 0.0;
+	res.m23 = 0.0;
+	res.m31 = 0.0;
+	res.m32 = 0.0;
+	res.m33 = 0.0;
+	Mat3 m1 = motor1(q1);
+	Mat3 m2 = motor2(q2);
+	Mat3 m3 = motor3(q3);
+	res.m41 = m1.m11;
+	res.m51 = m1.m21;
+	res.m61 = m1.m31;
+	res.m42 = m2.m11;
+	res.m52 = m2.m21;
+	res.m62 = m2.m31;
+	res.m43 = m3.m11;
+	res.m53 = m3.m21;
+	res.m63 = m3.m31;
+	return res; 
+	
+}
+
+MatrixXf computePseudoInverse(MatrixXf J)
+{
+    //MatrixXf J = jacobian(theta1, theta2, theta3);
+    MatrixXf invJ = J.completeOrthogonalDecomposition().pseudoInverse();
+
+    return invJ;
+}
+
+MotorState doIk(double tAz, double tAlt, double polar) {
+	MotorState response;
+	tAz += PI;
+	tAlt *= -1;
+	Mat3 targMat = sunMat(tAz, tAlt);
+	double q1 = 0.0;
+	double q2 = 0.0;
+	double q3 = 0.0;
+	
+	Mat3 fk = doFk(q1, q2, q3);
+	
+	
+	int DOF = 3;
+	Vector6 err_pose = getPoseErr(targMat, fk);
+	double err = getErrPose(targMat, fk);
+	int iterator = 0;
+	int max_iter = 1000;
+	double lamb = 0.5;
+	bool didSolve = true;
+	double dq1 = 0.0;
+	double dq2 = 0.0;
+	double dq3 = 0.0;
+	while (err > EPS_) {
+		iterator++;
+		if (iterator > max_iter) {
+			didSolve = false;
+			break;
+		}
+		Mat6 Jac = getJacobian(q1, q2, q3);
+		//printf("Jac calculated. Pinv\n");
+		MatrixXf J(3, 6);
+		J(0, 0) = Jac.m11;
+		J(1, 0) = Jac.m12;
+		J(2, 0) = Jac.m13;
+		J(0, 1) = Jac.m21;
+		J(1, 1) = Jac.m22;
+		J(2, 1) = Jac.m23;
+		J(0, 2) = Jac.m31;
+		J(1, 2) = Jac.m32;
+		J(2, 2) = Jac.m33;
+		J(0, 3) = Jac.m41;
+		J(1, 3) = Jac.m42;
+		J(2, 3) = Jac.m43;
+		J(0, 4) = Jac.m51;
+		J(1, 4) = Jac.m52;
+		J(2, 4) = Jac.m53;
+		J(0, 5) = Jac.m61;
+		J(1, 5) = Jac.m62;
+		J(2, 5) = Jac.m63;
+		std::cout << J << std::endl;
+		MatrixXf Jinv = computePseudoInverse(J);
+		dq1 = lamb * ((Jinv(0, 0) * err_pose.x) + (Jinv(1, 0) * err_pose.y) + (Jinv(2, 0) * err_pose.z) + (Jinv(3, 0) * err_pose.a) + (Jinv(4, 0) * err_pose.b) + (Jinv(5, 0) * err_pose.c));
+		dq2 = lamb * ((Jinv(0, 1) * err_pose.x) + (Jinv(1, 1) * err_pose.y) + (Jinv(2, 1) * err_pose.z) + (Jinv(3, 1) * err_pose.a) + (Jinv(4, 1) * err_pose.b) + (Jinv(5, 1) * err_pose.c));
+		dq3 = lamb * ((Jinv(0, 2) * err_pose.x) + (Jinv(1, 2) * err_pose.y) + (Jinv(2, 2) * err_pose.z) + (Jinv(3, 2) * err_pose.a) + (Jinv(4, 2) * err_pose.b) + (Jinv(5, 2) * err_pose.c));
+		printf("%f -- %f %f %f - %f %f %f\n", err, q1, q2, q3, dq1, dq2, dq3);
+		q1 += dq1;
+		q2 += dq2;
+		q3 += dq3;
+		fk = doFk(q1, q2, q3);
+		err_pose = getPoseErr(targMat, fk);
+		err = getErrPose(targMat, fk);
+	}
+	printf("Finished in %d iterations, err: %f\n", iterator, err);
+	if (didSolve) {
+		response.q1 = q1;
+		response.q2 = q2;
+		response.q3 = q3;
+	} else {
+		//response.q1 = 0.0;
+		//response.q2 = 0.0;
+		//response.q3 = 0.0;
+	}
+	return response;
+}

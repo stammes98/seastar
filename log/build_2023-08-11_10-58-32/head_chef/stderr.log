@@ -1,0 +1,84 @@
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KVector6 getPoseErr(Mat3, Mat3)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:264:34:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KMat3[m[K’ to non-scalar type ‘[01m[KVector3[m[K’ requested
+  264 |         Vector3 rot_err = [01;31m[KdotMats(transpose(cur), targ)[m[K;
+      |                           [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:265:53:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Krot_err[m[K’ from ‘[01m[KVector3[m[K’ to ‘[01m[KMat3[m[K’
+  265 |         Vector3 w_err = matDotVec(cur, rot_to_omega([01;31m[Krot_err[m[K);
+      |                                                     [01;31m[K^~~~~~~[m[K
+      |                                                     [01;31m[K|[m[K
+      |                                                     [01;31m[KVector3[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KMat3 sunMat(double, double)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:304:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kphi[m[K’ was not declared in this scope
+  304 |         res.m23 = sin(az) * sin([01;31m[Kphi[m[K);
+      |                                 [01;31m[K^~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KMotorState doIk(double, double, double)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:400:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kbool[m[K’
+  400 |         [01;31m[Kbool[m[K didSolve = true;
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:407:25:[m[K [01;31m[Kerror: [m[K‘[01m[KdidSolve[m[K’ was not declared in this scope
+  407 |                         [01;31m[KdidSolve[m[K = false;
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:437:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kfki[m[K’ was not declared in this scope; did you mean ‘[01m[Kfk[m[K’?
+  437 |                 [01;31m[Kfki[m[K = doFk(q1, q2, q3);
+      |                 [01;31m[K^~~[m[K
+      |                 [32m[Kfk[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:442:13:[m[K [01;31m[Kerror: [m[K‘[01m[KdidSolve[m[K’ was not declared in this scope
+  442 |         if ([01;31m[KdidSolve[m[K) {
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:394:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KDOF[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  394 |         int [01;35m[KDOF[m[K = 3;
+      |             [01;35m[K^~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:451:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  451 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:382:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpolar[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  382 | MotorState doIk(double tAz, double tAlt, [01;35m[Kdouble polar[m[K) {
+      |                                          [01;35m[K~~~~~~~^~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:[m[K In member function ‘[01m[Kvoid ChefScript::execNextLine()[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:37:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChefCommand>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   37 |         if ([01;35m[KexecLine >= comms_.size()[m[K) {
+      |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.h:13[m[K,
+                 from [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:2[m[K:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.cpp:47:41:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+   47 |         RCLCPP_INFO(chef_->get_logger(),[01;35m[K"Running line %d"[m[K, execLine, (int) c, p);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:[m[K In function ‘[01m[Kvoid signal_callback_handler(int)[m[K’:
+[01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/head_chef.cpp:16:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | void signal_callback_handler([01;35m[Kint signum[m[K) {
+      |                              [01;35m[K~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:90: CMakeFiles/head_chef.dir/src/sousChef.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:76: CMakeFiles/head_chef.dir/src/head_chef.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
+Traceback (most recent call last):
+  File "/home/seastar/.local/bin/cmake", line 8, in <module>
+    sys.exit(cmake())
+  File "/home/seastar/.local/lib/python3.10/site-packages/cmake/__init__.py", line 43, in cmake
+    raise SystemExit(_program('cmake', sys.argv[1:]))
+  File "/home/seastar/.local/lib/python3.10/site-packages/cmake/__init__.py", line 39, in _program
+    return subprocess.call([os.path.join(CMAKE_BIN_DIR, name)] + args, close_fds=False)
+  File "/usr/lib/python3.10/subprocess.py", line 347, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1959, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.10/subprocess.py", line 1917, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

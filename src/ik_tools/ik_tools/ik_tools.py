@@ -92,12 +92,16 @@ class IkTools(Node):
 		
 		ik = Jinv @ newVec
 		
-		ik = 1 * ik #Here we can scale how much the robot responds but any more and it starts feeling like drawing circles
+		tErr = np.linalg.norm(newVec)
+		if (tErr < 0.1):
+			ik = 2.25 * ik
+		elif (tErr >= 0.1 and tErr < 0.35):
+			ik = 1.75 * ik #Here we can scale how much the robot responds but any more and it starts feeling like drawing circles
 		
 		#print(ik)
 		
 		msg2 = String()
-		msg2.data = str(ik[0]) + "," + str(ik[1]) + "," + str(ik[2])
+		msg2.data = str(-ik[2]) + "," + str(ik[0]) + "," + str(ik[2])
 		self.inJacPub.publish(msg2)
 		
 		robotephemeris = SkyEphemeris()  # custom message type

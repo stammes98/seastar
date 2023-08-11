@@ -43,9 +43,10 @@ HeadChef::HeadChef() : Node("head_chef") {
 	pid3 = getFromFile("/home/seastar/steve_summer_seastar_ws/settings/pid3.cfg");
 	
 	//Load our scripts
-	cs = ChefScript("/recipes/testScript.rcp");
+	cs = ChefScript();
 	//Gives reference to this object so the script can call our functions.
 	cs.hireChef(this);
+	cs.loadScript("/home/seastar/steve_summer_seastar_ws/recipes/testScript.rcp");
 	
 	//For testing
 	solarVecS.x = 1;
@@ -67,7 +68,7 @@ HeadChef::HeadChef() : Node("head_chef") {
 	client_ = this->create_client<seastar_interfaces::srv::PointMotors>("ik_solver");
 	jacSub_ = this->create_subscription<std_msgs::msg::String>("/inv_jacobian", 10, std::bind(&HeadChef::jacUpdate, this, _1));
 	homeSub_ = this->create_subscription<std_msgs::msg::Bool>("/is_homing", 10, std::bind(&HeadChef::homeUpdate, this, _1));
-	
+	cook();
 	//Wait for requested service to be available
 	while (!client_->wait_for_service(1s)) {
 		if (!rclcpp::ok()) {
@@ -75,6 +76,7 @@ HeadChef::HeadChef() : Node("head_chef") {
 			return;
 		}
 	}
+	RCLCPP_INFO(this->get_logger(), "Head chef started");
 	
 	//timer_ = this->create_wall_timer(20ms, std::bind(&HeadChef::orderMotors, this));
 }
@@ -270,58 +272,63 @@ void HeadChef::checkSunTimer() {
 
 //Call the relevant commands depending on the current mode.
 void HeadChef::cook() {
-	//printf("Cook called\n");
-	if (doneWithCommand) {
-		printf("Running next command\n");
-		doneWithCommand = false;
-		cs.execNextLine();
+	if (mode == IKTest) {
+		MotorState ik = doIk(DEG2RAD(45.0), DEG2RAD(45.0), 0.0);
+		std::cout << RAD2DEG(ik.q1) << ", " << RAD2DEG(ik.q2) << ", " << RAD2DEG(ik.q3) << std::endl; 
+	} else {
+		//printf("Cook called\n");
+		//RCLCPP_INFO(this->get_logger(), "Head chef cooking");
+		if (doneWithCommand) {
+			RCLCPP_INFO(this->get_logger(), "Running next ChefScript line");
+			doneWithCommand = false;
+			cs.execNextLine();
+		}
+		
+		//std::cout << mode << std::endl;
+		
+		switch (mode) {
+			case SunSeeking:
+				seekSun();
+				break;
+			case SunSeekingTimer:
+				seekSun();
+				checkSunTimer();
+				break;
+			case SunSeekingTest:
+				seekSun();
+				logSunData();
+				break;
+			case SunTracking:
+				followSun();
+				checkSunTimer();
+				break;
+			case SunTrackingTest:
+				followSun();
+				logSunData();
+				break;
+			case DrawCircleSun:
+				seekLoopPos();
+				break;
+			case TargSeeking:
+				seekSTarg();
+				break;
+			case TargSeekingTimer:
+				seekSTarg();
+				checkSunTimer();
+				break;
+			case DrawArcSun:
+			case DrawArcTarg:
+				seekArcPos();
+				break;
+			case WaitForComm:
+				commVels[0] = 0.0;
+				commVels[1] = 0.0;
+				commVels[2] = 0.0;
+			default:
+				//What
+				break;
+		}
 	}
-	
-	//std::cout << mode << std::endl;
-	
-	switch (mode) {
-		case SunSeeking:
-			seekSun();
-			break;
-		case SunSeekingTimer:
-			seekSun();
-			checkSunTimer();
-			break;
-		case SunSeekingTest:
-			seekSun();
-			logSunData();
-			break;
-		case SunTracking:
-			followSun();
-			checkSunTimer();
-			break;
-		case SunTrackingTest:
-			followSun();
-			logSunData();
-			break;
-		case DrawCircleSun:
-			seekLoopPos();
-			break;
-		case TargSeeking:
-			seekSTarg();
-			break;
-		case TargSeekingTimer:
-			seekSTarg();
-			checkSunTimer();
-			break;
-		case DrawArcSun:
-		case DrawArcTarg:
-			seekArcPos();
-			break;
-		case WaitForComm:
-			commVels[0] = 0.0;
-			commVels[1] = 0.0;
-			commVels[2] = 0.0;
-		default:
-			//What
-			break;
-	}
-	
 }
 
 //Will draw circle around sun
@@ -637,6 +644,8 @@ void HeadChef::imuUpdate(const geometry_msgs::msg::QuaternionStamped msg) {
 
 //Start and run our node
 int main(int argc, char ** argv) {
+	//Half a second of sleep to make sure all needed nodes have booted up
+	std::this_thread::sleep_for(std::chrono::milliseconds(500));
 	rclcpp::init(argc, argv);
 	signal(SIGINT, signal_callback_handler);
 	rclcpp::spin(std::make_shared<HeadChef>());

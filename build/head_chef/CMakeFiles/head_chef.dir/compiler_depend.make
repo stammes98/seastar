@@ -393,6 +393,9 @@ CMakeFiles/head_chef.dir/src/ChefScript.cpp.o: /home/seastar/steve_summer_seasta
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/unordered_map \
@@ -446,14 +449,11 @@ CMakeFiles/head_chef.dir/src/ChefScript.cpp.o: /home/seastar/steve_summer_seasta
   /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_futex.h \
-  /usr/include/c++/11/bits/std_thread.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
   /usr/include/c++/11/set \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_set.h \
   /usr/include/c++/11/bits/stl_multiset.h \
-  /usr/include/c++/11/thread \
-  /usr/include/c++/11/bits/this_thread_sleep.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
@@ -950,6 +950,212 @@ CMakeFiles/head_chef.dir/src/ChefScript.cpp.o: /home/seastar/steve_summer_seasta
   /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/srv/detail/point_motors__traits.hpp \
   /home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.h \
   /usr/include/libconfig.h++ \
+  /usr/include/eigen3/Eigen/Dense \
+  /usr/include/eigen3/Eigen/Core \
+  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/include/c++/11/complex \
+  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
+  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
+  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Memory.h \
+  /usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h \
+  /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
+  /usr/include/eigen3/Eigen/src/Core/NumTraits.h \
+  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
+  /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
+  /usr/include/eigen3/Eigen/src/Core/IO.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseBase.h \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
+  /usr/include/eigen3/Eigen/src/Core/MatrixBase.h \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/Core/EigenBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Product.h \
+  /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
+  /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
+  /usr/include/eigen3/Eigen/src/Core/Assign.h \
+  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseStorage.h \
+  /usr/include/eigen3/Eigen/src/Core/NestByValue.h \
+  /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h \
+  /usr/include/eigen3/Eigen/src/Core/NoAlias.h \
+  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Matrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Array.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
+  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/Dot.h \
+  /usr/include/eigen3/Eigen/src/Core/StableNorm.h \
+  /usr/include/eigen3/Eigen/src/Core/Stride.h \
+  /usr/include/eigen3/Eigen/src/Core/MapBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Map.h \
+  /usr/include/eigen3/Eigen/src/Core/Ref.h \
+  /usr/include/eigen3/Eigen/src/Core/Block.h \
+  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
+  /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
+  /usr/include/eigen3/Eigen/src/Core/Reshaped.h \
+  /usr/include/eigen3/Eigen/src/Core/Transpose.h \
+  /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Diagonal.h \
+  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/Redux.h \
+  /usr/include/eigen3/Eigen/src/Core/Visitor.h \
+  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h \
+  /usr/include/eigen3/Eigen/src/Core/Swap.h \
+  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h \
+  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/Solve.h \
+  /usr/include/eigen3/Eigen/src/Core/Inverse.h \
+  /usr/include/eigen3/Eigen/src/Core/SolverBase.h \
+  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Transpositions.h \
+  /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+  /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
+  /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
+  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h \
+  /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
+  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h \
+  /usr/include/eigen3/Eigen/src/Core/Select.h \
+  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
+  /usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h \
+  /usr/include/eigen3/Eigen/src/Core/Random.h \
+  /usr/include/eigen3/Eigen/src/Core/Replicate.h \
+  /usr/include/eigen3/Eigen/src/Core/Reverse.h \
+  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
+  /usr/include/eigen3/Eigen/src/Core/StlIterators.h \
+  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
+  /usr/include/eigen3/Eigen/LU \
+  /usr/include/eigen3/Eigen/src/misc/Kernel.h \
+  /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/Determinant.h \
+  /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
+  /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
+  /usr/include/eigen3/Eigen/Cholesky \
+  /usr/include/eigen3/Eigen/Jacobi \
+  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
+  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
+  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
+  /usr/include/eigen3/Eigen/QR \
+  /usr/include/eigen3/Eigen/Householder \
+  /usr/include/eigen3/Eigen/src/Householder/Householder.h \
+  /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
+  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+  /usr/include/eigen3/Eigen/SVD \
+  /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
+  /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
+  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/Geometry \
+  /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
+  /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
+  /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
+  /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Scaling.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
+  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
+  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+  /usr/include/eigen3/Eigen/Eigenvalues \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /home/seastar/steve_summer_seastar_ws/src/head_chef/src/PID.h
 
 CMakeFiles/head_chef.dir/src/PID.cpp.o: /home/seastar/steve_summer_seastar_ws/src/head_chef/src/PID.cpp \
@@ -1347,6 +1553,17 @@ CMakeFiles/head_chef.dir/src/head_chef.cpp.o: /home/seastar/steve_summer_seastar
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/unordered_map \
@@ -1393,14 +1610,6 @@ CMakeFiles/head_chef.dir/src/head_chef.cpp.o: /home/seastar/steve_summer_seastar
   /usr/include/c++/11/string_view \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/ext/string_conversions.h \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/iostream \
@@ -1472,14 +1681,11 @@ CMakeFiles/head_chef.dir/src/head_chef.cpp.o: /home/seastar/steve_summer_seastar
   /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_futex.h \
-  /usr/include/c++/11/bits/std_thread.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
   /usr/include/c++/11/set \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_set.h \
   /usr/include/c++/11/bits/stl_multiset.h \
-  /usr/include/c++/11/thread \
-  /usr/include/c++/11/bits/this_thread_sleep.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
@@ -1988,6 +2194,212 @@ CMakeFiles/head_chef.dir/src/head_chef.cpp.o: /home/seastar/steve_summer_seastar
   /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/srv/detail/point_motors__traits.hpp \
   /home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.h \
   /usr/include/libconfig.h++ \
+  /usr/include/eigen3/Eigen/Dense \
+  /usr/include/eigen3/Eigen/Core \
+  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/include/c++/11/complex \
+  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
+  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
+  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Memory.h \
+  /usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h \
+  /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
+  /usr/include/eigen3/Eigen/src/Core/NumTraits.h \
+  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
+  /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
+  /usr/include/eigen3/Eigen/src/Core/IO.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseBase.h \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
+  /usr/include/eigen3/Eigen/src/Core/MatrixBase.h \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/Core/EigenBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Product.h \
+  /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
+  /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
+  /usr/include/eigen3/Eigen/src/Core/Assign.h \
+  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseStorage.h \
+  /usr/include/eigen3/Eigen/src/Core/NestByValue.h \
+  /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h \
+  /usr/include/eigen3/Eigen/src/Core/NoAlias.h \
+  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Matrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Array.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
+  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/Dot.h \
+  /usr/include/eigen3/Eigen/src/Core/StableNorm.h \
+  /usr/include/eigen3/Eigen/src/Core/Stride.h \
+  /usr/include/eigen3/Eigen/src/Core/MapBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Map.h \
+  /usr/include/eigen3/Eigen/src/Core/Ref.h \
+  /usr/include/eigen3/Eigen/src/Core/Block.h \
+  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
+  /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
+  /usr/include/eigen3/Eigen/src/Core/Reshaped.h \
+  /usr/include/eigen3/Eigen/src/Core/Transpose.h \
+  /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Diagonal.h \
+  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/Redux.h \
+  /usr/include/eigen3/Eigen/src/Core/Visitor.h \
+  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h \
+  /usr/include/eigen3/Eigen/src/Core/Swap.h \
+  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h \
+  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/Solve.h \
+  /usr/include/eigen3/Eigen/src/Core/Inverse.h \
+  /usr/include/eigen3/Eigen/src/Core/SolverBase.h \
+  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Transpositions.h \
+  /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+  /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
+  /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
+  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h \
+  /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
+  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h \
+  /usr/include/eigen3/Eigen/src/Core/Select.h \
+  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
+  /usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h \
+  /usr/include/eigen3/Eigen/src/Core/Random.h \
+  /usr/include/eigen3/Eigen/src/Core/Replicate.h \
+  /usr/include/eigen3/Eigen/src/Core/Reverse.h \
+  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
+  /usr/include/eigen3/Eigen/src/Core/StlIterators.h \
+  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
+  /usr/include/eigen3/Eigen/LU \
+  /usr/include/eigen3/Eigen/src/misc/Kernel.h \
+  /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/Determinant.h \
+  /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
+  /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
+  /usr/include/eigen3/Eigen/Cholesky \
+  /usr/include/eigen3/Eigen/Jacobi \
+  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
+  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
+  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
+  /usr/include/eigen3/Eigen/QR \
+  /usr/include/eigen3/Eigen/Householder \
+  /usr/include/eigen3/Eigen/src/Householder/Householder.h \
+  /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
+  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+  /usr/include/eigen3/Eigen/SVD \
+  /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
+  /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
+  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/Geometry \
+  /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
+  /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
+  /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
+  /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Scaling.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
+  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
+  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+  /usr/include/eigen3/Eigen/Eigenvalues \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /home/seastar/steve_summer_seastar_ws/src/head_chef/src/PID.h \
   /home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h \
   /usr/include/c++/11/filesystem \
@@ -2212,23 +2624,27 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/libconfig.h++ \
-  /home/seastar/steve_summer_seastar_ws/src/head_chef/src/PID.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/ctime \
-  /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/c++/11/algorithm \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
-  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/eigen3/Eigen/Dense \
+  /usr/include/eigen3/Eigen/Core \
+  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/include/c++/11/complex \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+  /usr/include/c++/11/cstddef \
+  /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/invoke.h \
@@ -2242,7 +2658,217 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
+  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
+  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Memory.h \
+  /usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h \
+  /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
+  /usr/include/eigen3/Eigen/src/Core/NumTraits.h \
+  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
+  /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
+  /usr/include/eigen3/Eigen/src/Core/IO.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseBase.h \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
+  /usr/include/eigen3/Eigen/src/Core/MatrixBase.h \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/Core/EigenBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Product.h \
+  /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
+  /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
+  /usr/include/eigen3/Eigen/src/Core/Assign.h \
+  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseStorage.h \
+  /usr/include/eigen3/Eigen/src/Core/NestByValue.h \
+  /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h \
+  /usr/include/eigen3/Eigen/src/Core/NoAlias.h \
+  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Matrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Array.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
+  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/Dot.h \
+  /usr/include/eigen3/Eigen/src/Core/StableNorm.h \
+  /usr/include/eigen3/Eigen/src/Core/Stride.h \
+  /usr/include/eigen3/Eigen/src/Core/MapBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Map.h \
+  /usr/include/eigen3/Eigen/src/Core/Ref.h \
+  /usr/include/eigen3/Eigen/src/Core/Block.h \
+  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
+  /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
+  /usr/include/eigen3/Eigen/src/Core/Reshaped.h \
+  /usr/include/eigen3/Eigen/src/Core/Transpose.h \
+  /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Diagonal.h \
+  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/Redux.h \
+  /usr/include/eigen3/Eigen/src/Core/Visitor.h \
+  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h \
+  /usr/include/eigen3/Eigen/src/Core/Swap.h \
+  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h \
+  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/Solve.h \
+  /usr/include/eigen3/Eigen/src/Core/Inverse.h \
+  /usr/include/eigen3/Eigen/src/Core/SolverBase.h \
+  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Transpositions.h \
+  /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+  /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
+  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h \
+  /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
+  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h \
+  /usr/include/eigen3/Eigen/src/Core/Select.h \
+  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
+  /usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h \
+  /usr/include/eigen3/Eigen/src/Core/Random.h \
+  /usr/include/eigen3/Eigen/src/Core/Replicate.h \
+  /usr/include/eigen3/Eigen/src/Core/Reverse.h \
+  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
+  /usr/include/eigen3/Eigen/src/Core/StlIterators.h \
+  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
+  /usr/include/eigen3/Eigen/LU \
+  /usr/include/eigen3/Eigen/src/misc/Kernel.h \
+  /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/Determinant.h \
+  /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
+  /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
+  /usr/include/eigen3/Eigen/Cholesky \
+  /usr/include/eigen3/Eigen/Jacobi \
+  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
+  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
+  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
+  /usr/include/eigen3/Eigen/QR \
+  /usr/include/eigen3/Eigen/Householder \
+  /usr/include/eigen3/Eigen/src/Householder/Householder.h \
+  /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
+  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+  /usr/include/eigen3/Eigen/SVD \
+  /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
+  /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
+  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/Geometry \
+  /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
+  /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
+  /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
+  /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Scaling.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
+  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
+  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+  /usr/include/eigen3/Eigen/Eigenvalues \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /home/seastar/steve_summer_seastar_ws/src/head_chef/src/PID.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -2254,11 +2880,215 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /home/seastar/steve_summer_seastar_ws/src/head_chef/src/PID.h:
 
+/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
+
+/usr/include/eigen3/Eigen/Eigenvalues:
+
+/usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Translation.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
+
+/usr/include/eigen3/Eigen/Geometry:
+
+/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
+
+/usr/include/eigen3/Eigen/SVD:
+
+/usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
+
+/usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
+
+/usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
+
+/usr/include/eigen3/Eigen/src/Householder/Householder.h:
+
+/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
+
+/usr/include/eigen3/Eigen/Jacobi:
+
+/usr/include/eigen3/Eigen/Cholesky:
+
+/usr/include/eigen3/Eigen/src/LU/Determinant.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
+/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+
+/usr/include/eigen3/Eigen/src/Core/StlIterators.h:
+
+/usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h:
+
+/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
+
+/usr/include/eigen3/Eigen/src/Core/Reverse.h:
+
+/usr/include/eigen3/Eigen/src/Core/Random.h:
+
+/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
+
+/usr/include/eigen3/Eigen/src/Core/Select.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
+
+/usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
+
+/usr/include/eigen3/Eigen/src/Core/Solve.h:
+
+/usr/include/eigen3/Eigen/src/Core/GeneralProduct.h:
+
+/usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
+
+/usr/include/eigen3/Eigen/src/Core/Visitor.h:
+
+/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
+
+/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/Diagonal.h:
+
+/usr/include/eigen3/Eigen/src/Core/Reshaped.h:
+
+/usr/include/eigen3/Eigen/src/Core/Block.h:
+
+/usr/include/eigen3/Eigen/src/Core/Map.h:
+
+/usr/include/eigen3/Eigen/src/Core/Stride.h:
+
+/usr/include/eigen3/Eigen/src/Core/Dot.h:
+
+/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
+
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+
+/usr/include/eigen3/Eigen/src/Core/Assign.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/usr/include/eigen3/Eigen/src/Core/Product.h:
+
+/usr/include/eigen3/Eigen/src/Core/EigenBase.h:
+
+/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
+
+/usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
+
+/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Memory.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Meta.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/limits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Macros.h:
+
+/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
+
 /home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
 
 /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/srv/point_motors.hpp:
 
 /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/motor_command__traits.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
+
+/usr/include/eigen3/Eigen/Dense:
 
 /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/motor_command__builder.hpp:
 
@@ -2271,6 +3101,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/detail/sky_ephemeris__builder.hpp:
 
 /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/sky_ephemeris.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
 
@@ -2304,6 +3136,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/IO.h:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp:
@@ -2320,11 +3154,15 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp:
 
+/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
+
+/usr/include/eigen3/Eigen/Householder:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp:
 
@@ -2333,6 +3171,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp:
 
@@ -2350,11 +3190,15 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:
+
+/usr/include/eigen3/Eigen/src/misc/Image.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
 
@@ -2378,6 +3222,10 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
+
+/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
@@ -2388,13 +3236,19 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/Transpositions.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/DenseBase.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
+
+/usr/include/eigen3/Eigen/Core:
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
 
@@ -2424,6 +3278,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
@@ -2448,6 +3304,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
@@ -2458,7 +3316,11 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_subscription.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:
 
@@ -2469,6 +3331,10 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
+
+/usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
@@ -2498,13 +3364,19 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/NoAlias.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
 
 /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/msg/motor_command.hpp:
 
@@ -2530,11 +3402,15 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp:
 
@@ -2547,6 +3423,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/tf2/tf2/visibility_control.h:
 
 /usr/include/c++/11/bits/stl_numeric.h:
+
+/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
 
 /usr/include/c++/11/numeric:
 
@@ -2562,15 +3440,11 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
+/usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
+
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/11/tr1/poly_hermite.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
-/opt/ros/humble/include/rcutils/rcutils/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
@@ -2585,6 +3459,14 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/unordered_map:
+
+/usr/include/eigen3/Eigen/src/misc/Kernel.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
+
+/usr/include/c++/11/thread:
+
+/usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
@@ -2602,9 +3484,13 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/bits/align.h:
 
+/usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
+
 /usr/include/c++/11/bits/functional_hash.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
@@ -2630,6 +3516,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/bits/fs_ops.h:
 
+/usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
+
 /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
@@ -2642,6 +3530,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
+
 /usr/include/c++/11/bit:
 
 /usr/include/c++/11/sstream:
@@ -2650,11 +3540,13 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
-/usr/include/signal.h:
-
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
+/usr/include/signal.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
 
 /usr/include/c++/11/bits/codecvt.h:
 
@@ -2666,19 +3558,37 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/c++/11/locale:
 
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/c++/11/ratio:
+
+/usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
 /usr/include/c++/11/bits/fs_fwd.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
 /usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
 
 /usr/include/c++/11/istream:
 
@@ -2714,11 +3624,15 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/bits/locale_facets.h:
 
+/usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/eigen3/Eigen/src/Core/MapBase.h:
 
 /usr/include/c++/11/bits/basic_ios.h:
 
@@ -2729,6 +3643,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
 /usr/include/c++/11/bits/hash_bytes.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h:
 
 /opt/ros/humble/include/rcl/rcl/service.h:
 
@@ -2744,9 +3660,7 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/array:
 
-/usr/include/c++/11/csignal:
-
-/opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
+/usr/include/eigen3/Eigen/src/Core/ReturnByValue.h:
 
 /usr/include/c++/11/system_error:
 
@@ -2768,6 +3682,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
 
+/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
 /usr/include/wchar.h:
@@ -2778,10 +3694,6 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefScript.h:
 
-/usr/include/c++/11/bits/basic_string.tcc:
-
-/usr/include/c++/11/thread:
-
 /usr/include/asm-generic/errno-base.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
@@ -2789,6 +3701,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
 /usr/include/c++/11/cerrno:
+
+/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
@@ -2822,17 +3736,23 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/eigen3/Eigen/src/Core/Inverse.h:
+
 /usr/include/c++/11/bits/locale_conv.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/c++/11/bits/unique_ptr.h:
 
+/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
@@ -2848,9 +3768,19 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
+/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
+
 /usr/include/c++/11/mutex:
 
 /usr/include/c++/11/bits/unique_lock.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
+
+/opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
+
+/usr/include/c++/11/csignal:
 
 /usr/include/c++/11/cctype:
 
@@ -2859,6 +3789,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
 
 /usr/include/c++/11/typeinfo:
+
+/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
@@ -2888,6 +3820,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/optional:
 
+/usr/include/eigen3/Eigen/src/Core/Ref.h:
+
 /usr/include/c++/11/bits/specfun.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -2897,6 +3831,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -2940,6 +3876,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
+/usr/include/eigen3/Eigen/src/Core/StableNorm.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp:
@@ -2951,6 +3889,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
+
+/usr/include/eigen3/Eigen/src/Core/NumTraits.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
 
@@ -3012,13 +3952,27 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
+/usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
+
 /usr/include/c++/11/bits/stl_iterator.h:
 
 /usr/include/wctype.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+/opt/ros/humble/include/rcl/rcl/time.h:
+
 /usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.h:
 
@@ -3031,6 +3985,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /usr/include/c++/11/bits/memoryfwd.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -3075,16 +4031,6 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/home/seastar/steve_summer_seastar_ws/src/head_chef/src/ChefCommand.cpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/opt/ros/humble/include/rcl/rcl/time.h:
 
 /usr/include/c++/11/type_traits:
 
@@ -3152,6 +4098,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
 
+/usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
+
 /home/seastar/steve_summer_seastar_ws/build/seastar_interfaces/rosidl_generator_cpp/seastar_interfaces/srv/detail/point_motors__builder.hpp:
 
 /usr/include/c++/11/filesystem:
@@ -3188,7 +4136,13 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rcutils/rcutils/allocator.h:
 
+/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
+
+/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
+
 /usr/include/c++/11/tr1/legendre_function.tcc:
+
+/usr/include/c++/11/cstddef:
 
 /usr/include/c++/11/bits/std_abs.h:
 
@@ -3212,13 +4166,19 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/exception:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
 /usr/include/c++/11/iomanip:
 
 /opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/Swap.h:
+
 /usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/c++/11/ext/concurrence.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
 
 /usr/include/locale.h:
 
@@ -3234,6 +4194,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/time.h:
 
+/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
+
 /opt/ros/humble/include/rcutils/rcutils/logging.h:
 
 /usr/include/sched.h:
@@ -3242,21 +4204,17 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
-
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
-
 /usr/include/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
+
+/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
@@ -3268,6 +4226,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp:
 
+/usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
+
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -3277,6 +4237,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
@@ -3300,6 +4262,10 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/cstdio:
 
+/usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
 
 /usr/include/c++/11/string_view:
@@ -3312,9 +4278,13 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/ext/string_conversions.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
 /usr/include/stdlib.h:
+
+/usr/include/c++/11/complex:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -3322,11 +4292,17 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/endian.h:
 
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/opt/ros/humble/include/rcutils/rcutils/types.h:
+
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/eigen3/Eigen/src/Core/Redux.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
@@ -3345,6 +4321,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /usr/include/c++/11/math.h:
 
 /usr/include/assert.h:
+
+/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
@@ -3390,7 +4368,11 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
+/usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
+
 /usr/include/c++/11/algorithm:
+
+/usr/include/eigen3/Eigen/QR:
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
@@ -3403,6 +4385,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /usr/include/math.h:
 
 /usr/include/c++/11/condition_variable:
+
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
 
 /usr/include/c++/11/bits/atomic_futex.h:
 
@@ -3422,6 +4406,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
+/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
+
 /opt/ros/humble/include/rcl/rcl/init_options.h:
 
 /usr/include/c++/11/cassert:
@@ -3429,6 +4415,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
+
+/usr/include/eigen3/Eigen/src/Core/Transpose.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
 
@@ -3496,6 +4484,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rmw/rmw/init.h:
 
+/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
+
 /opt/ros/humble/include/rmw/rmw/init_options.h:
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
@@ -3536,6 +4526,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
 
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
@@ -3549,6 +4541,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_changed.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
+
+/usr/include/eigen3/Eigen/src/Core/IndexedView.h:
 
 /opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
 
@@ -3564,6 +4558,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rcl/rcl/visibility_control.h:
 
+/usr/include/eigen3/Eigen/src/Core/util/MKL_support.h:
+
 /usr/include/c++/11/new:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
@@ -3571,6 +4567,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
 
 /opt/ros/humble/include/rcl/rcl/wait.h:
 
@@ -3587,6 +4585,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /opt/ros/humble/include/rcl/rcl/event_callback.h:
 
 /opt/ros/humble/include/rmw/rmw/event_callback_type.h:
+
+/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
 
 /opt/ros/humble/include/rcl/rcl/node.h:
 
@@ -3638,7 +4638,11 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
 
+/usr/include/c++/11/climits:
+
 /opt/ros/humble/include/rclcpp/rclcpp/context.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Replicate.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
 
@@ -3674,6 +4678,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/BooleanRedux.h:
+
 /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp:
@@ -3696,9 +4702,13 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
 
+/usr/include/eigen3/Eigen/LU:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
 
@@ -3734,7 +4744,11 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
 
+/usr/include/eigen3/Eigen/src/Core/Array.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
@@ -3757,6 +4771,8 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
 
@@ -3788,6 +4804,12 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h:
+
+/usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
+
+/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
@@ -3800,11 +4822,13 @@ CMakeFiles/head_chef.dir/src/sousChef.cpp.o: /home/seastar/steve_summer_seastar_
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_setting.hpp:
 
-/usr/include/c++/11/bits/stl_algobase.h:
-
 /usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/c++/11/bits/stl_algobase.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 

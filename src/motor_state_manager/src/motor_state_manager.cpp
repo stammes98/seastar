@@ -92,12 +92,12 @@ private:
 				ps = split(res, "=")[1];
 				//std::cout << ps << std::endl;
 				p2 = stod(ps);
-				
+				/*
 				sendCommand(fd_, std::to_string(m3i) + "IP");
 				res = std::string(getResponse(fd_));
 				ps = split(res, "=")[1];
 				p3 = stod(ps);
-				
+				*/
 				stateUpdate();
 			} else {
 				sendCommand(fd_, std::to_string(m1i) + "CS" + std::to_string(v1));
@@ -106,8 +106,10 @@ private:
 				sendCommand(fd_, std::to_string(m2i) + "CS" + std::to_string(v2));
 				res = getResponse(fd_);
 				
+				/*
 				sendCommand(fd_, std::to_string(m3i) + "CS" + std::to_string(v3));
 				res = getResponse(fd_);
+				*/
 				//std::cout << res << std::endl;
 				//Set velocity to latest stored one
 			}
