@@ -358,6 +358,26 @@ Mat6 getJacobian(double q1, double q2, double q3) {
 	Mat3 m1 = motor1(q1);
 	Mat3 m2 = motor2(q2);
 	Mat3 m3 = motor3(q3);
+	
+	std::cout << std::endl;
+	std::cout << m1.m11 << " " << m1.m12 << " " << m1.m13 << std::endl;
+	std::cout << m1.m21 << " " << m1.m22 << " " << m1.m23 << std::endl;
+	std::cout << m1.m31 << " " << m1.m32 << " " << m1.m33 << std::endl;
+	std::cout << std::endl;
+	
+	std::cout << std::endl;
+	std::cout << m2.m11 << " " << m2.m12 << " " << m2.m13 << std::endl;
+	std::cout << m2.m21 << " " << m2.m22 << " " << m2.m23 << std::endl;
+	std::cout << m2.m31 << " " << m2.m32 << " " << m2.m33 << std::endl;
+	std::cout << std::endl;
+	
+	std::cout << std::endl;
+	std::cout << m3.m11 << " " << m3.m12 << " " << m3.m13 << std::endl;
+	std::cout << m3.m21 << " " << m3.m22 << " " << m3.m23 << std::endl;
+	std::cout << m3.m31 << " " << m3.m32 << " " << m3.m33 << std::endl;
+	std::cout << std::endl;
+	
+	
 	res.m41 = m1.m11;
 	res.m51 = m1.m21;
 	res.m61 = m1.m31;
@@ -409,6 +429,12 @@ MotorState doIk(double tAz, double tAlt, double polar) {
 		}
 		Mat6 Jac = getJacobian(q1, q2, q3);
 		//printf("Jac calculated. Pinv\n");
+		std::cout << Jac.m11 << " " << Jac.m12 << " " << Jac.m13 << std::endl;
+		std::cout << Jac.m21 << " " << Jac.m22 << " " << Jac.m23 << std::endl;
+		std::cout << Jac.m31 << " " << Jac.m32 << " " << Jac.m33 << std::endl;
+		std::cout << Jac.m41 << " " << Jac.m42 << " " << Jac.m43 << std::endl;
+		std::cout << Jac.m51 << " " << Jac.m52 << " " << Jac.m53 << std::endl;
+		std::cout << Jac.m61 << " " << Jac.m62 << " " << Jac.m63 << std::endl;
 		MatrixXf J(3, 6);
 		J(0, 0) = Jac.m11;
 		J(1, 0) = Jac.m12;
@@ -428,6 +454,7 @@ MotorState doIk(double tAz, double tAlt, double polar) {
 		J(0, 5) = Jac.m61;
 		J(1, 5) = Jac.m62;
 		J(2, 5) = Jac.m63;
+		J.transposeInPlace();
 		std::cout << J << std::endl;
 		MatrixXf Jinv = computePseudoInverse(J);
 		dq1 = lamb * ((Jinv(0, 0) * err_pose.x) + (Jinv(1, 0) * err_pose.y) + (Jinv(2, 0) * err_pose.z) + (Jinv(3, 0) * err_pose.a) + (Jinv(4, 0) * err_pose.b) + (Jinv(5, 0) * err_pose.c));

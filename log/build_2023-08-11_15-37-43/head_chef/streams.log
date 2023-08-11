@@ -1,0 +1,38 @@
+[0.032s] Invoking command in '/home/seastar/steve_summer_seastar_ws/build/head_chef': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4
+[0.158s] [ 16%] [32mBuilding CXX object CMakeFiles/head_chef.dir/src/sousChef.cpp.o[0m
+[0.164s] [01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/usr/lib/x86_64-linux-gnu/libconfig++.so: not a directory
+[2.285s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:[m[K In function ‘[01m[KMotorState doIk(double, double, double)[m[K’:
+[2.285s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:412:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KJac[m[K’
+[2.285s]   412 |                std::cout << Jac.m11 << " " << Jac.m12 << " "[01;31m[K [m[K[32m[KJac[m[K.m13 << std::endl;
+[2.286s]       |                                                             [01;31m[K^[m[K[32m[K~~~[m[K
+[2.286s]       |                                                             [32m[K;[m[K
+[2.286s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:413:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KJac[m[K’
+[2.286s]   413 |                std::cout << Jac.m21 << " " << Jac.m22 << " "[01;31m[K [m[K[32m[KJac[m[K.m23 << std::endl;
+[2.286s]       |                                                             [01;31m[K^[m[K[32m[K~~~[m[K
+[2.286s]       |                                                             [32m[K;[m[K
+[2.286s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:414:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KJac[m[K’
+[2.287s]   414 |                std::cout << Jac.m31 << " " << Jac.m32 << " "[01;31m[K [m[K[32m[KJac[m[K.m33 << std::endl;
+[2.287s]       |                                                             [01;31m[K^[m[K[32m[K~~~[m[K
+[2.287s]       |                                                             [32m[K;[m[K
+[2.287s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:415:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KJac[m[K’
+[2.287s]   415 |                std::cout << Jac.m41 << " " << Jac.m42 << " "[01;31m[K [m[K[32m[KJac[m[K.m43 << std::endl;
+[2.287s]       |                                                             [01;31m[K^[m[K[32m[K~~~[m[K
+[2.287s]       |                                                             [32m[K;[m[K
+[2.288s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:416:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KJac[m[K’
+[2.288s]   416 |                std::cout << Jac.m51 << " " << Jac.m52 << " "[01;31m[K [m[K[32m[KJac[m[K.m53 << std::endl;
+[2.288s]       |                                                             [01;31m[K^[m[K[32m[K~~~[m[K
+[2.288s]       |                                                             [32m[K;[m[K
+[2.288s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:417:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KJac[m[K’
+[2.288s]   417 |                std::cout << Jac.m61 << " " << Jac.m62 << " "[01;31m[K [m[K[32m[KJac[m[K.m63 << std::endl;
+[2.288s]       |                                                             [01;31m[K^[m[K[32m[K~~~[m[K
+[2.289s]       |                                                             [32m[K;[m[K
+[2.299s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:394:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KDOF[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.299s]   394 |         int [01;35m[KDOF[m[K = 3;
+[2.299s]       |             [01;35m[K^~~[m[K
+[2.300s] [01m[K/home/seastar/steve_summer_seastar_ws/src/head_chef/src/sousChef.cpp:382:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpolar[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.300s]   382 | MotorState doIk(double tAz, double tAlt, [01;35m[Kdouble polar[m[K) {
+[2.300s]       |                                          [01;35m[K~~~~~~~^~~~~[m[K
+[6.675s] gmake[2]: *** [CMakeFiles/head_chef.dir/build.make:90: CMakeFiles/head_chef.dir/src/sousChef.cpp.o] Error 1
+[6.675s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/head_chef.dir/all] Error 2
+[6.675s] gmake: *** [Makefile:146: all] Error 2
+[6.680s] Invoked command in '/home/seastar/steve_summer_seastar_ws/build/head_chef' returned '2': CMAKE_PREFIX_PATH=/home/seastar/steve_summer_seastar_ws/install/seastar_interfaces:/home/seastar/steve_summer_seastar_ws/install/sunspotter:/home/seastar/steve_summer_seastar_ws/install/head_chef:/home/seastar/steve_summer_seastar_ws/install/motor_state_manager:/home/seastar/steve_summer_seastar_ws/install/motor_manager:/home/seastar/steve_summer_seastar_ws/install/bluespace_ai_xsens_mti_driver:/home/seastar/steve_summer_seastar_ws/install/test_cam:/home/seastar/steve_summer_seastar_ws/install/solar_ephemeris:/home/seastar/steve_summer_seastar_ws/install/pysp:/home/seastar/steve_summer_seastar_ws/install/imufaker:/home/seastar/steve_summer_seastar_ws/install/ik_tools:/home/seastar/steve_summer_seastar_ws/install/ik_solver:/home/seastar/steve_summer_seastar_ws/install/hamburger_helper:/opt/ros/humble /home/seastar/.local/bin/cmake --build /home/seastar/steve_summer_seastar_ws/build/head_chef -- -j4 -l4

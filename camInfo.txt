@@ -1,0 +1,4 @@
+Approximate camera FoV:
+
+x-axis: 65.1 degrees
+y-axis: 51.5 degrees
